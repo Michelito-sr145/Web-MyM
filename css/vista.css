@@ -1,0 +1,377 @@
+:root{
+  --color-text-precio: #ff0000;
+}
+
+/* Secciones ocultas por defecto */
+.vista-producto,
+.vista-noCode,
+.vp-input-talle,
+.vp-input-color,
+.vp-input-cant {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+/* Mostrar secciones cuando tengan el --show */
+.vista-producto--show,
+.vista-noCode--show,
+.vp-input-talle--show,
+.vp-input-color--show,
+.vp-input-cant--show {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.vista-producto {
+    padding-top: 30px;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* ============================== TEXTO, COLOR, ETC... ============================== */
+/* - No code - */
+.vista-noCode .no-code {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #555;
+}
+/* - Vista Producto - */
+.vp-presentacion {
+  text-align: center;
+}
+.vp-titulo h1 {
+  font-size: 1.6rem;
+  color: #222;
+}
+.vp-carrusel {
+  background: #f9f9f9;
+  align-items: center; 
+}
+.vp-prev, .vp-next {
+  color: #333;
+  background: rgba(255,255,255,0.7);
+  transition: background 0.3s;
+}
+.vp-prev:hover, .vp-next:hover {
+  background: rgba(255,255,255,0.9);
+}
+/* - Detalles y formulario - */
+.vp-detalles {
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+.vp-detalles p {
+  color: #555;
+}
+.vp-detalles h2 {
+  font-size: 1.4rem;
+  color: var(--color-text-precio);
+}
+.vp-input-talle select,
+.vp-input-color select,
+.vp-cantidad-control input {
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+}
+
+.vp-cantidad-control button {
+  font-size: 1.7rem;
+  color: #444;
+}
+.vp-cantidad-control button:hover {
+  color: #000;
+}
+.vp-comprar {
+  background: #1bc105;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.vp-comprar:hover {
+  background: #e55f00;
+}
+
+/*Sugerencia*/
+.vs-title {
+  text-align: center;
+  font-size: 1.7rem;
+}
+.vs-Presentacion {
+  background-color: #000;
+}
+
+.vs-Presentacion h3 {
+  font-size: 0.75rem;
+  color: #fff;
+  font-weight: bold;
+}
+.vs-Texto h4 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.vs-Texto p { 
+  font-size: 1.1rem;
+  color: var(--color-text-precio);
+}
+.vs-carrusel {
+  background: #fff;
+}
+.vs-carrusel button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 1.5rem;
+}
+.vs-carrusel button:hover { 
+    background-color: rgba(0,0,0,0.7); 
+}
+
+
+
+
+
+/* ============================== VISTA NO CODE ============================== */
+.vista-noCode {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+/* ============================== VISTA DEL PRODUCTO ============================== */
+.vp-producto {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+/* Presentacion imagen */
+.vp-carrusel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  min-height: 250px;
+  display: flex;
+  justify-content: center;
+}
+.vp-cimg img {
+  width: 100%;
+  height: 100%;
+  max-height: 250px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.vp-prev, .vp-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 6px 12px;
+}
+.vp-prev { left: 10px; }
+.vp-next { right: 10px; }
+/* Detalles y formulario */
+.vp-detalles {
+  padding: 20px;
+}
+.vp-detalles p {
+  margin-bottom: 15px;
+}
+.vp-detalles form {
+  display: grid;
+  gap: 15px;
+}
+.vp-input-talle--show,
+.vp-input-color--show,
+.vp-input-cant--show {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.vp-input-talle select,
+.vp-input-color select,
+.vp-cantidad-control input {
+  padding: 8px;
+  border-radius: 6px;
+}
+.vp-cantidad-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.vp-cantidad-control button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.vp-comprar {
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+
+/* ============================== SUGERENCIA ============================== */
+.vista-sugerencia {
+  padding: 20px;
+}
+.vs-title {
+  margin-bottom: 15px;
+}
+
+/* Carrusel contenedor */
+.vs-carrusel {
+  position: relative;
+  border: 3px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.vs-1);
+  overflow: hidden;
+}
+
+/* Items del carrusel */
+.vs-carrusel-items {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+  user-select: none;
+  touch-action: pan-y;
+}
+
+/* Producto */
+.vs-c-producto {
+  min-width: 100%;
+  padding: 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.vs-carrusel-items a{
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* Presentación (imagen + etiqueta) */
+.vs-Presentacion {
+  position: relative;
+  width: 120px;
+  height: 180px;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.vs-Presentacion img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.vs-Presentacion h3 {
+  position: absolute;
+  top: 20px;
+  left: -40px;
+  padding: 5px 50px;
+  transform: rotate(-45deg);
+  text-transform: uppercase;
+}
+/* Texto */
+.vs-Texto { 
+  margin-top: 10px;
+}
+.vs-Texto h4 {
+  margin-bottom: 5px;
+}
+/* Botones del carrusel */
+.vs-carrusel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background 0.3s;
+  z-index: 2;
+}
+.vs-carrusel .vs-prev { left: 10px; }
+.vs-carrusel .vs-next { right: 10px; }
+
+
+@media (min-width: 425px) {
+  /* === VISTA PRODUCTO === */
+  .vp-cimg img {
+    max-height: 320px;
+  }
+  .vp-titulo h1 {
+    font-size: 1.8rem;
+  }
+  .vp-detalles {
+    padding: 25px;
+  }
+  /* === SUGERENCIA === */
+  .vs-c-producto { min-width: 50%; }
+  .vs-title {font-size: 1.7rem;}
+  .vs-Presentacion h3 {font-size: 0.75rem;}
+  .vs-Texto h4 {font-size: 1rem;}
+  .vs-Texto p {font-size: 1.1rem;}
+  .vs-carrusel button {font-size: 1.5rem;}
+
+}
+
+@media (min-width: 768px) {
+  /* === VISTA PRODUCTO === */
+  .vp-producto {
+    grid-template-columns: 1fr 1fr; /* presentación a la izquierda, detalles a la derecha */
+    align-items: start;
+  }
+  .vp-cimg img {
+    max-height: 400px;
+  }
+  .vp-titulo h1 {
+    font-size: 2rem;
+  }
+  .vp-detalles h2 {
+    font-size: 1.6rem;
+  }
+  .vp-comprar {
+    font-size: 1.1rem;
+    padding: 14px;
+  }
+  /* === SUGERENCIA === */
+  .vs-c-producto { min-width: 33.33%; }
+  .vs-title {margin-bottom: 18px;}
+  .vs-carrusel button {padding: 12px;}
+}
+
+@media (min-width: 1024px) {
+  /* === VISTA PRODUCTO === */
+  .vp-producto {
+    gap: 40px; /* más espacio entre columnas */
+  }
+  .vp-cimg img {
+    max-height: 500px;
+  }
+  .vp-titulo h1 {
+    font-size: 2.2rem;
+  }
+  .vp-detalles {
+    padding: 30px;
+  }
+  .vp-detalles p {
+    font-size: 1.05rem;
+  }
+  .vp-detalles h2 {
+    font-size: 1.8rem;
+  }
+  .vp-comprar {
+    font-size: 1.2rem;
+    padding: 16px 20px;
+  }
+
+  /* === SUGERENCIA === */
+  .vs-c-producto { min-width: 25%; }
+  .vs-carrusel button {padding: 14px; }
+}

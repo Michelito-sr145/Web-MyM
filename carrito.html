@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/carrito.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Plantillas Master MyM</title>
+</head>
+
+<body>
+    <!---Header Section--->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">MyM</a>
+        </div>
+        <div class="fa-solid fa-bars" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="carrito.html">Carrito</a></li>
+        </ul>
+        <div class="social-icons">
+            <a class="linkSocial fc"><i class="fa-brands fa-square-facebook"></i></a>
+            <a class="linkSocial ig"><i class="fa-brands fa-square-instagram"></i></a>
+            <a class="linkSocial wsp"><i class="fa-brands fa-square-whatsapp"></i></a>
+        </div>
+    </header>
+    <main>
+        <!-- Banner y Opciones -->
+        <section class="opciones">
+            <img src="/img/Local/Banner.jpg" alt="Banner" class="banner">
+            <div class="categoria-botones">
+                <button class="principal" id="btn-sec-plantilla">Plantillas</button>
+                <div class="secundarios">
+                    <button id="btn-sec-llavero">Llaveros</button>
+                    <button id="btn-sec-media">Medias</button>
+                    <button id="btn-sec-todo">Todos</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="vacio">
+            <h2> Esta vacio el Carrito</h2>
+            <button id="btn-verPro">Ver Productos</button>
+        </section>
+        <section class="Carro">
+            <h1>Mi Carrito</h1>
+            <div class="carrito-lista" id="carrito-lista">
+                <!-- Productos agregados se mostrarán aquí -->
+            </div>
+            <div class="carrito-footer">
+                <button id="btn-comprar" class="btn-comprar">Realizar Compra</button>
+            </div>
+        </section>
+
+        <section class="Compra-Modal">
+            <div class="opcion">
+                <button id="msj-wsp"><i class="fa-brands fa-whatsapp"></i></button>
+                <button id="msj-email"><i class="fa-regular fa-envelope"></i></button>
+            </div>
+            <div class="confirmacion-wsp">
+                <button class="reenviar-wsp">Recargar mensaje <i class="fa-solid fa-rotate-right"></i></button>
+                <p>Síguenos:</p>
+                <div class="social-icons">
+                    <a class="linkSocial fc"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a class="linkSocial ig"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a class="linkSocial wsp"><i class="fa-brands fa-square-whatsapp"></i></a>
+                </div>
+                <button class="atras-wsp"><i class="fa-solid fa-left-long"></i> volver</button>
+                <button class="cerrar-confi-wsp">cerrar/vaciar</button>
+            </div>
+            <div class="form-email">
+                <form id="formulario">
+                    <h2 class="form-title">Contacto y Pedido</h2>
+                    
+                    <!-- Campo Nombre -->
+                    <div class="form-group">
+                        <label for="name">Nombre completo</label>
+                        <input type="text" id="name" name="name" placeholder="Ej: Juan Pérez" required>
+                    </div>
+                    
+                    <!-- Campo Email -->
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                    </div>
+                    
+                    <!-- Campo Mensaje -->
+                    <div class="form-group">
+                        <label for="msg-cliente">Mensaje adicional</label>
+                        <textarea id="msg-cliente" name="mensaje" placeholder="Escribe aquí tu mensaje..." rows="4"></textarea>
+                    </div>
+                    
+                    <!-- Botón -->
+                    <div class="form-actions">
+                        <button type="submit" class="send-email">
+                            Enviar mensaje <i id="send-msj" class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </form>
+                <button class="atras-email"><i class="fa-solid fa-left-long"></i> volver</button>
+            </div>
+            
+            <div class="confirmacion-email">
+                <p class="estado"></p>
+                <p>Síguenos:</p>
+                <div class="social-icons">
+                    <a class="linkSocial fc"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a class="linkSocial ig"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a class="linkSocial wsp"><i class="fa-brands fa-square-whatsapp"></i></a>
+                </div>
+                <button class="cerrar-confi-email">cerrar/vaciar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="info">
+            <div class="info2">
+                <p>Síguenos:</p>
+                <div class="social-icons">
+                    <a class="linkSocial fc"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a class="linkSocial ig"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a class="linkSocial wsp"><i class="fa-brands fa-square-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="mini-mapa">
+                <p>Nos Ubicamos:</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.975067332465!2d-58.40274712470483!3d-34.60479197295386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaeb7ce7786f%3A0xd6224e8f0d7a6786!2sPlantillas%20Master%20Local%20%228%22!5e0!3m2!1ses!2sar!4v1756238111547!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <p>&copy; 2025 Plantillas Master MyM</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("m2TiZgiU2f969EkXE");
+        })();
+    </script>
+    <script src="js/productos.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/carrito.js"></script>
+</body>
+</html>

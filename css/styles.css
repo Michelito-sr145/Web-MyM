@@ -1,0 +1,446 @@
+/* Reset y variables */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-fondo-header: #eee8e8;
+    --color-text-header:#000;
+    --color-fondo-main: #38f66eee;
+    --color-fondo-footer: #eee8e8;
+    --color-text-footer: #000;
+    --color-text-footer-copy: #000;
+    --color-logo:#000;
+    --color-btn:#c339c7;
+    --color-btn-text: #fff;
+    --color-hover:rgb(183, 255, 0);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Main toma todo el espacio disponible */
+main {
+    flex: 1; /* fuerza a ocupar todo el espacio entre header y footer */
+    padding-top: 70px; /* header es fijo */
+    padding-bottom: 1rem; /* opcional, espacio antes del footer */
+}
+
+section{
+    background-color: transparent;
+}
+
+/* ===== Tamaño de texto,etc.. ===== */
+.social-icons a {font-size: 1.6rem;}
+.logo a {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--color-logo);
+}
+.navbar a {
+    color: #000000;
+    font-size: 1.4rem;
+}
+#menu-icon {
+    font-size: 1.6rem;
+}
+
+.categoria-botones .principal {
+  background-color: var(--color-btn);
+  color: var(--color-btn-text);
+  font-size: 1rem;
+}
+.categoria-botones .secundarios button {
+  background-color: var(--color-btn);
+  color: var(--color-btn-text);
+  font-size: 1rem;
+}
+
+footer .info {
+  font-size: 0.9rem;
+}
+
+footer > p {
+    color: var(--color-text-footer-copy);
+    font-size: 0.7rem;
+}
+
+.carrito-cantidad {
+  background-color: red;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.icono-car i{
+  font-size: 1.2rem;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+/* ===== REDES SOCIALES ===== */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.social-icons a {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.fa-square-instagram {
+    color: #e440d1;
+}
+.fa-square-facebook {
+    color: #1877f2;
+}
+.fa-square-whatsapp {
+    color: #25d366;
+}
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+/* ==================================== HEADER ==================================== */
+header {
+    width: 100%;
+    height: 70px;
+    background: var(--color-fondo-header);
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+/* ===== LOGO ===== */
+.logo a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--color-logo);
+}
+/* ===== NAVBAR ===== */
+.navbar {
+    position: absolute;
+    top: 70px;
+    right: -100%;
+    background: var(--color-fondo-header);
+    flex-direction: column;
+    width: 200px;
+    padding: 15px;
+    transition: right 0.4s ease;
+}
+.navbar.active {
+    right: 0;
+}
+
+.navbar li {
+    list-style: none;
+    padding: 10px 3px;
+    margin: 0;
+}
+
+.navbar a {
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: var(--color-hover);
+    font-weight: bold;
+}
+
+/* ===== MENÚ ICONO ===== */
+#menu-icon {
+    display: block;
+}
+
+/* ==================================== BANNER ==================================== */
+.opciones {
+  position: relative;
+  width: 100%;
+  height: 125px; /* equivalente a 125px usando rem ~1rem=10px */
+  overflow: hidden;
+}
+
+/* Imagen de fondo */
+.opciones .banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Contenedor de botones sobre la imagen */
+.categoria-botones {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Botón principal */
+.categoria-botones .principal {
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+/* Botones secundarios */
+.categoria-botones .secundarios {
+  display: flex;
+  gap: 10px;
+}
+.categoria-botones .secundarios button {
+  padding: 8px 13px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Hover */
+.categoria-botones button:hover {
+  background-color:var(--color-hover);
+  color: #000;
+  transition: 0.3s;
+}
+
+/* ==================================== FOOTER ==================================== */
+footer {
+  background-color: var(--color-fondo-footer);
+  color: var(--color-text-footer);
+  padding: 15px 0;
+  text-align: center;
+}
+
+/* Contenedor principal del footer */
+footer .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+/* Mapa miniatura */
+.mini-mapa {
+  width: 220px;
+  height: 150px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.25);
+}
+.mini-mapa iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+/* Texto e info */
+.info2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+}
+
+/* Copyright */
+footer > p {
+    margin: 5px;
+    opacity: 0.9;
+}
+
+
+
+/* ==== CARRITO ICONO FLOTANTE ==== */
+.carrito-ico {
+  position: fixed;
+  bottom: 20px;    /* distancia desde el top */
+  right: 20px;  /* distancia desde la derecha */
+  z-index: 9999;
+}
+
+.icono-car {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.carrito-cantidad {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none; /* que no interfiera con el click */
+}
+.icono-car i{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,.18);
+  transition: transform .15s ease, box-shadow .2s ease, background-color .2s ease;
+}
+
+
+/* ====== RESPONSIVE ====== */
+/* === A partir de 425px (móviles grandes / pequeños tablets) === */
+@media (min-width: 425px) {
+  .social-icons a {font-size: 1.6rem;}
+  .logo a {
+      font-size: 1.6rem;
+  }
+  .navbar a {
+      font-size: 1.4rem;
+  }
+  .categoria-botones .principal{
+    font-size: 1rem;
+    padding: 8px 14px;
+  }
+  .categoria-botones .secundarios button {
+    font-size: 1rem;
+    padding: 8px 14px;
+  }
+  footer .info {
+    font-size: 0.9rem;
+  }
+  footer > p {
+      font-size: 0.7rem;
+  }
+  .carrito-cantidad {
+    font-size: 1rem;
+  }
+  .icono-car i{
+    font-size: 1.2rem;
+  }
+
+  #menu-icon {
+      display: none;
+  }
+  .navbar {
+      justify-content:space-around;
+      position: static;
+      flex-direction: row;
+      width: auto;
+      padding: 0;
+      background: transparent;
+      display: flex;
+      gap: 15px;
+  }
+  
+  /* === BANNER === */
+  .opciones {
+    height: 125px;
+  }
+  .categoria-botones {
+    flex-direction: row;
+    gap: 10px;
+  }
+  .categoria-botones .secundarios {
+      justify-content:space-around;
+      gap: 10px;
+  }
+  /* ==== FOOTER ====*/
+  footer .info {
+    flex-direction: row; /* fila: info a la izquierda, mapa derecha */
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+  }
+  .info2 {
+    align-items: center;
+  }
+  .mini-mapa {
+    margin-top: 0;
+  }
+  /* Hover/active/focus accesibles */
+  .icono-car:hover i{
+    transform: translateY(-1px) scale(1.2);
+    box-shadow: 0 8px 18px rgba(0,0,0,.25);
+    background: #1a1a1a;
+  }
+  .icono-car:active i{
+    transform: scale(0.97);
+  }
+  .icono-car:focus-visible i{
+    outline: 2px solid #fff;
+    outline-offset: 3px;
+  }
+}
+
+/* === A partir de 768px (tablets horizontales / laptops chicos) === */
+@media (min-width: 768px) {
+  .navbar {
+      position: static;
+      flex-direction: row;
+      width: auto;
+      padding: 0;
+      background: transparent;
+      display: flex;
+      gap: 25px;
+  }
+  header {
+      padding: 0 40px;
+  }
+  .social-icons a {font-size: 2rem;}
+  .logo a {
+      font-size: 2rem;
+  }
+  .navbar a {
+      font-size: 1.5rem;
+  }
+  .categoria-botones .principal{
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+  .categoria-botones .secundarios button {
+    font-size: 1rem;
+    padding:  10px 20px;
+  }
+  footer .info {
+    font-size: 0.9rem;
+  }
+  footer > p {
+      font-size: 0.7rem;
+  }
+  .carrito-cantidad {
+    font-size: 1rem;
+  }
+  .icono-car i{
+    font-size: 1.2rem;
+  }
+
+  .categoria-botones {
+    gap: 20px;
+  }
+  .categoria-botones .secundarios {
+      gap: 20px;
+  }
+
+  /*=== FOOTER ===*/
+  .mini-mapa {
+    width: 250px;
+    height: 180px;
+  }
+}
+

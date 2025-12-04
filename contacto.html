@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantillas Master MyM</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">MyM</a>
+        </div>
+        <div class="fa-solid fa-bars" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="carrito.html">Carrito</a></li>
+        </ul>
+        <div class="social-icons">
+            <a class="linkSocial fc"><i class="fa-brands fa-square-facebook"></i></a>
+            <a class="linkSocial ig"><i class="fa-brands fa-square-instagram"></i></a>
+            <a class="linkSocial wsp"><i class="fa-brands fa-square-whatsapp"></i></a>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <section class="hero-contacto">
+            <h1>Master MyM</h1>
+            <!-- Imagen perfil -->
+            <div class="img-perfil">
+            <img src="img/Local/perfil.jpg" alt="Master MyM">
+            </div>
+            <!-- Descripción -->
+            <div class="descripcion-contacto">
+                <p>
+                    En <strong>Master MyM</strong> ofrecemos productos de la más alta calidad, diseñados para garantizar durabilidad y comodidad.
+                    Cada plantilla y accesorio es fabricado con materiales seleccionados para cuidar tus pies y brindarte un producto confiable.
+                </p>
+                <p>
+                    Nuestro compromiso es combinar funcionalidad con estilo, ofreciendo soluciones prácticas para el día a día y el bienestar de nuestros clientes.
+                    Contamos con atención personalizada y soporte para que tu experiencia de compra sea segura y satisfactoria.
+                </p>
+            </div>
+        </section>
+
+        <!-- Información de contacto y ubicación -->
+        <section class="info-contacto">
+            <h2>Nuestra ubicación</h2>
+            <div class="info">
+                <p>Visítanos en nuestro local o contáctanos por teléfono o WhatsApp:</p>
+                <ul>
+                    <li><strong>Dirección:</strong> Av. Corrientes 2344 - Ciudad. Autónoma de Buenos Aires</li>
+                    <li><strong>Teléfono / WhatsApp:</strong> +54 9 11 3891-3633</li>
+                    <li><strong>Email:</strong> melisaroncal@gmail.com</li>
+                </ul>
+            </div>
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.975067332465!2d-58.40274712470483!3d-34.60479197295386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaeb7ce7786f%3A0xd6224e8f0d7a6786!2sPlantillas%20Master%20Local%20%228%22!5e0!3m2!1ses!2sar!4v1756238111547!5m2!1ses!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+
+        <!-- Formulario de contacto -->
+        <section class="formulario-contacto">
+            <h2>Contáctanos</h2>
+            <p>Si tienes dudas, sugerencias o quieres realizar un pedido personalizado, completa el siguiente formulario o dirigete al icono de WhatsApp para una mejor atencion:</p>
+            <form id="contacto-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+                </div>
+                <button type="submit" class="btn-enviar">Enviar mensaje <i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+            <label for="estado" id="estado"></label>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <section class="info">
+            <div class="info2">
+                <p>Síguenos:</p>
+                <div class="social-icons">
+                    <a class="linkSocial fc"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a class="linkSocial ig"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a class="linkSocial wsp"><i class="fa-brands fa-square-whatsapp"></i></a>
+                </div>
+            </div>
+        </section>
+        <p>&copy; 2025 Plantillas Master MyM</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("m2TiZgiU2f969EkXE");
+        })();
+    </script>
+    <script src="js/script.js"></script>
+    <script src="js/contacto.js"></script>
+</body>
+</html>

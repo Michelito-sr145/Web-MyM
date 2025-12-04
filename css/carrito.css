@@ -1,0 +1,583 @@
+.vacio,
+.Carro,
+.Compra-Modal,
+.opcion,
+.form-email,
+.confirmacion-email,
+.confirmacion-wsp{
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+.vacio--show,
+.Carro--show,
+.Compra-Modal--show,
+.opcion--show,
+.form-email--show,
+.confirmacion-email--show,
+.confirmacion-wsp--show{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ======================= CARRITO VACÍO ======================= */
+.vacio {
+  height: 400px;
+  margin: 4rem auto;
+  padding: 2rem;
+  text-align: center;
+  background: #fff;
+  border-radius: 12px;
+}
+
+.vacio h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.vacio button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.vacio button:hover {
+  background: #0056b3;
+}
+
+
+
+
+/* ======================= SECCIÓN CARRITO ======================= */
+.Carro {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.Carro h1 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Lista del carrito */
+.carrito-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Item del carrito */
+.carrito-item {
+  padding: 1rem;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+/* Contenedor imagen + datos */
+.producto-contenedor {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.carrito-img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.producto-datos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.carrito-nombre {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #000;
+}
+
+/* Botones */
+.producto-botones {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.producto-botones button {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border: none;
+}
+
+.btn-editar {
+  background: #007bff;
+  color: #fff;
+}
+
+.btn-editar:hover {
+  background: #0056b3;
+}
+
+.btn-eliminar {
+  background: #dc3545;
+  color: #fff;
+}
+
+.btn-eliminar:hover {
+  background: #a71d2a;
+}
+
+.input-cantidad {
+  width: 70px;
+  padding: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Total */
+.carrito-total {
+  margin-top: 1rem;
+  font-weight: bold;
+  text-align: right;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Botón comprar */
+.btn-comprar {
+  display: block;
+  margin: 1.5rem auto 0;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #28a745;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-comprar:hover {
+  background: #1e7e34;
+}
+
+
+
+
+
+
+
+/* ======================= MODAL DE COMPRA ======================= */
+.Compra-Modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  padding: 1rem;
+}
+
+.Compra-Modal > div {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 100%;
+  max-width: 320px; /* ajustado a móvil */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+/* Contenedor base */
+.opcion,
+.confirmacion-wsp,
+.form-email,
+.confirmacion-email {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* =======================
+   BOTONES DE OPCIÓN
+======================= */
+.opcion button {
+  margin: 0 1rem;
+  padding: 1rem 1.5rem;
+  font-size: 2rem;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+#msj-wsp {
+  background: #25d366;
+}
+#msj-wsp:hover {
+  background: #1ebe5c;
+  transform: scale(1.05);
+}
+
+#msj-email {
+  background: #007bff;
+}
+#msj-email:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+.atras-email {
+  margin: 0.8rem auto;
+  font-size: 1rem;
+  color: #444;
+  background: #e74c3c;
+  color: #fff;
+  padding: 0.7rem 1.3rem;
+  border: none;
+  border-radius: 8px;
+}
+
+
+
+/* =======================
+   CONFIRMACIÓN WSP
+======================= */
+.confirmacion-wsp p {
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: #444;
+}
+
+.confirmacion-wsp button {
+  display: block;
+  margin: 0.8rem auto;
+  padding: 0.7rem 1.3rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.reenviar-wsp {
+  background: #f1f1f1;
+}
+.atras-wsp {
+  background: #007bff;
+  color: #fff;
+}
+.cerrar-confi-wsp {
+  background: #e74c3c;
+  color: #fff;
+}
+
+/* =======================
+   FORM EMAIL
+======================= */
+.form-email .form-title {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.form-email .form-group {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.form-email label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.form-email input,
+.form-email textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.form-email input:focus,
+.form-email textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.form-actions {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.send-email {
+  background: #007bff;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.send-email:hover {
+  background: #0056b3;
+}
+
+/* =======================
+   CONFIRMACIÓN EMAIL
+======================= */
+.confirmacion-email .estado {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.confirmacion-email button {
+  margin-top: 1rem;
+  padding: 0.7rem 1.3rem;
+  border: none;
+  border-radius: 8px;
+  background: #e74c3c;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* =======================
+   ANIMACIÓN
+======================= */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 424px) {
+  /*Carrito lleno*/
+  .Carro {
+    padding: 1rem;
+  }
+
+  .carrito-img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .producto-contenedor {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .producto-datos {
+    align-items: center;
+  }
+
+  .producto-botones {
+    flex-direction: column;
+  }
+
+
+  /* Modal */
+  .Compra-Modal .opcion,
+  .Compra-Modal .confirmacion-wsp,
+  .Compra-Modal .form-email,
+  .Compra-Modal .confirmacion-email {
+    padding: 1.5rem;
+  }
+
+  .opcion button {
+    margin: 0.5rem;
+    font-size: 1.1rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .form-email .form-title {
+    font-size: 1.2rem;
+  }
+
+
+}
+
+@media (min-width: 425px) {
+  /* Carrito vacío */
+  .vacio {
+    margin: 2rem 1rem;
+    padding: 1.5rem;
+  }
+
+  .vacio h2 {
+    font-size: 1.2rem;
+  }
+
+  .vacio button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  /* Carrito lleno */
+  .carrito-item {
+    flex-direction: column;
+  }
+
+  .producto-contenedor {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .producto-datos {
+    font-size: 1rem;
+  }
+
+  /* Modals */
+  .Compra-Modal .opcion,
+  .Compra-Modal .confirmacion-wsp,
+  .Compra-Modal .form-email,
+  .Compra-Modal .confirmacion-email {
+    max-width: 450px;
+  }
+}
+
+
+/* =======================
+   TABLET GRANDE (>=768px)
+======================= */
+@media (min-width: 768px) {
+  /* Carrito vacío */
+  .vacio h2 {
+    font-size: 1.3rem;
+  }
+
+  .vacio button {
+    font-size: 1rem;
+  }
+
+  /* Carrito lleno */
+  .Carro {
+    padding: 2rem;
+  }
+
+  .carrito-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .producto-datos {
+    font-size: 1rem;
+  }
+
+  .carrito-total {
+    font-size: 1.2rem;
+  }
+}
+
+
+/* =======================
+   ESCRITORIO (>=1024px)
+======================= */
+@media (min-width: 1024px) {
+  /* Carrito vacío */
+  .vacio h2 {
+    font-size: 1.6rem;
+  }
+
+  .vacio button {
+    font-size: 1.1rem;
+  }
+
+  /* Carrito lleno */
+  .Carro {
+    max-width: 1100px;
+    padding: 2.5rem;
+  }
+
+  .carrito-item {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .producto-contenedor {
+    flex: 1;
+  }
+
+  .producto-botones {
+    flex-shrink: 0;
+  }
+
+  .carrito-total {
+    font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,235 @@
+/* ====== HERO CONTACTO ====== */
+.hero-contacto {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.hero-contacto h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
+}
+.hero-contacto .img-perfil img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 12px;
+  margin: 0 auto;
+  display: block;
+}
+.hero-contacto .descripcion-contacto {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #444;
+}
+.hero-contacto .descripcion-contacto strong {
+  color: #ff6b00; /* resalta la marca */
+}
+
+
+
+/* ===== INFO CONTACTO ===== */
+.info-contacto {
+  max-width: 900px;
+  margin: 1rem auto;
+  padding: 1.5rem;
+  text-align: center;
+}
+.info-contacto h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+.info-contacto .info {
+  margin-bottom: 1.5rem;
+}
+.info-contacto .info p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #555;
+}
+.info-contacto .info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.info-contacto .info li {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #444;
+}
+.info-contacto .info strong {
+  color: #000;
+}
+.info-contacto .mapa {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* ====== FORMULARIO CONTACTO ====== */
+.formulario-contacto {
+  padding: 30px 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  max-width: 600px;
+  margin: 1rem auto;
+  text-align: center;
+}
+.formulario-contacto h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+.formulario-contacto p {
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+#contacto-form {
+  display: grid;
+  gap: 15px;
+  text-align: left;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.form-group label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #333;
+}
+.form-group input,
+.form-group textarea {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  resize: none;
+}
+.btn-enviar {
+  background: #ff6b00;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+  text-align: center;
+}
+.btn-enviar:hover {
+  background: #e55f00;
+}
+#estado {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+
+
+/* ====== RESPONSIVE ====== */
+@media (min-width: 425px) {
+  .formulario-contacto {
+    padding: 40px 25px;
+  }
+  .info-contacto h2 {
+    font-size: 1.8rem;
+  }
+  .info-contacto .info li {
+    font-size: 1.05rem;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .hero-contacto {
+    grid-template-columns: 1fr 2fr;
+    text-align: left;
+    align-items: center;
+  }
+  .hero-contacto h1 {
+    grid-column: span 2;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .hero-contacto .img-perfil img {
+    max-width: 250px;
+  }
+  .formulario-contacto {
+    padding: 50px 40px;
+  }
+  .formulario-contacto h2 {
+    font-size: 1.8rem;
+  }
+  .info-contacto {
+    text-align: left;
+  }
+  .info-contacto .info {
+    margin-bottom: 0;
+  }
+  .info-contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+  .info-contacto h2 {
+    grid-column: span 2;
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .hero-contacto {
+    grid-template-columns: 1fr 3fr;
+    gap: 40px;
+    padding: 40px 60px;
+  }
+  .hero-contacto h1 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+  }
+  .hero-contacto .img-perfil img {
+    max-width: 300px;
+  }
+  .hero-contacto .descripcion-contacto {
+    font-size: 1rem;
+  }
+  .formulario-contacto {
+    max-width: 650px;
+    padding: 60px;
+  }
+  .formulario-contacto h2 {
+    font-size: 2rem;
+  }
+  .formulario-contacto p {
+    font-size: 1rem;
+  }
+  .info-contacto {
+    max-width: 1100px;
+    padding: 2rem;
+  }
+  .info-contacto h2 {
+    font-size: 2.2rem;
+  }
+  .info-contacto .info li {
+    font-size: 1.1rem;
+  }
+  .info-contacto .mapa iframe {
+    height: 350px;
+  }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Plantillas Master MyM</title>
+</head>
+
+<body>
+    <!---Header Section--->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">MyM</a>
+        </div>
+        <div class="fa-solid fa-bars" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="carrito.html">Carrito</a></li>
+        </ul>
+        <div class="social-icons">
+            <a class="linkSocial fc"><i class="fa-brands fa-square-facebook"></i></a>
+            <a class="linkSocial ig"><i class="fa-brands fa-square-instagram"></i></a>
+            <a class="linkSocial wsp"><i class="fa-brands fa-square-whatsapp"></i></a>
+        </div>
+    </header>
+    <main>
+        <!-- Banner y Opciones -->
+        <section class="opciones">
+            <img src="/img/Local/Banner.jpg" alt="Banner" class="banner">
+            <div class="categoria-botones">
+                <button class="principal" id="btn-sec-plantilla">Plantillas</button>
+                <div class="secundarios">
+                    <button id="btn-sec-llavero">Llaveros</button>
+                    <button id="btn-sec-media">Medias</button>
+                    <button id="btn-sec-todo">Todos</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Zona de Productos Sugerentes -->
+        <section class="sugerencia">
+            <h2 class="title">Productos Destacados</h2>
+            <div class="carrusel">
+                <div class="carrusel-items"></div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+        </section>
+
+        <!-- Zona de todos los Productos y Buscador -->
+        <section class="productos" id="productos">
+            <h2 class="title">Todos los Productos</h2>
+            <!-- Controles de búsqueda y filtrado -->
+            <div class="productos-controles">
+                <input type="text" id="busqueda" placeholder="Buscar producto...">
+            </div>
+            <!-- Lista de productos -->
+            <div class="productos-lista"></div>
+        </section>
+
+        <section class="carrito-ico">
+            <a href="carrito.html" class="icono-car">
+                <span class="carrito-cantidad" id="carrito-cantidad">0</span>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <section class="info">
+            <div class="info2">
+                <p>Síguenos:</p>
+                <div class="social-icons">
+                    <a class="linkSocial fc"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a class="linkSocial ig"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a class="linkSocial wsp"><i class="fa-brands fa-square-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="mini-mapa">
+                <p>Nos Ubicamos:</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.975067332465!2d-58.40274712470483!3d-34.60479197295386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaeb7ce7786f%3A0xd6224e8f0d7a6786!2sPlantillas%20Master%20Local%20%228%22!5e0!3m2!1ses!2sar!4v1756238111547!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <p>&copy; 2025 Plantillas Master MyM</p>
+    </footer>
+    <script src="js/productos.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
