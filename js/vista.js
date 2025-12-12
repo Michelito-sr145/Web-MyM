@@ -96,7 +96,7 @@ function cargarProducto() {
     let imgIndex = 0;
     function mostrarImagen() {
         if (productoselecImgs?.Imagenes.length > 0) {
-            vp_carrusel.innerHTML = `<img src="img/${productoselecImgs.Imagenes[imgIndex]}" alt="Imagen ${codigoP}">`;
+            vp_carrusel.innerHTML = `<img src="img/${productoselecImgs.Imagenes[imgIndex]}.jpg" alt="Imagen ${codigoP}">`;
         } else {
             vp_carrusel.innerHTML = `<p>Sin imágenes disponibles</p>`;
         }
