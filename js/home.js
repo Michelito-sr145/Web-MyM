@@ -25,7 +25,7 @@ productosDestacados.forEach(prod => {
     </div>
     <div class="Texto">
       <h4>${prod.Producto}</h4>
-      <p>${prod.Precio ? `$${prod.Precio}` : 'Consultar precio'}</p>
+      <p>${prod.PrecioMayor ? `$${prod.PrecioMayor}` : 'Consultar precio'}</p>
     </div>
   `;
   carruselItems.appendChild(a);
@@ -119,7 +119,7 @@ function mostrarProductos(productosFiltrados) {
       <a href="producto.html?code=${encodeURIComponent(prod.Codigo)}">
         <img src="img/${prod.Img}.jpg" alt="${prod.Producto}">
         <h4>${prod.Producto}</h4>
-        <p>${prod.Precio ? `$${prod.Precio}` : "Consultar precio"}</p>
+        <p>${prod.PrecioMayor ? `$${prod.PrecioMayor}` : "Consultar precio"}</p>
         <button class="btn-visualizar">Comprar</button>
       </a>
     `;
@@ -131,7 +131,7 @@ function mostrarProductos(productosFiltrados) {
 function aplicarBusqueda() {
   const texto = busquedaInput.value.toLowerCase();
   const filtrados = productos.filter(p =>
-    p.Producto.toLowerCase().includes(texto)
+    p.Producto.toLowerCase().includes(texto) || p.Categoria.toLowerCase().includes(texto) || p.Codigo.toLowerCase().includes(texto)
   );
   mostrarProductos(filtrados);
 }

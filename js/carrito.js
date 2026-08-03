@@ -38,6 +38,11 @@ function mostrarCarrito() {
     contenedorCarrito.innerHTML = "";
     let total = 0;
 
+    const titulo = document.createElement("h1");
+    titulo.textContent = "Mi Carrito";
+    titulo.classList.add("titulo-carrito");
+    contenedorCarrito.appendChild(titulo);
+
     carrito.forEach((item, index) => {
         const producto = productos.find(p => p.Codigo === item.Codigo);
         if (!producto) return;
@@ -81,16 +86,16 @@ function mostrarCarrito() {
         }
 
         // Precio y cantidad solo si tiene precio
-        if (producto.Precio) {
+        if (producto.PrecioMayor) {
             const precio = document.createElement("span");
-            precio.textContent = `Precio : $${producto.Precio.toFixed(2)}`;
+            precio.textContent = `Precio : $${producto.PrecioMayor.toFixed(2)}`;
             datos.appendChild(precio);
 
             const cantidad = document.createElement("span");
             cantidad.textContent = `Cantidad: ${item.Cantidad}`;
             datos.appendChild(cantidad);
 
-            total += producto.Precio * item.Cantidad;
+            total += producto.PrecioMayor * item.Cantidad;
         }else{
             const precio = document.createElement("span");
             precio.textContent = "Para Consultar Precio";
@@ -105,7 +110,7 @@ function mostrarCarrito() {
         botones.classList.add("producto-botones");
 
         // Botón Editar (solo si hay precio y cantidad)
-        if (producto.Precio && (item.Cantidad || 0) > 0) {
+        if (producto.PrecioMayor && (item.Cantidad || 0) > 0) {
             const btnEditar = document.createElement("button");
             btnEditar.textContent = "Editar";
             btnEditar.classList.add("btn-editar");
@@ -173,15 +178,15 @@ function activarEdicion(fila, item, index, producto) {
         datos.appendChild(color);
     }
 
-    if (producto.Precio) {
+    if (producto.PrecioMayor) {
         const precio = document.createElement("span");
-        precio.textContent = `Precio: $${producto.Precio.toFixed(2)}`;
+        precio.textContent = `Precio: $${producto.PrecioMayor.toFixed(2)}`;
         datos.appendChild(precio);
     }
 
     // Input cantidad editable (solo si hay precio)
     let inputCantidad;
-    if (producto.Precio) {
+    if (producto.PrecioMayor) {
         inputCantidad = document.createElement("input");
         inputCantidad.type = "number";
         inputCantidad.min = 1;
@@ -199,7 +204,7 @@ function activarEdicion(fila, item, index, producto) {
 
     // Botón Guardar (solo si hay precio)
     let btnGuardar;
-    if (producto.Precio) {
+    if (producto.PrecioMayor) {
         btnGuardar = document.createElement("button");
         btnGuardar.textContent = "Guardar";
         btnGuardar.classList.add("btn-editar");
@@ -258,7 +263,7 @@ function generarTextoPedido() {
         }
 
         // Cantidad (negrita si falta)
-        if (datos.Precio) {
+        if (datos.PrecioMayor) {
             linea += "\n Cantidad: " + pcar.Cantidad;
         } else {
             linea += "\n *CONSULTA* del precio";

@@ -9,7 +9,7 @@
 .hero-contacto h1 {
   font-size: 1.6rem;
   font-weight: 700;
-  color: #222;
+  color: var(--text); /* color */
   margin-bottom: 10px;
 }
 .hero-contacto .img-perfil img {
@@ -21,15 +21,13 @@
   display: block;
 }
 .hero-contacto .descripcion-contacto {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   line-height: 1.6;
-  color: #444;
+  color: var(--text-light); /* color */
 }
 .hero-contacto .descripcion-contacto strong {
-  color: #ff6b00; /* resalta la marca */
+  color: var(--precio); /* resalta la marca */ /* 123Holor */
 }
-
-
 
 /* ===== INFO CONTACTO ===== */
 .info-contacto {
@@ -38,32 +36,39 @@
   padding: 1.5rem;
   text-align: center;
 }
+
 .info-contacto h2 {
   font-size: 1.6rem;
   margin-bottom: 1rem;
-  color: #333;
+  color: var(--text); /* color */
 }
+
 .info-contacto .info {
   margin-bottom: 1.5rem;
 }
+
 .info-contacto .info p {
   margin-bottom: 1rem;
-  font-size: 1rem;
-  color: #555;
+  font-size: 1.2rem;
+  color: var(--text); /* color */
 }
+
 .info-contacto .info ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 .info-contacto .info li {
   margin: 0.5rem 0;
   font-size: 1rem;
-  color: #444;
+  color: var(--text); /* 123Holor */
 }
+
 .info-contacto .info strong {
-  color: #000;
+  color: var(--precio); /* 123Holor */
 }
+
 .info-contacto .mapa {
   border-radius: 10px;
   overflow: hidden;
@@ -71,42 +76,47 @@
 }
 
 
-
 /* ====== FORMULARIO CONTACTO ====== */
 .formulario-contacto {
   padding: 30px 20px;
-  background: #fff;
+  background: var(--bg2);
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
   max-width: 600px;
   margin: 1rem auto;
   text-align: center;
 }
+
 .formulario-contacto h2 {
   font-size: 1.6rem;
   margin-bottom: 10px;
-  color: #222;
+  color: var(--text); /* 123Holor */
 }
+
 .formulario-contacto p {
   font-size: 0.95rem;
   margin-bottom: 20px;
-  color: #555;
+  color: var(--text-light); /* 123Holor */
 }
+
 #contacto-form {
   display: grid;
   gap: 15px;
   text-align: left;
 }
+
 .form-group {
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
+
 .form-group label {
   font-weight: 600;
   font-size: 0.9rem;
-  color: #333;
+  color: var(--text); /* 123Holor */
 }
+
 .form-group input,
 .form-group textarea {
   padding: 10px 12px;
@@ -115,9 +125,10 @@
   font-size: 0.95rem;
   resize: none;
 }
+
 .btn-enviar {
-  background: #ff6b00;
-  color: #fff;
+  background: var(--color-btn2); /* 123Holor */
+  color: var(--white); /* 123Holor */
   border: none;
   border-radius: 8px;
   padding: 12px;
@@ -127,17 +138,17 @@
   transition: background 0.3s;
   text-align: center;
 }
+
 .btn-enviar:hover {
-  background: #e55f00;
+  background: var(--color-btn2-hover); /* 123Holor */
 }
+
 #estado {
   display: block;
   margin-top: 10px;
   font-size: 0.9rem;
-  color: #555;
+  color: var(--text); /* 123Holor */
 }
-
-
 
 /* ====== RESPONSIVE ====== */
 @media (min-width: 425px) {
@@ -151,7 +162,6 @@
     font-size: 1.05rem;
   }
 }
-
 
 @media (min-width: 768px) {
   .hero-contacto {
@@ -192,7 +202,6 @@
   }
 }
 
-
 @media (min-width: 1024px) {
   .hero-contacto {
     grid-template-columns: 1fr 3fr;
@@ -207,7 +216,7 @@
     max-width: 300px;
   }
   .hero-contacto .descripcion-contacto {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .formulario-contacto {
     max-width: 650px;
@@ -217,7 +226,7 @@
     font-size: 2rem;
   }
   .formulario-contacto p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .info-contacto {
     max-width: 1100px;

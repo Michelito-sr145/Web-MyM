@@ -5,10 +5,10 @@
 .form-email,
 .confirmacion-email,
 .confirmacion-wsp{
-    display: none;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
 }
 
 .vacio--show,
@@ -18,9 +18,9 @@
 .form-email--show,
 .confirmacion-email--show,
 .confirmacion-wsp--show{
-    display: block;
-    opacity: 1;
-    visibility: visible;
+  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 
 /* ======================= CARRITO VACÍO ======================= */
@@ -29,14 +29,14 @@
   margin: 4rem auto;
   padding: 2rem;
   text-align: center;
-  background: #fff;
+  background: var(--bg); /* color */
   border-radius: 12px;
 }
 
 .vacio h2 {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
-  color: #555;
+  color: var(--text); /* color */
 }
 
 .vacio button {
@@ -44,14 +44,14 @@
   font-size: 1rem;
   border: none;
   border-radius: 8px;
-  background: #007bff;
-  color: #fff;
+  background: var(--color-btn2); /* color */
+  color: var(--white); /* color */
   cursor: pointer;
   transition: background 0.3s ease;
 }
 
 .vacio button:hover {
-  background: #0056b3;
+  background: var(--color-btn2-hover); /* color */
 }
 
 
@@ -62,7 +62,7 @@
   max-width: 900px;
   margin: 2rem auto;
   padding: 1.5rem;
-  background: #fff;
+  background: var(--bg2); /* color */
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
@@ -71,14 +71,7 @@
   font-size: 1.8rem;
   text-align: center;
   margin-bottom: 1.5rem;
-  color: #333;
-}
-
-/* Lista del carrito */
-.carrito-lista {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  color: var(--text); /* color */
 }
 
 /* Item del carrito */
@@ -86,7 +79,7 @@
   padding: 1rem;
   border: 1px solid #eee;
   border-radius: 10px;
-  background: #fafafa;
+  background: var(--bg2); /* 123holor */
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
@@ -111,14 +104,15 @@
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
-  font-size: 0.95rem;
-  color: #444;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--text-light); /* 123holor */
 }
 
 .carrito-nombre {
   font-weight: bold;
   font-size: 1rem;
-  color: #000;
+  color: var(--text); /* 123holor */
 }
 
 /* Botones */
@@ -131,28 +125,30 @@
   flex: 1;
   padding: 0.5rem 1rem;
   border-radius: 6px;
-  font-size: 0.9rem;
+  font-size: 1rem;
   cursor: pointer;
   transition: background 0.3s ease;
   border: none;
 }
 
 .btn-editar {
-  background: #007bff;
-  color: #fff;
+  background: var(--btn-green); /* color */
+  color: var(--white); /* color */
 }
 
 .btn-editar:hover {
-  background: #0056b3;
+  scale: 1.05;
+  background: var(--btn-green-hover); /* color */
 }
 
 .btn-eliminar {
-  background: #dc3545;
-  color: #fff;
+  background: var(--btn-red); /* color */
+  color: var(--white); /* color */
 }
 
 .btn-eliminar:hover {
-  background: #a71d2a;
+  scale: 1.05;
+  background: var(--btn-red-hover); /* color */
 }
 
 .input-cantidad {
@@ -168,7 +164,7 @@
   font-weight: bold;
   text-align: right;
   font-size: 1.1rem;
-  color: #333;
+  color: var(--text); /* 123holor */
 }
 
 /* Botón comprar */
@@ -179,21 +175,15 @@
   font-size: 1rem;
   border: none;
   border-radius: 8px;
-  background: #28a745;
-  color: #fff;
+  background: var(--color-btn2); /* 123holor */
+  color: var(--white); /* 123holor */
   cursor: pointer;
   transition: background 0.3s ease;
 }
 
 .btn-comprar:hover {
-  background: #1e7e34;
+  background: var(--color-btn2-hover); /* 123holor */
 }
-
-
-
-
-
-
 
 /* ======================= MODAL DE COMPRA ======================= */
 .Compra-Modal {
@@ -211,7 +201,7 @@
 }
 
 .Compra-Modal > div {
-  background: #fff;
+  background: var(--bg); /* 123holor */
   border-radius: 12px;
   padding: 20px;
   width: 100%;
@@ -220,12 +210,17 @@
   text-align: center;
 }
 
+.compra-title {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: var(--text); /* color */
+}
 /* Contenedor base */
 .opcion,
 .confirmacion-wsp,
 .form-email,
 .confirmacion-email {
-  background: #fff;
+  background: var(--bg2); /* color */
   border-radius: 12px;
   padding: 2rem;
   max-width: 500px;
@@ -244,7 +239,7 @@
   font-size: 2rem;
   border: none;
   border-radius: 8px;
-  color: #fff;
+  color: var(--white); /* color */
   cursor: pointer;
   transition: transform 0.2s ease, background 0.3s ease;
 }
@@ -268,12 +263,16 @@
 .atras-email {
   margin: 0.8rem auto;
   font-size: 1rem;
-  color: #444;
-  background: #e74c3c;
-  color: #fff;
+  color: var(--white); /* color */
+  background: var(--btn-red); /* color */
   padding: 0.7rem 1.3rem;
   border: none;
   border-radius: 8px;
+}
+
+.atras-email:hover {
+  scale: 1.05;
+  background: var(--btn-red-hover); /* color */
 }
 
 
@@ -284,7 +283,7 @@
 .confirmacion-wsp p {
   margin: 1rem 0;
   font-size: 1rem;
-  color: #444;
+  color: var(--text-light); /* color */
 }
 
 .confirmacion-wsp button {
@@ -297,15 +296,24 @@
 }
 
 .reenviar-wsp {
-  background: #f1f1f1;
+  background: var(--bg2); /* color */
 }
 .atras-wsp {
-  background: #007bff;
-  color: #fff;
+  background: var(--btn-red); /* color */
+  color: var(--white); /* color */
 }
 .cerrar-confi-wsp {
-  background: #e74c3c;
-  color: #fff;
+  background: var(--color-btn2); /* color */
+  color: var(--white); /* color */
+}
+
+.atras-wsp:hover {
+  scale: 1.05;
+  background: var(--btn-red-hover); /* color */
+}
+.cerrar-confi-wsp:hover {
+  scale: 1.05;
+  background: var(--color-btn2-hover); /* color */
 }
 
 /* =======================
@@ -314,7 +322,7 @@
 .form-email .form-title {
   font-size: 1.4rem;
   margin-bottom: 1rem;
-  color: #333;
+  color: var(--text); /* 123holor */
 }
 
 .form-email .form-group {
@@ -326,7 +334,7 @@
   display: block;
   margin-bottom: 0.3rem;
   font-weight: 600;
-  color: #555;
+  color: var(--text-light); /* 123holor */
 }
 
 .form-email input,
@@ -340,7 +348,7 @@
 
 .form-email input:focus,
 .form-email textarea:focus {
-  border-color: #007bff;
+  border-color: var(--color-btn2); /* 123holor */
   outline: none;
 }
 
@@ -350,8 +358,8 @@
 }
 
 .send-email {
-  background: #007bff;
-  color: #fff;
+  background: var(--color-btn2); /* 123holor */
+  color: var(--white); /* 123holor */
   padding: 0.8rem 1.5rem;
   border: none;
   border-radius: 8px;
@@ -359,7 +367,7 @@
   transition: background 0.3s ease;
 }
 .send-email:hover {
-  background: #0056b3;
+  background: var(--color-btn2-hover); /* 123holor */
 }
 
 /* =======================
@@ -368,7 +376,7 @@
 .confirmacion-email .estado {
   font-size: 1.1rem;
   margin-bottom: 1rem;
-  color: #333;
+  color: var(--text); /* 123holor */
 }
 
 .confirmacion-email button {
@@ -376,13 +384,13 @@
   padding: 0.7rem 1.3rem;
   border: none;
   border-radius: 8px;
-  background: #e74c3c;
-  color: #fff;
+  background: var(--color-btn2); /* 123holor */
+  color: var(--white); /* 123holor */
   cursor: pointer;
 }
 
 /* =======================
-   ANIMACIÓN
+  ANIMACIÓN
 ======================= */
 @keyframes fadeIn {
   from {
@@ -394,35 +402,6 @@
     transform: translateY(0);
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 424px) {
   /*Carrito lleno*/
@@ -449,7 +428,6 @@
     flex-direction: column;
   }
 
-
   /* Modal */
   .Compra-Modal .opcion,
   .Compra-Modal .confirmacion-wsp,
@@ -467,7 +445,6 @@
   .form-email .form-title {
     font-size: 1.2rem;
   }
-
 
 }
 
@@ -509,7 +486,6 @@
     max-width: 450px;
   }
 }
-
 
 /* =======================
    TABLET GRANDE (>=768px)

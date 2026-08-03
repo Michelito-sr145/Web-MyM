@@ -86,8 +86,8 @@ function cargarProducto() {
     document.getElementById("vp-nombre").textContent = productoSeleccionado.Producto || "";
     document.getElementById("vp-Descripcion").textContent = productoSeleccionado.Descripcion?.trim() || productoSeleccionado.Producto;
     // Precio y cantidad
-    const vp_tienePrecio = (productoSeleccionado.Precio && productoSeleccionado.Precio > 0);
-    document.getElementById("vp-precio").textContent = vp_tienePrecio ? `${productoSeleccionado.Precio}$` : "Consultar Precio";
+    const vp_tienePrecio = (productoSeleccionado.PrecioMayor && productoSeleccionado.PrecioMayor > 0);
+    document.getElementById("vp-precio").textContent = vp_tienePrecio ? `${productoSeleccionado.PrecioMayor}` : "Consultar Precio";
     vista(vp_tienePrecio, document.querySelector(".vp-input-cant"));
 
     // Imágenes del producto
@@ -135,7 +135,7 @@ function simularesOestado(esPorCategoria) {
         mostraP(ProCategoría);
     } else {
         const ProSugeridos = productos.filter(p => p.Estado);
-        vs_title.textContent = "Productos sugeridos";
+        vs_title.textContent = "Otros Productos";
         mostraP(ProSugeridos);
     }
 }
@@ -153,7 +153,7 @@ function mostraP(prodMostrar){
             </div>
             <div class="vs-Texto">
                 <h4>${sprod.Producto}</h4>
-                <p>${sprod.Precio ? `$${sprod.Precio}` : "Consultar precio"}</p>
+                <p>${sprod.PrecioMayor ? `$${sprod.PrecioMayor}` : "Consultar precio"}</p>
             </div>
         `;
         vs_carruselItems.appendChild(enlace);

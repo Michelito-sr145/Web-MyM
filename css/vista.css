@@ -1,135 +1,209 @@
-:root{
-  --color-text-precio: #ff0000;
-}
-
-/* Secciones ocultas por defecto */
+/* ============================== SHOW / HIDDEN ============================== */
 .vista-producto,
 .vista-noCode,
 .vp-input-talle,
 .vp-input-color,
 .vp-input-cant {
-    display: none;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
 }
-/* Mostrar secciones cuando tengan el --show */
+
 .vista-producto--show,
-.vista-noCode--show,
+.vista-noCode--show {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
 .vp-input-talle--show,
 .vp-input-color--show,
 .vp-input-cant--show {
-    display: block;
-    opacity: 1;
-    visibility: visible;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  opacity: 1;
+  visibility: visible;
 }
 
+
+/* ============================== VISTA PRODUCTO ============================== */
 .vista-producto {
-    padding-top: 30px;
-    flex-direction: column;
-    gap: 15px;
+  height: auto;
+  margin: 15px;
+  flex-direction: column;
 }
 
-/* ============================== TEXTO, COLOR, ETC... ============================== */
-/* - No code - */
-.vista-noCode .no-code {
-  text-align: center;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #555;
+.vp-producto {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
 }
-/* - Vista Producto - */
+
+/* ============================== PRESENTACION ============================== */
+
 .vp-presentacion {
   text-align: center;
 }
-.vp-titulo h1 {
-  font-size: 1.6rem;
-  color: #222;
-}
+
 .vp-carrusel {
-  background: #f9f9f9;
-  align-items: center; 
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  min-height: 250px;
+  background: var(--white); /* color */
+  border-radius: 10px;
 }
-.vp-prev, .vp-next {
-  color: #333;
-  background: rgba(255,255,255,0.7);
+
+.vp-cimg img {
+  width: 100%;
+  height: 100%;
+  max-height: 250px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+/* ============================== BOTONES CARRUSEL ============================== */
+.vp-prev,
+.vp-next,
+.vs-carrusel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
   transition: background 0.3s;
+  z-index: 2;
 }
-.vp-prev:hover, .vp-next:hover {
-  background: rgba(255,255,255,0.9);
+
+/* Vista producto */
+.vp-prev,
+.vp-next {
+  padding: 6px 12px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--black); /* color */
+  background: var(--bg2); /* color */
+  box-shadow: 0 2px 3px rgba(0,0,0,0.5);
 }
-/* - Detalles y formulario - */
+
+.vp-prev:hover,
+.vp-next:hover {
+  scale: 1.2;
+  background: var(--bg2); /* color */
+}
+
+.vp-prev { left: 10px; }
+.vp-next { right: 10px; }
+
+/* Sugerencia */
+.vs-carrusel button {
+  padding: 10px;
+  font-size: 1.5rem;
+  color: #fff;
+  background: rgba(0,0,0,0.5); /* color */
+}
+
+.vs-carrusel button:hover {
+  background: rgba(0,0,0,0.7); /* color */
+}
+
+.vs-prev { left: 10px; }
+.vs-next { right: 10px; }
+
+
+/* ============================== DETALLES ============================== */
+
 .vp-detalles {
-  background: #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  padding: 10px;
+  background: var(--bg2); /* color */
+  border-radius: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
 }
+
 .vp-detalles p {
-  color: #555;
+  margin-bottom: 15px;
 }
-.vp-detalles h2 {
-  font-size: 1.4rem;
-  color: var(--color-text-precio);
+
+.vp-detalles form {
+  display: grid;
+  gap: 15px;
 }
+
+#vp-nombre{
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text); /* color */
+}
+
+#vp-Descripcion {
+  margin: 15px 0;
+  font-size: 1.2rem;
+  color: var(--text-light); /* color */
+}
+
+#vp-precio {
+  font-size: 1.7rem;
+  font-weight: 900;
+  color: var(--black); /* color */
+}
+
+/* ============================== FORMULARIO ============================== */
+
+.vp-form-valores label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--black); /* color */
+}
+
 .vp-input-talle select,
 .vp-input-color select,
 .vp-cantidad-control input {
+  padding: 8px;
   border: 1px solid #ccc;
-  font-size: 0.95rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.vp-cantidad-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .vp-cantidad-control button {
+  border: none;
+  background: none;
+  cursor: pointer;
   font-size: 1.7rem;
-  color: #444;
+  color: var(--black); /* color */
+  transition: transform 0.2s; 
 }
+
 .vp-cantidad-control button:hover {
-  color: #000;
+  scale: 0.9;
+  color: var(--text); /* color */
 }
+
 .vp-comprar {
-  background: #1bc105;
-  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
   font-size: 1.3rem;
   font-weight: 600;
+  color: var(--white); /* color */
+  background: var(--color-btn2); /* color */
+  transition: background 0.3s;
 }
+
 .vp-comprar:hover {
-  background: #e55f00;
+  background: var(--color-btn2-hover); /* color */
 }
-
-/*Sugerencia*/
-.vs-title {
-  text-align: center;
-  font-size: 1.7rem;
-}
-.vs-Presentacion {
-  background-color: #000;
-}
-
-.vs-Presentacion h3 {
-  font-size: 0.75rem;
-  color: #fff;
-  font-weight: bold;
-}
-.vs-Texto h4 {
-  font-size: 1rem;
-  font-weight: bold;
-}
-.vs-Texto p { 
-  font-size: 1.1rem;
-  color: var(--color-text-precio);
-}
-.vs-carrusel {
-  background: #fff;
-}
-.vs-carrusel button {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  font-size: 1.5rem;
-}
-.vs-carrusel button:hover { 
-    background-color: rgba(0,0,0,0.7); 
-}
-
-
-
 
 
 /* ============================== VISTA NO CODE ============================== */
@@ -138,81 +212,10 @@
   padding: 60px 20px;
 }
 
-/* ============================== VISTA DEL PRODUCTO ============================== */
-.vp-producto {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-}
-/* Presentacion imagen */
-.vp-carrusel {
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-  min-height: 250px;
-  display: flex;
-  justify-content: center;
-}
-.vp-cimg img {
-  width: 100%;
-  height: 100%;
-  max-height: 250px;
-  object-fit: contain;
-  border-radius: 10px;
-}
-.vp-prev, .vp-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+.vista-noCode .no-code {
   font-size: 2rem;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 50%;
-  padding: 6px 12px;
-}
-.vp-prev { left: 10px; }
-.vp-next { right: 10px; }
-/* Detalles y formulario */
-.vp-detalles {
-  padding: 20px;
-}
-.vp-detalles p {
-  margin-bottom: 15px;
-}
-.vp-detalles form {
-  display: grid;
-  gap: 15px;
-}
-.vp-input-talle--show,
-.vp-input-color--show,
-.vp-input-cant--show {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-.vp-input-talle select,
-.vp-input-color select,
-.vp-cantidad-control input {
-  padding: 8px;
-  border-radius: 6px;
-}
-.vp-cantidad-control {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.vp-cantidad-control button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.2s;
-}
-.vp-comprar {
-  border: none;
-  border-radius: 8px;
-  padding: 12px;
-  cursor: pointer;
-  transition: background 0.3s;
+  font-weight: 600;
+  color: var(--text-light); /* color */
 }
 
 
@@ -220,20 +223,24 @@
 .vista-sugerencia {
   padding: 20px;
 }
+
 .vs-title {
   margin-bottom: 15px;
+  text-align: center;
+  font-size: 1.7rem;
 }
 
-/* Carrusel contenedor */
+/* Carrusel */
+
 .vs-carrusel {
   position: relative;
-  border: 3px solid #ddd;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.vs-1);
   overflow: hidden;
+  background: #fff; /* 123holor */
+  border: 3px solid #ddd; 
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.1);
 }
 
-/* Items del carrusel */
 .vs-carrusel-items {
   display: flex;
   transition: transform 0.5s ease-in-out;
@@ -249,129 +256,112 @@
   text-align: center;
   box-sizing: border-box;
 }
-.vs-carrusel-items a{
-  text-decoration: none;
-  color: inherit;
+
+.vs-carrusel-items a {
   display: block;
+  color: inherit;
+  text-decoration: none;
 }
 
-/* Presentación (imagen + etiqueta) */
+/* Presentacion */
 .vs-Presentacion {
   position: relative;
   width: 120px;
   height: 180px;
   margin: 0 auto;
-  border-radius: 8px;
   overflow: hidden;
+  border-radius: 8px;
 }
+
 .vs-Presentacion img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .vs-Presentacion h3 {
   position: absolute;
-  top: 20px;
-  left: -40px;
-  padding: 5px 50px;
+  top: 15px;
+  left: -35px;
+  width: 140px;
+  padding: 4px 0;
   transform: rotate(-45deg);
-  text-transform: uppercase;
+  text-align: center;
+  font-size: 0.7rem;
+  overflow: hidden;
 }
+
 /* Texto */
-.vs-Texto { 
+.vs-Texto {
   margin-top: 10px;
 }
 .vs-Texto h4 {
   margin-bottom: 5px;
+  font-size: 1rem;
+  font-weight: bold;
 }
-/* Botones del carrusel */
-.vs-carrusel button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-  border-radius: 50%;
-  transition: background 0.3s;
-  z-index: 2;
+.vs-Texto p {
+  font-size: 1.1rem;
+  color: var(--precio); /* color */
 }
-.vs-carrusel .vs-prev { left: 10px; }
-.vs-carrusel .vs-next { right: 10px; }
 
+
+/* ============================== RESPONSIVE ============================== */
 
 @media (min-width: 425px) {
-  /* === VISTA PRODUCTO === */
   .vp-cimg img {
-    max-height: 320px;
+    max-height: 200px;
   }
   .vp-titulo h1 {
-    font-size: 1.8rem;
+    /*font-size: 1.8rem;*/
   }
   .vp-detalles {
     padding: 25px;
   }
-  /* === SUGERENCIA === */
-  .vs-c-producto { min-width: 50%; }
-  .vs-title {font-size: 1.7rem;}
-  .vs-Presentacion h3 {font-size: 0.75rem;}
-  .vs-Texto h4 {font-size: 1rem;}
-  .vs-Texto p {font-size: 1.1rem;}
-  .vs-carrusel button {font-size: 1.5rem;}
-
+  .vs-c-producto {
+    min-width: 50%;
+  }
 }
 
 @media (min-width: 768px) {
-  /* === VISTA PRODUCTO === */
   .vp-producto {
-    grid-template-columns: 1fr 1fr; /* presentación a la izquierda, detalles a la derecha */
+    grid-template-columns: 1fr 1fr;
     align-items: start;
   }
   .vp-cimg img {
     max-height: 400px;
   }
-  .vp-titulo h1 {
-    font-size: 2rem;
-  }
-  .vp-detalles h2 {
-    font-size: 1.6rem;
-  }
   .vp-comprar {
-    font-size: 1.1rem;
     padding: 14px;
   }
-  /* === SUGERENCIA === */
-  .vs-c-producto { min-width: 33.33%; }
-  .vs-title {margin-bottom: 18px;}
-  .vs-carrusel button {padding: 12px;}
+  .vs-c-producto {
+    min-width: 33.33%;
+  }
+  .vs-title {
+    margin-bottom: 18px;
+  }
+  .vs-carrusel button {
+    padding: 12px;
+  }
 }
 
 @media (min-width: 1024px) {
-  /* === VISTA PRODUCTO === */
   .vp-producto {
-    gap: 40px; /* más espacio entre columnas */
+    gap: 40px;
   }
   .vp-cimg img {
     max-height: 500px;
   }
-  .vp-titulo h1 {
-    font-size: 2.2rem;
-  }
   .vp-detalles {
     padding: 30px;
   }
-  .vp-detalles p {
-    font-size: 1.05rem;
-  }
-  .vp-detalles h2 {
-    font-size: 1.8rem;
-  }
   .vp-comprar {
-    font-size: 1.2rem;
     padding: 16px 20px;
   }
-
-  /* === SUGERENCIA === */
-  .vs-c-producto { min-width: 25%; }
-  .vs-carrusel button {padding: 14px; }
+  .vs-c-producto {
+    min-width: 25%;
+  }
+  .vs-carrusel button {
+    padding: 14px;
+  }
 }

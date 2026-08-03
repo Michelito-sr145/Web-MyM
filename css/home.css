@@ -1,15 +1,10 @@
-:root{
-  --color-text-precio:#5403eb;
-  
-}
-
 /* === TEXTO === */
 .title {
   font-size: 1.7rem;
 }
 .Presentacion h3 {
   font-size: 0.75rem;
-  color: #fff;
+  color: var(--white); /* holor */
   font-weight: bold;
 }
 .Texto h4 {
@@ -18,7 +13,7 @@
 }
 .Texto p { 
   font-size: 1.1rem;
-  color: var(--color-text-precio);
+  color: var(--precio);  /* holor */
 }
 .productos-controles input {
   font-size: 1rem;
@@ -28,17 +23,18 @@
   font-weight: bold;
 }
 .producto p {
-  font-size: 1.1rem;
-  color: var(--color-text-precio);
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--precio);  /* holor */
 }
 .producto .btn-visualizar {
-  color: #fff;
+  color: var(--white);  /* holor */
   font-size: 1rem;
   font-weight: bold;
 }
 .carrusel button {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);  /* holor */
+  color: var(--white);  /* holor */
   font-size: 1.5rem;
 }
 
@@ -57,7 +53,7 @@
   position: relative;
   border: 3px solid #ddd;
   border-radius: 12px;
-  background: #fff;
+  background: var(--bg);  /* holor */
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   overflow: hidden;
 }
@@ -89,7 +85,7 @@
   position: relative;
   width: 120px;
   height: 180px;
-  background-color: #000;
+  background-color: var(--black);  /* holor */
   margin: 0 auto;
   border-radius: 8px;
   overflow: hidden;
@@ -107,16 +103,16 @@
   transform: rotate(-45deg);
   text-transform: uppercase;
 }
-.Presentacion h3:empty { display: none; } /* si no hay estado, no muestres la banda */
 
-.Presentacion h3.oferta { background-color: red; }
-.Presentacion h3.limitado { background-color: blue; }
-.Presentacion h3.nuevo { background-color: green; padding-left: 53px; }
-.Presentacion h3.agotado { background-color: #555; padding-left: 48px; }
-.Presentacion h3.exclusivo { background-color: gold; color: #000; padding-left: 45px; }
-.Presentacion h3.rebajado { background-color: orange; padding-left: 45px; }
-.Presentacion h3.proximamente { background-color: purple; padding-left: 33px; }
-.Presentacion h3.top { background-color: teal; padding-left: 55px; }
+.Presentacion h3:empty { display: none; } /* si no hay estado, no muestres la banda */
+.Presentacion h3.Oferta { background-color: red; }
+.Presentacion h3.Limitado { background-color: blue; }
+.Presentacion h3.Nuevo { background-color: green; padding-left: 53px; }
+.Presentacion h3.Agotado { background-color: #555; padding-left: 48px; }
+.Presentacion h3.Exclusivo { background-color: gold; color: #000; padding-left: 45px; }
+.Presentacion h3.Rebajado { background-color: orange; padding-left: 45px; }
+.Presentacion h3.Proximamente { background-color: purple; padding-left: 33px; }
+.Presentacion h3.Top { background-color: teal; padding-left: 55px; }
 
 /* Texto */
 .Texto { 
@@ -136,6 +132,7 @@
   border-radius: 50%;
   transition: background 0.3s;
   z-index: 2;
+  background-color: rgba(44, 44, 44, 0.452);
 }
 .carrusel button:hover { background-color: rgba(0,0,0,0.7); }
 .carrusel .prev { left: 10px; }
@@ -168,7 +165,7 @@
 
 /* Tarjeta */
 .producto {
-  background: #fff;
+  background: var(--white);   /* holor */
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 10px;
@@ -204,13 +201,18 @@
 }
 
 .producto .btn-visualizar {
-  background: #ff6b00;
+  background: var(--color-btn); /* holor */
   border: none;
   border-radius: 15px;
   padding: 12px;
   cursor: pointer;
 }
 
+.btn-visualizar:hover {
+  background-color: var(--color-btn-hover); /* holor */
+  color: var(--white); /* holor */
+  transition: 0.3s;
+}
 
 /* ===== RESPONSIVE ===== */
 /* >= 425px: 2 por pantalla */
