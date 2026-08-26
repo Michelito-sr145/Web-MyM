@@ -1069,7 +1069,6 @@ const TodasImg = [
         Imagenes: [
             "Medias/M01-img1",
             "Medias/M01-img2",
-            "Medias/M01-img3"
         ],
     },
     {
@@ -1077,7 +1076,9 @@ const TodasImg = [
         Imagenes: [
             "Medias/M02-img1",
             "Medias/M02-img2",
-            "Medias/M02-img3"
+            "Medias/M02-img3",
+            "Medias/M02-img4",
+            "Medias/M02-img5"
         ],
     },
     {
@@ -1092,8 +1093,6 @@ const TodasImg = [
         codigo: "M04",
         Imagenes: [
             "Medias/M04-img1",
-            "Medias/M04-img2",
-            "Medias/M04-img3"
         ],
     },
     {
@@ -1101,7 +1100,9 @@ const TodasImg = [
         Imagenes: [
             "Medias/M05-img1",
             "Medias/M05-img2",
-            "Medias/M05-img3"
+            "Medias/M05-img3",
+            "Medias/M05-img4",
+            "Medias/M05-img5"
         ],
     },
     {
@@ -1109,7 +1110,6 @@ const TodasImg = [
         Imagenes: [
             "Medias/M06-img1",
             "Medias/M06-img2",
-            "Medias/M06-img3"
         ],
     },
     {
@@ -1125,7 +1125,10 @@ const TodasImg = [
         Imagenes: [
             "Medias/M08-img1",
             "Medias/M08-img2",
-            "Medias/M08-img3"
+            "Medias/M08-img3",
+            "Medias/M08-img4",
+            "Medias/M08-img5",
+            "Medias/M08-img6"
         ],
     },
 
