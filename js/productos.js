@@ -1324,7 +1324,8 @@ const TodasImg = [
         Imagenes: [
             "Vestimenta/VE01-img1",
             "Vestimenta/VE01-img2",
-            "Vestimenta/VE01-img3"
+            "Vestimenta/VE01-img3",
+            "Vestimenta/VE01-img4"
         ],
     },
     {
@@ -1332,15 +1333,14 @@ const TodasImg = [
         Imagenes: [
             "Vestimenta/VE02-img1",
             "Vestimenta/VE02-img2",
-            "Vestimenta/VE02-img3"
+            "Vestimenta/VE02-img3",
+            "Vestimenta/VE02-img4"
         ],
     },
     {
         codigo: "VE03",
         Imagenes: [
             "Vestimenta/VE03-img1",
-            "Vestimenta/VE03-img2",
-            "Vestimenta/VE03-img3"
         ],
     },
     {
@@ -1348,7 +1348,7 @@ const TodasImg = [
         Imagenes: [
             "Vestimenta/VE04-img1",
             "Vestimenta/VE04-img2",
-            "Vestimenta/VE04-img3"
+            "Vestimenta/VE04-img3",
         ],
     },
     {
@@ -1372,15 +1372,14 @@ const TodasImg = [
         Imagenes: [
             "Vestimenta/VE07-img1",
             "Vestimenta/VE07-img2",
-            "Vestimenta/VE07-img3"
+            "Vestimenta/VE07-img3",
+            "Vestimenta/VE07-img4"
         ],
     },
     {
         codigo: "VE08",
         Imagenes: [
             "Vestimenta/VE08-img1",
-            "Vestimenta/VE08-img2",
-            "Vestimenta/VE08-img3"
         ],
     },
     {
@@ -1388,7 +1387,6 @@ const TodasImg = [
         Imagenes: [
             "Vestimenta/VE09-img1",
             "Vestimenta/VE09-img2",
-            "Vestimenta/VE09-img3"
         ],
     },
 ];
