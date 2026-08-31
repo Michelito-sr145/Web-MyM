@@ -5,10 +5,21 @@
   box-sizing: border-box;
 }
 :root{
+  /*
+  --bg-hf: #ac2321d2; /* fondo header y footer 
+  --bg: #d8d8d8c0; /* fondo de carrusel 
+  --bg2: #d8d8d8c0; /* fondo formularios
+  --white: #ffffff70; /* blanco 
+  --degrade-del-logo:
+  linear-gradient(180deg, #6BA7C9 0%, #6A91C6 25%, #6C7CC1 50%, #855D90 75%, #B8282F 100%) /* 1 */
+  /*implementacion de degradado en el logo*/
+
   --bg-hf: #ddd1c1e8; /* fondo */
   --bg: #fafafa; /* fondo */
   --bg2: #f0f0f080; /* fondo */
   --white: #ffffff; /* blanco */
+
+  
   --black: #000000; /* negro */
   --text: #222222; /* texto 1 */
   --text-light: #666666; /* texto 2 */
@@ -32,6 +43,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
+  background:var(--degrade-del-logo);
 }
 
 /* Main toma todo el espacio disponible */
