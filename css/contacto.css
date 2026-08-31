@@ -9,7 +9,7 @@
 .hero-contacto h1 {
   font-size: 1.6rem;
   font-weight: 700;
-  color: var(--text); /* color */
+  color: var(--contacto-text-1); /* color */
   margin-bottom: 10px;
 }
 .hero-contacto .img-perfil img {
@@ -23,10 +23,10 @@
 .hero-contacto .descripcion-contacto {
   font-size: 1.1rem;
   line-height: 1.6;
-  color: var(--text-light); /* color */
+  color: var(--contacto-text-1); /* color */
 }
 .hero-contacto .descripcion-contacto strong {
-  color: var(--precio); /* resalta la marca */ /* 123Holor */
+  color: var(--contacto-text-3); /* resalta la marca */ /* 123Holor */
 }
 
 /* ===== INFO CONTACTO ===== */
@@ -40,7 +40,7 @@
 .info-contacto h2 {
   font-size: 1.6rem;
   margin-bottom: 1rem;
-  color: var(--text); /* color */
+  color: var(--contacto-text-1); /* color */
 }
 
 .info-contacto .info {
@@ -50,7 +50,7 @@
 .info-contacto .info p {
   margin-bottom: 1rem;
   font-size: 1.2rem;
-  color: var(--text); /* color */
+  color: var(--contacto-text-1); /* color */
 }
 
 .info-contacto .info ul {
@@ -62,11 +62,11 @@
 .info-contacto .info li {
   margin: 0.5rem 0;
   font-size: 1rem;
-  color: var(--text); /* 123Holor */
+  color: var(--contacto-text-1); /* 123Holor */
 }
 
 .info-contacto .info strong {
-  color: var(--precio); /* 123Holor */
+  color: var(--contacto-text-3); /* 123Holor */
 }
 
 .info-contacto .mapa {
@@ -79,7 +79,7 @@
 /* ====== FORMULARIO CONTACTO ====== */
 .formulario-contacto {
   padding: 30px 20px;
-  background: var(--bg2);
+  background: var(--formulario-bg);
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.5);
   max-width: 600px;
@@ -90,13 +90,13 @@
 .formulario-contacto h2 {
   font-size: 1.6rem;
   margin-bottom: 10px;
-  color: var(--text); /* 123Holor */
+  color: var(--formulario-text-1); /* 123Holor */
 }
 
 .formulario-contacto p {
   font-size: 0.95rem;
   margin-bottom: 20px;
-  color: var(--text-light); /* 123Holor */
+  color: var(--formulario-text-2); /* 123Holor */
 }
 
 #contacto-form {
@@ -114,7 +114,7 @@
 .form-group label {
   font-weight: 600;
   font-size: 0.9rem;
-  color: var(--text); /* 123Holor */
+  color: var(--contacto-text-1); /* 123Holor */
 }
 
 .form-group input,
@@ -127,8 +127,8 @@
 }
 
 .btn-enviar {
-  background: var(--color-btn2); /* 123Holor */
-  color: var(--white); /* 123Holor */
+  background: var(--formulario-btn-3); /* 123Holor */
+  color: var(--formulario-text-4); /* 123Holor */
   border: none;
   border-radius: 8px;
   padding: 12px;
@@ -140,14 +140,14 @@
 }
 
 .btn-enviar:hover {
-  background: var(--color-btn2-hover); /* 123Holor */
+  background: var(--formulario-btn-hover); /* 123Holor */
 }
 
 #estado {
   display: block;
   margin-top: 10px;
   font-size: 0.9rem;
-  color: var(--text); /* 123Holor */
+  color: var(--formulario-btn-1); /* 123Holor */
 }
 
 /* ====== RESPONSIVE ====== */

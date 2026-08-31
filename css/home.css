@@ -4,7 +4,7 @@
 }
 .Presentacion h3 {
   font-size: 0.75rem;
-  color: var(--white); /* holor */
+  color: var(--producto-text-1); /* color */
   font-weight: bold;
 }
 .Texto h4 {
@@ -13,7 +13,7 @@
 }
 .Texto p { 
   font-size: 1.1rem;
-  color: var(--precio);  /* holor */
+  color: var(--producto-text-4);  /* color */
 }
 .productos-controles input {
   font-size: 1rem;
@@ -21,21 +21,17 @@
 .producto h4 {
   font-size: 1rem;
   font-weight: bold;
+  color: var(--producto-text-2);
 }
 .producto p {
   font-size: 1.3rem;
   font-weight: bold;
-  color: var(--precio);  /* holor */
+  color: var(--producto-text-4);  /* color */
 }
 .producto .btn-visualizar {
-  color: var(--white);  /* holor */
+  color: var(--producto-text-1);  /* color */
   font-size: 1rem;
   font-weight: bold;
-}
-.carrusel button {
-  background-color: rgba(0, 0, 0, 0.5);  /* holor */
-  color: var(--white);  /* holor */
-  font-size: 1.5rem;
 }
 
 
@@ -51,9 +47,9 @@
 /* Carrusel contenedor */
 .carrusel {
   position: relative;
-  border: 3px solid #ddd;
+  border: 3px;
   border-radius: 12px;
-  background: var(--bg);  /* holor */
+  background: var(--carrusel-bg);  /* holor */
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   overflow: hidden;
 }
@@ -85,7 +81,6 @@
   position: relative;
   width: 120px;
   height: 180px;
-  background-color: var(--black);  /* holor */
   margin: 0 auto;
   border-radius: 8px;
   overflow: hidden;
@@ -132,9 +127,10 @@
   border-radius: 50%;
   transition: background 0.3s;
   z-index: 2;
-  background-color: rgba(44, 44, 44, 0.452);
+  background-color: var(--carrusel-btn);
+  color: var(--carrusel-text);
 }
-.carrusel button:hover { background-color: rgba(0,0,0,0.7); }
+.carrusel button:hover { background-color: var(--carrusel-btn-hover); color: var(--carrusel-text-hover);}
 .carrusel .prev { left: 10px; }
 .carrusel .next { right: 10px; }
 
@@ -153,7 +149,7 @@
   max-width: 200px;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 6px;
+  border-radius: 10px;
 }
 
 /* Lista de productos en grid */
@@ -165,9 +161,9 @@
 
 /* Tarjeta */
 .producto {
-  background: var(--white);   /* holor */
-  border: 1px solid #ddd;
+  background: var(--producto-bg);   /* holor */
   border-radius: 10px;
+  border: 1px;
   padding: 10px;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -175,6 +171,7 @@
 }
 .producto:hover {
   transform: scale(1.03);
+  background: var(--producto-bg-hover);
 }
 
 .producto a {
@@ -202,7 +199,7 @@
 }
 
 .producto .btn-visualizar {
-  background: var(--color-btn); /* holor */
+  background: var(--producto-btn); /* holor */
   border: none;
   border-radius: 15px;
   padding: 12px;
@@ -210,8 +207,8 @@
 }
 
 .btn-visualizar:hover {
-  background-color: var(--color-btn-hover); /* holor */
-  color: var(--white); /* holor */
+  background-color: var(--producto-btn-hover); /* holor */
+  color: var(--producto-text-1); /* holor */
   transition: 0.3s;
 }
 

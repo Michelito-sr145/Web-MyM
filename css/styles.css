@@ -5,29 +5,86 @@
   box-sizing: border-box;
 }
 :root{
-  /*
-  --bg-hf: #ac2321d2; /* fondo header y footer 
-  --bg: #d8d8d8c0; /* fondo de carrusel 
-  --bg2: #d8d8d8c0; /* fondo formularios
-  --white: #ffffff70; /* blanco 
-  --degrade-del-logo:
-  linear-gradient(180deg, #6BA7C9 0%, #6A91C6 25%, #6C7CC1 50%, #855D90 75%, #B8282F 100%) /* 1 */
-  /*implementacion de degradado en el logo*/
+  --prueba: #00ff15;
+  /* Styles */
+  --degrade-del-logo:  linear-gradient(180deg, #6BA7C9 0%, #6A91C6 25%, #6C7CC1 50%, #855D90 75%, #B8282F 100%); /* implementacion de degradado en el logo */
+  --HeaderFooter-bg: #ac2321d2; /* fondo header y footer */
+  --HeaderFooter-text-1: #fff;
+  --HeaderFooter-text-2: #000;
+  --HeaderFooter-menu-hover:#00ccff;
+  --redes--sociales: #fff;
+  --banner-btn : #ac2321;
+  --banner-btn-hover: #ff4b48;
+  --banner-text : #fff;
+  --banner-text-hover : #00ccff;
+  --carrito-bg: #000;
+  --carrito-text: #fff; 
+  --carrito-text-hover: #00ccff; 
 
-  --bg-hf: #ddd1c1e8; /* fondo */
-  --bg: #fafafa; /* fondo */
-  --bg2: #f0f0f080; /* fondo */
-  --white: #ffffff; /* blanco */
+  /* Productos: Home - vista */
+  --carrusel-bg: #d8d8d8c0;
+  --carrusel-btn: #00000080;
+  --carrusel-btn-hover: #57575780;
+  --carrusel-text: #fff ;
+  --carrusel-text-hover: #fff ;
 
+  --producto-bg : #d8d8d852 ;
+  --producto-bg-hover : #d8d8d890 ;
+  --producto-text-1 : #fff ;
+  --producto-text-2 : #000 ;
+  --producto-text-3 : #343434 ;
+  --producto-text-4 : #ff0000 ;
+  --producto-btn : #e83330 ;
+  --producto-btn-hover : #ac2321;
+
+  --formulario-bg: #d8d8d852 ;
+  --formulario-bg-hover: #d8d8d890 ;
+  --formulario-text-1 : #000 ;
+  --formulario-text-2 : #343434 ;
+  --formulario-text-3 : #ff0000 ;
+  --formulario-text-4 : #fff ;
+  --formulario-text-hover : #00ccff ;
+  --formulario-btn-1 : #000 ;
+  --formulario-btn-2 : #00ccff ;
+  --formulario-btn-3 : #ac2321 ;
+  --formulario-btn-hover: #e83330;
+
+  --contacto-text-1: #000;
+  --contacto-text-2: #fff;
+  --contacto-text-3: #e83330;
   
-  --black: #000000; /* negro */
-  --text: #222222; /* texto 1 */
-  --text-light: #666666; /* texto 2 */
-  --primary: #000000; /* primario */
-  --precio: #ff0000; /* rojo */
-  --accent: #d80000; /* acento */
-  --border: #e5e5e5; /* borde */
-  --color-logo:#000; /* logo */
+  /*-----------------*/
+
+  --degrade-del-logo:  linear-gradient(180deg, #6BA7C9 0%, #6A91C6 25%, #6C7CC1 50%, #855D90 75%, #B8282F 100%); /* 1 */
+  /*implementacion de degradado en el logo */
+  --bg-hf: #ac2321d2; /* fondo header y footer */
+  
+
+  --bg-carrusel: #d8d8d8c0; /* fondo de carrusel */
+  --bg-formulario: #d8d8d8c0; /* fondo formularios */
+  --texto-hf: #fff;
+  --texto-negro: #000;
+  --texto-blanco: #fff;
+  --texto-gris: #aaaaaa; 
+
+  --Botontes-1: #ffffff70; /* Botones opciones y compra */
+  --carrito: #fff; /* Carrito icono */
+  --precio: #ff0000; /* precio */
+  
+  /*   color-prueba: fb00ff; */
+
+  --bg: #fb00ff; /* fondo */
+  --bg2: #fb00ff; /* fondo */
+  --white: #fb00ff; /* blanco */
+  
+  --black: #fb00ff; /* negro */
+  --text: #fb00ff; /* texto 1 */
+  --text-light: #fb00ff; /* texto 2 */
+  --primary: #fb00ff; /* primario */
+  --accent: #fb00ff; /* acento */
+  --border: #fb00ff; /* borde */
+  --color-logo:#fb00ff; /* logo */
+
   --color-btn:#d47d35;; /* botón */
   --color-btn-hover:#db6b0f;
   --color-btn2:#0070da; /* botón */
@@ -71,8 +128,7 @@ HEADER
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
-  background: var(--bg-hf);
-  border-bottom: 1px solid var(--border);
+  background: var(--HeaderFooter-bg);
   z-index: 1000;
 }
 
@@ -96,12 +152,12 @@ HEADER
 #menu-icon{
   font-size: 1.8rem;
   cursor: pointer;
-  color: var(--primary);
+  color: var(--HeaderFooter-text-1);
   display: block;
 }
 
 #menu-icon:hover{
-  color: var(--color-btn2-hover);
+  color: var(--HeaderFooter-menu-hover);
 }
 
 /* NAVBAR MOBILE */
@@ -112,7 +168,7 @@ HEADER
   top: 80px;
   left: 0;
   width: 100%;
-  background: var(--bg-hf);
+  background: var(--HeaderFooter-bg);
   display: none;
   flex-direction: column;
   align-items: center;
@@ -127,7 +183,7 @@ HEADER
 
 .navbar a{
   text-decoration: none;
-  color: var(--primary);
+  color: var(--HeaderFooter-text-1);
   font-size: 1rem;
   font-weight: 600;
   position: relative;
@@ -141,12 +197,12 @@ HEADER
   bottom: -6px;
   width: 0;
   height: 2px;
-  background: var(--color-btn2);
+  background: var(--HeaderFooter-menu-hover);
   transition: .3s;
 }
 
 .navbar a:hover{
-  color: var(--color-btn2);
+  color: var(--HeaderFooter-menu-hover);
 }
 
 .navbar a:hover::after{
@@ -163,21 +219,23 @@ HEADER
 .social-icons a{
   font-size: 1.6rem;
   transition: transform 0.3s ease, color 0.3s ease;
+  color: var(--redes--sociales);
 }
 
 .social-icons a:hover{
-  transform:scale(1.2);
+  transform:scale(1.4);
 }
 
-.fa-square-facebook{
+
+.fa-square-facebook:hover{
   color:#1877f2;
 }
 
-.fa-square-instagram{
+.fa-square-instagram:hover{
   color:#e440d1;
 }
 
-.fa-square-whatsapp{
+.fa-square-whatsapp:hover{
   color:#25d366;
 }
 
@@ -216,8 +274,8 @@ HEADER
   border: none;
   cursor: pointer;
   border-radius: 7px;
-  background-color: var(--color-btn); /* holor */
-  color: var(--white); /* holor */
+  background-color: var(--banner-btn); /* holor */
+  color: var(--banner-text); /* holor */
   font-size: 1rem;
 }
 
@@ -230,14 +288,14 @@ HEADER
   border: none;
   cursor: pointer;
   border-radius: 5px;
-  background-color: var(--color-btn); /* holor */
-  color: var(--white); /* holor */
+  background-color: var(--banner-btn); /* holor */
+  color: var(--banner-text); /* holor */
   font-size: 1rem;
 }
 
 .categoria-botones button:hover {
-  background-color:var(--color-btn-hover); /* holor */
-  color: #000;
+  background-color:var(--banner-btn-hover); /* holor */
+  color: var(--banner-text-hover);
   transition: 0.3s;
 }
 
@@ -266,13 +324,13 @@ HEADER
   box-shadow: 0 4px 12px rgba(0,0,0,.18);
   transition: transform .15s ease, box-shadow .2s ease, background-color .2s ease;
   font-size: 1.2rem;
-  background-color: var(--black); /* holor */
-  color: var(--bg); /* holor */
+  background-color: var(--carrito-bg-ico); /* holor */
+  color: var(--carrito-text-ico); /* holor */
 }
 
 .icono-car:hover i{
   transform:scale(1.1);
-  background:var(--accent);
+  color: var(--carrito-text-hover-ico)
 }
 
 .carrito-cantidad {
@@ -286,7 +344,7 @@ HEADER
   align-items: center;
   justify-content: center;
   pointer-events: none; /* que no interfiera con el click */
-  color: var(--text-light); /* holor */
+  color: var(--carrito-text-ico); /* holor */
   font-size: 1rem;
   font-weight: bold;
 }
@@ -294,8 +352,8 @@ HEADER
 /* ======= FOOTER ======= */
 
 footer{
-  background-color: var(--bg-hf); /* holor */
-  color: var(--black); /* holor */
+  background-color: var(--HeaderFooter-bg); /* holor */
+  color: var(--HeaderFooter-text-1); /* holor */
   padding: 15px 0;
   text-align: center;
 }
@@ -335,7 +393,7 @@ footer .info {
 }
 
 footer > p {
-  color: var(--text); /* 123holor */
+  color: var(--HeaderFooter-text-1); /* 123holor */
   font-size: 1rem;
   font-weight: bold;
   margin: 5px;
@@ -345,7 +403,7 @@ footer > p {
 /* === A partir de 425px (móviles grandes / pequeños tablets) === */
 @media (min-width: 425px) {
   .social-icons a {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
   .navbar a {
     font-size: 1.4rem;
@@ -431,7 +489,7 @@ footer > p {
   header {
     padding: 0 40px;
   }
-  .social-icons a {font-size: 2rem;}
+  .social-icons a {font-size: 2.2rem;}
 
   .navbar a {
     font-size: 1.5rem;

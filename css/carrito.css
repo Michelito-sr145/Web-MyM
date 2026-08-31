@@ -1,3 +1,109 @@
+:root{
+  --prueba: #00ff15;
+  /* Styles */
+  --degrade-del-logo:  linear-gradient(180deg, #6BA7C9 0%, #6A91C6 25%, #6C7CC1 50%, #855D90 75%, #B8282F 100%); /* implementacion de degradado en el logo */
+  --HeaderFooter-bg: #ac2321d2; /* fondo header y footer */
+  --HeaderFooter-text-1: #fff;
+  --HeaderFooter-text-2: #000;
+  --HeaderFooter-menu-hover:#00ccff;
+  --redes--sociales: #fff;
+  --banner-btn : #ac2321;
+  --banner-btn-hover: #ff4b48;
+  --banner-text : #fff;
+  --banner-text-hover : #00ccff;
+
+  /* Productos: Home - vista */
+  --carrusel-bg: #d8d8d8c0;
+  --carrusel-btn: #00000080;
+  --carrusel-btn-hover: #57575780;
+  --carrusel-text: #fff ;
+  --carrusel-text-hover: #fff ;
+  
+  /* Productos */
+  --producto-bg : #d8d8d852 ;
+  --producto-bg-hover : #d8d8d890 ;
+  --producto-text-1 : #fff ;
+  --producto-text-2 : #000 ;
+  --producto-text-3 : #343434 ;
+  --producto-text-4 : #ff0000 ;
+  --producto-btn : #e83330 ;
+  --producto-btn-hover : #ac2321;
+
+  /* Formulario: Producto, Contacto y Carrito */
+  --formulario-bg: #d8d8d852 ;
+  --formulario-bg-hover: #d8d8d890 ;
+  --formulario-text-1 : #000 ;
+  --formulario-text-2 : #343434 ;
+  --formulario-text-3 : #ff0000 ;
+  --formulario-text-4 : #fff ;
+  --formulario-text-hover : #00ccff ;
+  --formulario-btn-1 : #000 ;
+  --formulario-btn-2 : #00ccff ;
+  --formulario-btn-3 : #ac2321 ;
+  --formulario-btn-hover: #e83330;
+
+  /* Contacto */
+  --contacto-text-1: #000;
+  --contacto-text-2: #fff;
+  --contacto-text-3: #e83330;
+
+  /* Carrito: icono y compra */
+  --carrito-bg-ico: #000;
+  --carrito-text-ico: #fff; 
+  --carrito-text-hover-ico: #00ccff;
+
+  --carrito-bg: #d8d8d84b;
+  --carrito-bg-hover: #000;
+  --carrito-text-1: #000;
+  --carrito-text-2: #ff00fb;
+  --carrito-btn-1: #0070da;
+  --carrito-btn-2: #00ccff;
+
+
+  /*-----------------*/
+
+  --degrade-del-logo:  linear-gradient(180deg, #6BA7C9 0%, #6A91C6 25%, #6C7CC1 50%, #855D90 75%, #B8282F 100%); /* 1 */
+  /*implementacion de degradado en el logo */
+  --bg-hf: #ac2321d2; /* fondo header y footer */
+  
+
+  --bg-carrusel: #d8d8d8c0; /* fondo de carrusel */
+  --bg-formulario: #d8d8d8c0; /* fondo formularios */
+  --texto-hf: #fff;
+  --texto-negro: #000;
+  --texto-blanco: #fff;
+  --texto-gris: #aaaaaa; 
+
+  --Botontes-1: #ffffff70; /* Botones opciones y compra */
+  --carrito: #fff; /* Carrito icono */
+  --precio: #ff0000; /* precio */
+  
+  /*   color-prueba: fb00ff; */
+
+  --bg: #fb00ff; /* fondo */
+  --bg2: #fb00ff; /* fondo */
+  --white: #fb00ff; /* blanco */
+  
+  --black: #fb00ff; /* negro */
+  --text: #fb00ff; /* texto 1 */
+  --text-light: #fb00ff; /* texto 2 */
+  --primary: #fb00ff; /* primario */
+  --accent: #fb00ff; /* acento */
+  --border: #fb00ff; /* borde */
+  --color-logo:#fb00ff; /* logo */
+
+  --color-btn:#d47d35;; /* botón */
+  --color-btn-hover:#db6b0f;
+  --color-btn2:#0070da; /* botón */
+  --color-btn2-hover:rgb(0, 204, 255);
+  --btn-red : #d30c20;
+  --btn-red-hover : #fd5465;
+  --btn-green : #00a827;
+  --btn-green-hover: #36db5d;
+}
+
+
+
 .vacio,
 .Carro,
 .Compra-Modal,
@@ -29,14 +135,14 @@
   margin: 4rem auto;
   padding: 2rem;
   text-align: center;
-  background: var(--bg); /* color */
+  background: var(--carrito-bg); /* color */
   border-radius: 12px;
 }
 
 .vacio h2 {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
-  color: var(--text); /* color */
+  color: var(--carrito-text-1); /* color */
 }
 
 .vacio button {
@@ -44,14 +150,14 @@
   font-size: 1rem;
   border: none;
   border-radius: 8px;
-  background: var(--color-btn2); /* color */
-  color: var(--white); /* color */
+  background: var(--carrito-btn-1); /* color */
+  color: var(--carrito-text-1); /* color */
   cursor: pointer;
   transition: background 0.3s ease;
 }
 
 .vacio button:hover {
-  background: var(--color-btn2-hover); /* color */
+  background: var(--carrito-btn-2); /* color */
 }
 
 
