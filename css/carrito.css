@@ -1,109 +1,3 @@
-:root{
-  --prueba: #00ff15;
-  /* Styles */
-  --degrade-del-logo:  linear-gradient(180deg, #6BA7C9 0%, #6A91C6 25%, #6C7CC1 50%, #855D90 75%, #B8282F 100%); /* implementacion de degradado en el logo */
-  --HeaderFooter-bg: #ac2321d2; /* fondo header y footer */
-  --HeaderFooter-text-1: #fff;
-  --HeaderFooter-text-2: #000;
-  --HeaderFooter-menu-hover:#00ccff;
-  --redes--sociales: #fff;
-  --banner-btn : #ac2321;
-  --banner-btn-hover: #ff4b48;
-  --banner-text : #fff;
-  --banner-text-hover : #00ccff;
-
-  /* Productos: Home - vista */
-  --carrusel-bg: #d8d8d8c0;
-  --carrusel-btn: #00000080;
-  --carrusel-btn-hover: #57575780;
-  --carrusel-text: #fff ;
-  --carrusel-text-hover: #fff ;
-  
-  /* Productos */
-  --producto-bg : #d8d8d852 ;
-  --producto-bg-hover : #d8d8d890 ;
-  --producto-text-1 : #fff ;
-  --producto-text-2 : #000 ;
-  --producto-text-3 : #343434 ;
-  --producto-text-4 : #ff0000 ;
-  --producto-btn : #e83330 ;
-  --producto-btn-hover : #ac2321;
-
-  /* Formulario: Producto, Contacto y Carrito */
-  --formulario-bg: #d8d8d852 ;
-  --formulario-bg-hover: #d8d8d890 ;
-  --formulario-text-1 : #000 ;
-  --formulario-text-2 : #343434 ;
-  --formulario-text-3 : #ff0000 ;
-  --formulario-text-4 : #fff ;
-  --formulario-text-hover : #00ccff ;
-  --formulario-btn-1 : #000 ;
-  --formulario-btn-2 : #00ccff ;
-  --formulario-btn-3 : #ac2321 ;
-  --formulario-btn-hover: #e83330;
-
-  /* Contacto */
-  --contacto-text-1: #000;
-  --contacto-text-2: #fff;
-  --contacto-text-3: #e83330;
-
-  /* Carrito: icono y compra */
-  --carrito-bg-ico: #000;
-  --carrito-text-ico: #fff; 
-  --carrito-text-hover-ico: #00ccff;
-
-  --carrito-bg: #d8d8d84b;
-  --carrito-bg-hover: #000;
-  --carrito-text-1: #000;
-  --carrito-text-2: #ff00fb;
-  --carrito-btn-1: #0070da;
-  --carrito-btn-2: #00ccff;
-
-
-  /*-----------------*/
-
-  --degrade-del-logo:  linear-gradient(180deg, #6BA7C9 0%, #6A91C6 25%, #6C7CC1 50%, #855D90 75%, #B8282F 100%); /* 1 */
-  /*implementacion de degradado en el logo */
-  --bg-hf: #ac2321d2; /* fondo header y footer */
-  
-
-  --bg-carrusel: #d8d8d8c0; /* fondo de carrusel */
-  --bg-formulario: #d8d8d8c0; /* fondo formularios */
-  --texto-hf: #fff;
-  --texto-negro: #000;
-  --texto-blanco: #fff;
-  --texto-gris: #aaaaaa; 
-
-  --Botontes-1: #ffffff70; /* Botones opciones y compra */
-  --carrito: #fff; /* Carrito icono */
-  --precio: #ff0000; /* precio */
-  
-  /*   color-prueba: fb00ff; */
-
-  --bg: #fb00ff; /* fondo */
-  --bg2: #fb00ff; /* fondo */
-  --white: #fb00ff; /* blanco */
-  
-  --black: #fb00ff; /* negro */
-  --text: #fb00ff; /* texto 1 */
-  --text-light: #fb00ff; /* texto 2 */
-  --primary: #fb00ff; /* primario */
-  --accent: #fb00ff; /* acento */
-  --border: #fb00ff; /* borde */
-  --color-logo:#fb00ff; /* logo */
-
-  --color-btn:#d47d35;; /* botón */
-  --color-btn-hover:#db6b0f;
-  --color-btn2:#0070da; /* botón */
-  --color-btn2-hover:rgb(0, 204, 255);
-  --btn-red : #d30c20;
-  --btn-red-hover : #fd5465;
-  --btn-green : #00a827;
-  --btn-green-hover: #36db5d;
-}
-
-
-
 .vacio,
 .Carro,
 .Compra-Modal,
@@ -142,7 +36,7 @@
 .vacio h2 {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
-  color: var(--carrito-text-1); /* color */
+  color: var(--carrito-text); /* color */
 }
 
 .vacio button {
@@ -151,13 +45,14 @@
   border: none;
   border-radius: 8px;
   background: var(--carrito-btn-1); /* color */
-  color: var(--carrito-text-1); /* color */
+  color: var(--carrito-text); /* color */
   cursor: pointer;
   transition: background 0.3s ease;
 }
 
 .vacio button:hover {
   background: var(--carrito-btn-2); /* color */
+  color: var(--carrito-text-hover);
 }
 
 
@@ -168,27 +63,26 @@
   max-width: 900px;
   margin: 2rem auto;
   padding: 1.5rem;
-  background: var(--bg2); /* color */
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .Carro h1 {
   font-size: 1.8rem;
   text-align: center;
   margin-bottom: 1.5rem;
-  color: var(--text); /* color */
+  color: var(--carrito-text); /* color */
 }
 
 /* Item del carrito */
 .carrito-item {
   padding: 1rem;
-  border: 1px solid #eee;
+  border: 0.5px solid #fff;
   border-radius: 10px;
-  background: var(--bg2); /* 123holor */
+  background: var(--carrito-bg); /* 123holor */
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+  margin: 10px;
 }
 
 /* Contenedor imagen + datos */
@@ -212,13 +106,13 @@
   gap: 0.3rem;
   font-size: 0.9rem;
   font-weight: bold;
-  color: var(--text-light); /* 123holor */
+  color: var(--carrito-text); /* 123holor */
 }
 
 .carrito-nombre {
   font-weight: bold;
-  font-size: 1rem;
-  color: var(--text); /* 123holor */
+  font-size: 1.4rem;
+  color: var(--carrito-text-1); /* 123holor */
 }
 
 /* Botones */
@@ -238,23 +132,25 @@
 }
 
 .btn-editar {
-  background: var(--btn-green); /* color */
-  color: var(--white); /* color */
+  background: var(--btn-editar); /* color */
+  color: var(--btn-editar-text); /* color */
 }
 
 .btn-editar:hover {
   scale: 1.05;
-  background: var(--btn-green-hover); /* color */
+  background: var(--btn-editar-hover); /* color */
+  color: var(--btn-editar-text-hover);
 }
 
 .btn-eliminar {
-  background: var(--btn-red); /* color */
-  color: var(--white); /* color */
+  background: var(--btn-eliminar); /* color */
+  color: var(--btn-eliminar-text); /* color */
 }
 
 .btn-eliminar:hover {
   scale: 1.05;
-  background: var(--btn-red-hover); /* color */
+  background: var(--btn-eliminar-hover); /* color */
+  color: var(--btn-eliminar-text-hover); /* color */
 }
 
 .input-cantidad {
@@ -270,7 +166,7 @@
   font-weight: bold;
   text-align: right;
   font-size: 1.1rem;
-  color: var(--text); /* 123holor */
+  color: var(--carrito-text); /* 123holor */
 }
 
 /* Botón comprar */
@@ -281,14 +177,15 @@
   font-size: 1rem;
   border: none;
   border-radius: 8px;
-  background: var(--color-btn2); /* 123holor */
-  color: var(--white); /* 123holor */
+  background: var(--btn-compra); /* 123holor */
+  color: var(--btn-compra-text); /* 123holor */
   cursor: pointer;
   transition: background 0.3s ease;
 }
 
 .btn-comprar:hover {
-  background: var(--color-btn2-hover); /* 123holor */
+  background: var(--btn-compra-hover);
+  color: var(--btn-compra-text-hover);
 }
 
 /* ======================= MODAL DE COMPRA ======================= */
@@ -307,7 +204,6 @@
 }
 
 .Compra-Modal > div {
-  background: var(--bg); /* 123holor */
   border-radius: 12px;
   padding: 20px;
   width: 100%;
@@ -315,18 +211,20 @@
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   text-align: center;
 }
+.opcion{
+  background: var(--modal-bg); /* 123holor */
+}
 
 .compra-title {
   font-size: 1.4rem;
   margin-bottom: 1rem;
-  color: var(--text); /* color */
+  color: var(--modal-text-2); /* color */
 }
 /* Contenedor base */
 .opcion,
 .confirmacion-wsp,
 .form-email,
 .confirmacion-email {
-  background: var(--bg2); /* color */
   border-radius: 12px;
   padding: 2rem;
   max-width: 500px;
@@ -345,32 +243,34 @@
   font-size: 2rem;
   border: none;
   border-radius: 8px;
-  color: var(--white); /* color */
+  color: var(--modal-text-2); /* color */
   cursor: pointer;
   transition: transform 0.2s ease, background 0.3s ease;
 }
 
 #msj-wsp {
-  background: #25d366;
+  background: #1ebe5c;
 }
 #msj-wsp:hover {
-  background: #1ebe5c;
-  transform: scale(1.05);
+  background: #25d366 ;
+  color: var(--modal-text);
+  transform: scale(1.1);
 }
 
 #msj-email {
-  background: #007bff;
+  background: #0056b3;
 }
 #msj-email:hover {
-  background: #0056b3;
+  background: #007bff;
+  color: var(--modal-text);
   transform: scale(1.05);
 }
 
 .atras-email {
   margin: 0.8rem auto;
   font-size: 1rem;
-  color: var(--white); /* color */
-  background: var(--btn-red); /* color */
+  background: var(--modal-btn); /* color */
+  color: var(--modal-text);
   padding: 0.7rem 1.3rem;
   border: none;
   border-radius: 8px;
@@ -378,7 +278,8 @@
 
 .atras-email:hover {
   scale: 1.05;
-  background: var(--btn-red-hover); /* color */
+  background: var(--modal-btn-hover); /* color */
+  color: var(--modal-text-hover);
 }
 
 
@@ -386,10 +287,14 @@
 /* =======================
    CONFIRMACIÓN WSP
 ======================= */
+.confirmacion-wsp{
+  background: var(--modal-wsp);
+}
+
 .confirmacion-wsp p {
   margin: 1rem 0;
   font-size: 1rem;
-  color: var(--text-light); /* color */
+  color: var(--modal-text); /* color */
 }
 
 .confirmacion-wsp button {
@@ -402,33 +307,44 @@
 }
 
 .reenviar-wsp {
-  background: var(--bg2); /* color */
+  background: var(--modal-reenviar-btn); /* color */
+  color: var(--modal-text);
 }
-.atras-wsp {
-  background: var(--btn-red); /* color */
-  color: var(--white); /* color */
-}
-.cerrar-confi-wsp {
-  background: var(--color-btn2); /* color */
-  color: var(--white); /* color */
+.reenviar-wsp:hover {
+  background: var(--modal-reenviar-btn-hover); /* color */
+  color: var(--modal-text-2);
 }
 
+.atras-wsp {
+  background: var(--modal-btn); /* color */
+  color: var(--modal-text); /* color */
+}
 .atras-wsp:hover {
   scale: 1.05;
-  background: var(--btn-red-hover); /* color */
+  background: var(--modal-btn-hover); /* color */
+  color: var(--modal-text-hover); /* color */
+}
+
+.cerrar-confi-wsp {
+  background: var(--modal-vaciar-btn); /* color */
+  color: var(--modal-text-hover); /* color */
 }
 .cerrar-confi-wsp:hover {
   scale: 1.05;
-  background: var(--color-btn2-hover); /* color */
+  background: var(--modal-vaciar-btn-hover); /* color */
 }
 
 /* =======================
    FORM EMAIL
 ======================= */
+.form-email{
+  background: var(--modal-email);
+}
+
 .form-email .form-title {
   font-size: 1.4rem;
   margin-bottom: 1rem;
-  color: var(--text); /* 123holor */
+  color: var(--modal-text-2); /* 123holor */
 }
 
 .form-email .form-group {
@@ -440,7 +356,7 @@
   display: block;
   margin-bottom: 0.3rem;
   font-weight: 600;
-  color: var(--text-light); /* 123holor */
+  color: var(--modal-text-2); /* 123holor */
 }
 
 .form-email input,
@@ -454,7 +370,7 @@
 
 .form-email input:focus,
 .form-email textarea:focus {
-  border-color: var(--color-btn2); /* 123holor */
+  border: 2px solid #00ff2a;
   outline: none;
 }
 
@@ -464,8 +380,8 @@
 }
 
 .send-email {
-  background: var(--color-btn2); /* 123holor */
-  color: var(--white); /* 123holor */
+  background: var(--modal-vaciar-btn); /* 123holor */
+  color: var(--modal-text-2); /* 123holor */
   padding: 0.8rem 1.5rem;
   border: none;
   border-radius: 8px;
@@ -473,26 +389,48 @@
   transition: background 0.3s ease;
 }
 .send-email:hover {
-  background: var(--color-btn2-hover); /* 123holor */
+  background: var(--modal-vaciar-btn-hover); /* 123holor */
 }
 
 /* =======================
    CONFIRMACIÓN EMAIL
 ======================= */
+.confirmacion-email{
+  background-color: var(--modal-email);
+}
 .confirmacion-email .estado {
   font-size: 1.1rem;
   margin-bottom: 1rem;
-  color: var(--text); /* 123holor */
+  color: var(--modal-text-2); /* 123holor */
+}
+.confirmacion-email p{
+  color: var(--modal-text-2);
+  margin-bottom: 10px;
 }
 
-.confirmacion-email button {
+
+.cerrar-confi-email{
   margin-top: 1rem;
   padding: 0.7rem 1.3rem;
   border: none;
   border-radius: 8px;
-  background: var(--color-btn2); /* 123holor */
-  color: var(--white); /* 123holor */
+  background: var(--modal-vaciar-btn); /* 123holor */
+  color: var(--modal-text); /* 123holor */
   cursor: pointer;
+}
+.cerrar-confi-email:hover {
+  background: var(--modal-vaciar-btn-hover); /* 123holor */
+  color: var(--modal-text-2); /* 123holor */
+}
+
+.atras-confi-email{
+  background: var(--modal-btn);
+  color: var(--modal-text);
+}
+
+.atras-confi-email:hover{
+  background: var(--modal-btn-hover);
+  color: var(--modal-text-hover);
 }
 
 /* =======================

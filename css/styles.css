@@ -5,9 +5,13 @@
   box-sizing: border-box;
 }
 :root{
-  --prueba: #00ff15;
   /* Styles */
-  --degrade-del-logo:  linear-gradient(180deg, #6BA7C9 0%, #6A91C6 25%, #6C7CC1 50%, #855D90 75%, #B8282F 100%); /* implementacion de degradado en el logo */
+  --degrade-del-logo:  linear-gradient(180deg,
+  #76adb9 0%,
+  #8d84bb 30%,
+  #ac2321d2 100%
+  );/**/
+  /*--degrade-del-logo:  linear-gradient(180deg, #6BA7C9 0%, #6A91C6 25%, #6C7CC1 50%, #855D90 75%, #B8282F 100%); /* implementacion de degradado en el logo */
   --HeaderFooter-bg: #ac2321d2; /* fondo header y footer */
   --HeaderFooter-text-1: #fff;
   --HeaderFooter-text-2: #000;
@@ -17,9 +21,6 @@
   --banner-btn-hover: #ff4b48;
   --banner-text : #fff;
   --banner-text-hover : #00ccff;
-  --carrito-bg: #000;
-  --carrito-text: #fff; 
-  --carrito-text-hover: #00ccff; 
 
   /* Productos: Home - vista */
   --carrusel-bg: #d8d8d8c0;
@@ -27,16 +28,18 @@
   --carrusel-btn-hover: #57575780;
   --carrusel-text: #fff ;
   --carrusel-text-hover: #fff ;
-
+  
+  /* Productos */
   --producto-bg : #d8d8d852 ;
   --producto-bg-hover : #d8d8d890 ;
   --producto-text-1 : #fff ;
   --producto-text-2 : #000 ;
   --producto-text-3 : #343434 ;
-  --producto-text-4 : #ff0000 ;
+  --producto-text-4 : #ff0000;
   --producto-btn : #e83330 ;
   --producto-btn-hover : #ac2321;
 
+  /* Formulario: Producto, Contacto y Carrito */
   --formulario-bg: #d8d8d852 ;
   --formulario-bg-hover: #d8d8d890 ;
   --formulario-text-1 : #000 ;
@@ -49,50 +52,55 @@
   --formulario-btn-3 : #ac2321 ;
   --formulario-btn-hover: #e83330;
 
+  /* Contacto */
   --contacto-text-1: #000;
   --contacto-text-2: #fff;
   --contacto-text-3: #e83330;
-  
-  /*-----------------*/
 
-  --degrade-del-logo:  linear-gradient(180deg, #6BA7C9 0%, #6A91C6 25%, #6C7CC1 50%, #855D90 75%, #B8282F 100%); /* 1 */
-  /*implementacion de degradado en el logo */
-  --bg-hf: #ac2321d2; /* fondo header y footer */
-  
+  /* Carrito: icono y compra */
+  --carrito-bg-ico: #000;
+  --carrito-text-ico: #fff; 
+  --carrito-text-hover-ico: #00ccff;
 
-  --bg-carrusel: #d8d8d8c0; /* fondo de carrusel */
-  --bg-formulario: #d8d8d8c0; /* fondo formularios */
-  --texto-hf: #fff;
-  --texto-negro: #000;
-  --texto-blanco: #fff;
-  --texto-gris: #aaaaaa; 
+  --carrito-bg: #d8d8d84b;
+  --carrito-bg-hover: #000;
+  --carrito-text: #000;
+  --carrito-text-1: #ac2321;
+  --carrito-text-hover: #fff;
+  --carrito-btn-1: #00ccff;
+  --carrito-btn-2: #0070da;
 
-  --Botontes-1: #ffffff70; /* Botones opciones y compra */
-  --carrito: #fff; /* Carrito icono */
-  --precio: #ff0000; /* precio */
-  
-  /*   color-prueba: fb00ff; */
+  --btn-editar: #36db5d;
+  --btn-editar-hover: #00a827;
+  --btn-editar-text: #000;
+  --btn-editar-text-hover: #fff;
+  --btn-eliminar: #fd5465;
+  --btn-eliminar-hover: #d30c20;
+  --btn-eliminar-text: #000;
+  --btn-eliminar-text-hover: #fff;
+  --btn-compra: #00ccff;
+  --btn-compra-hover: #0070da;
+  --btn-compra-text: #000;
+  --btn-compra-text-hover: #fff;
 
-  --bg: #fb00ff; /* fondo */
-  --bg2: #fb00ff; /* fondo */
-  --white: #fb00ff; /* blanco */
-  
-  --black: #fb00ff; /* negro */
-  --text: #fb00ff; /* texto 1 */
-  --text-light: #fb00ff; /* texto 2 */
-  --primary: #fb00ff; /* primario */
-  --accent: #fb00ff; /* acento */
-  --border: #fb00ff; /* borde */
-  --color-logo:#fb00ff; /* logo */
+  --modal-bg : #b50d1e;
+  --modal-text : #000;
+  --modal-text-2 : #fff;
+  --modal-text-hover : #fff;
+  --modal-btn :#0070da;
+  --modal-btn-hover : #00ccff;
 
-  --color-btn:#d47d35;; /* botón */
-  --color-btn-hover:#db6b0f;
-  --color-btn2:#0070da; /* botón */
-  --color-btn2-hover:rgb(0, 204, 255);
-  --btn-red : #d30c20;
-  --btn-red-hover : #fd5465;
-  --btn-green : #00a827;
-  --btn-green-hover: #36db5d;
+  --modal-wsp: #008430;
+  --modal-email: #070084; 
+
+  --modal-reenviar-btn:#db6b0f;; /* botón */
+  --modal-reenviar-btn-hover:#d47d35;
+
+  --modal-vaciar-btn:#d30c20;; /* botón */
+  --modal-vaciar-btn-hover:#fd5465; 
+
+  --modal-error-email: #a82330;
+  --modal-corret-email: #008430;
 }
 
 body {

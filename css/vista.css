@@ -150,6 +150,7 @@
   font-size: 1.7rem;
   font-weight: 900;
   color: var(--formulario-text-3); /* color */
+  -webkit-text-stroke: 0.5px #000;
 }
 
 /* ============================== FORMULARIO ============================== */
@@ -203,7 +204,7 @@
 
 .vp-comprar:hover {
   background: var(--formulario-btn-hover); /* color */
-  color: var(--formulario-text-hover);
+  color: var(--formulario-text-2);
 }
 
 

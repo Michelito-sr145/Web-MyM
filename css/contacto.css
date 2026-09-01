@@ -27,6 +27,7 @@
 }
 .hero-contacto .descripcion-contacto strong {
   color: var(--contacto-text-3); /* resalta la marca */ /* 123Holor */
+  -webkit-text-stroke: 0.2px #000;
 }
 
 /* ===== INFO CONTACTO ===== */
@@ -51,6 +52,7 @@
   margin-bottom: 1rem;
   font-size: 1.2rem;
   color: var(--contacto-text-1); /* color */
+  
 }
 
 .info-contacto .info ul {
@@ -66,7 +68,9 @@
 }
 
 .info-contacto .info strong {
+  font-size: 1.2rem;
   color: var(--contacto-text-3); /* 123Holor */
+  -webkit-text-stroke: 0.4px #000;
 }
 
 .info-contacto .mapa {
