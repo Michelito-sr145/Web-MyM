@@ -44,7 +44,7 @@ const productos = [
         TipoMedida: "Talle",
         Talle: [21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
         Descripcion: "Toalla y goma eva. precio minorista [3000] precio mayorista apartir de 3docenas(36 unidades) solo con talles variados [1000]",
-        Color: [],
+        Color: null,
     },
     {
         Codigo: "P04",
@@ -150,6 +150,33 @@ const productos = [
         Descripcion: null,
         Color: ["Naranja","Negro","Gris","Surtido",],
     },
+    {
+        Codigo: "P12",
+        Estado: null,
+        Img: "Plantillas/P12-img1",
+        Producto: "GEL WASSINGTON T-1",
+        PrecioMayor: null,
+        PrecioMinorista: null,
+        Categoria: "Plantillas",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "anatómicas, diseñadas para brindar confort superior en cada paso. Su estructura de gel flexible y adaptable permite una excelente amortiguación, reduciendo el impacto al caminar y al estar de pie por largos períodos. Cuentan con superficie textil suave, lo que evita rozaduras y mejora la comodidad dentro del calzado. 🔹 Gran flexibilidad — se adaptan al movimiento natural del pie 🔹 Soporte anatómico — zonas reforzadas para mayor estabilidad 🔹 Amortiguación de impacto — ideal para uso diario",
+        Color: null,
+    },
+    {
+        Codigo: "P13",
+        Estado: null,
+        Img: "Plantillas/P13-img1",
+        Producto: "Plantilla Acolchada Metatarso",
+        PrecioMayor: null,
+        PrecioMinorista: null,
+        Categoria: "Plantillas",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: null,
+        Color: null,
+    },
+
 
     {
         Codigo: "MODELO00",
@@ -160,9 +187,9 @@ const productos = [
         PrecioMinorista: 2500,
         Categoria: "Llaveros",
         TipoMedida: null,
-        Talle: [],
+        Talle: null,
         Descripcion: null,
-        Color: [],
+        Color: ["color Bronce","color Plata","Surtido"],
     },
     {
         Codigo: "MODELO01",
@@ -173,9 +200,9 @@ const productos = [
         PrecioMinorista: 3000,
         Categoria: "Llaveros",
         TipoMedida: null,
-        Talle: [],
+        Talle: null,
         Descripcion: null,
-        Color: [],
+        Color: ["color Bronce","color Plata","Surtido"],
     },
     {
         Codigo: "MODELO02",
@@ -186,9 +213,9 @@ const productos = [
         PrecioMinorista: 3500,
         Categoria: "Llaveros",
         TipoMedida: null,
-        Talle: [],
+        Talle: null,
         Descripcion: null,
-        Color: [],
+        Color: ["color Bronce","color Plata","Surtido"],
     },
     {
         Codigo: "MODELO03",
@@ -199,9 +226,9 @@ const productos = [
         PrecioMinorista: 2500,
         Categoria: "Llaveros",
         TipoMedida: null,
-        Talle: [],
+        Talle: null,
         Descripcion: null,
-        Color: [],
+        Color: ["color Bronce","color Plata","Surtido"],
     },
     {
         Codigo: "MODELO04",
@@ -212,9 +239,9 @@ const productos = [
         PrecioMinorista: 3000,
         Categoria: "Llaveros",
         TipoMedida: null,
-        Talle: [],
+        Talle: null,
         Descripcion: null,
-        Color: [],
+        Color: ["color Bronce","color Plata","Surtido"],
     },
     {
         Codigo: "MODELO07",
@@ -225,9 +252,9 @@ const productos = [
         PrecioMinorista: 2500,
         Categoria: "Llaveros",
         TipoMedida: null,
-        Talle: [],
+        Talle: null,
         Descripcion: null,
-        Color: [],
+        Color: ["color Bronce","color Plata","Surtido"],
     },
     {
         Codigo: "MODELO08",
@@ -238,9 +265,9 @@ const productos = [
         PrecioMinorista: 3500,
         Categoria: "Llaveros",
         TipoMedida: null,
-        Talle: [],
+        Talle: null,
         Descripcion: null,
-        Color: [],
+        Color: ["color Bronce","color Plata","Surtido"],
     },
     {
         Codigo: "MODELO09",
@@ -251,9 +278,9 @@ const productos = [
         PrecioMinorista: 3000,
         Categoria: "Llaveros",
         TipoMedida: null,
-        Talle: [],
+        Talle: null,
         Descripcion: null,
-        Color: [],
+        Color: ["color Bronce","color Plata","Surtido"],
     },
     {
         Codigo: "MODELO10",
@@ -264,9 +291,9 @@ const productos = [
         PrecioMinorista: 3000,
         Categoria: "Llaveros",
         TipoMedida: null,
-        Talle: [],
+        Talle: null,
         Descripcion: null,
-        Color: [],
+        Color: ["color Bronce","color Plata","Surtido"],
     },
     {
         Codigo: "MODELO11",
@@ -277,9 +304,9 @@ const productos = [
         PrecioMinorista: 3000,
         Categoria: "Llaveros",
         TipoMedida: null,
-        Talle: [],
+        Talle: null,
         Descripcion: null,
-        Color: [],
+        Color: null,
     },
     {
         Codigo: "MODELO12",
@@ -290,9 +317,9 @@ const productos = [
         PrecioMinorista: 3000,
         Categoria: "Llaveros",
         TipoMedida: null,
-        Talle: [],
+        Talle: null,
         Descripcion: null,
-        Color: [],
+        Color: null,
     },
     {
         Codigo: "MODELO13",
@@ -303,9 +330,9 @@ const productos = [
         PrecioMinorista: 3500,
         Categoria: "Llaveros",
         TipoMedida: null,
-        Talle: [],
+        Talle: null,
         Descripcion: null,
-        Color: [],
+        Color: ["color Bronce","color Plata","Surtido"],
     },
     {
         Codigo: "MODELO14",
@@ -316,9 +343,9 @@ const productos = [
         PrecioMinorista: 3500,
         Categoria: "Llaveros",
         TipoMedida: null,
-        Talle: [],
+        Talle: null,
         Descripcion: null,
-        Color: [],
+        Color: ["color Bronce","color Plata","Surtido"],
     },
 
     {
@@ -326,39 +353,39 @@ const productos = [
         Estado: "Limitado",
         Img: "ArticulosDePerro/ArtiPr01-img1",
         Producto: "Collar de Perro",
-        PrecioMayor: "Consultar",
-        PrecioMinorista: "Consultar",
+        PrecioMayor: null,
+        PrecioMinorista: null,
         Categoria: "Articulos de perro",
-        TipoMedida: null,
-        Talle: ["Chico", "Mediano", "Grande"],
-        Descripcion: "Chico:35cm x 1.5cm   Mediano:45cm x 2.0cm   Grande:55cm x 2.5cm",
-        Color: [],
+        TipoMedida: "Cm",
+        Talle: ["Chico: 35cm x 1.5cm", "Mediano: 45cm x 2.0cm", "Grande: 55cm x 2.5cm"],
+        Descripcion: null,
+        Color: ["Rojo","Azul","Verder","Amarillo","Surtido"],
     },
     {
         Codigo: "ArtiPr02",
         Estado: "Limitado",
         Img: "ArticulosDePerro/ArtiPr02-img1",
         Producto: "Correa de Perro",
-        PrecioMayor: "Consultar",
-        PrecioMinorista: "Consultar",
+        PrecioMayor: null,
+        PrecioMinorista: null,
         Categoria: "Articulos de perro",
-        TipoMedida: null,
-        Talle: ["Chico", "Mediano", "Grande"],
-        Descripcion: "Chico:1.2cm x 1.5cm   Mediano:1.2cm x 2.0cm   Grande:1.2cm x 2.5cm",
-        Color: [],
+        TipoMedida: "Cm",
+        Talle: ["Chico 1.2cm x 1.5cm", "Mediano: 1.2cm x 2.0cm", "Grande: 1.2cm x 2.5cm"],
+        Descripcion: null,
+        Color: ["Rojo","Azul","Verder","Amarillo","Surtido"],
     },
     {
         Codigo: "ArtiPr03",
         Estado: "Limitado",
         Img: "ArticulosDePerro/ArtiPr03-img1",
         Producto: "Pretal de Perro",
-        PrecioMayor: "Consultar",
-        PrecioMinorista: "Consultar",
+        PrecioMayor: null,
+        PrecioMinorista: null,
         Categoria: "Articulos de perro",
-        TipoMedida: null,
+        TipoMedida: "Talle",
         Talle: ["Chico", "Mediano", "Grande"],
         Descripcion: null,
-        Color: [],
+        Color: ["Rojo","Azul","Verder","Amarillo","Surtido"],
     },
 
     {
@@ -370,9 +397,9 @@ const productos = [
         PrecioMinorista: null,
         Categoria: "Medias",
         TipoMedida: null,
-        Talle: [],
+        Talle: null,
         Descripcion: null,
-        Color: [],
+        Color: null,
     },
     {
         Codigo: "M02",
@@ -383,9 +410,9 @@ const productos = [
         PrecioMinorista: null,
         Categoria: "Medias",
         TipoMedida: null,
-        Talle: [],
+        Talle: null,
         Descripcion: null,
-        Color: [],
+        Color: null,
     },
     {
         Codigo: "M03",
@@ -396,9 +423,9 @@ const productos = [
         PrecioMinorista: null,
         Categoria: "Medias",
         TipoMedida: null,
-        Talle: [],
+        Talle: null,
         Descripcion: null,
-        Color: [],
+        Color: null,
     },
     {
         Codigo: "M04",
@@ -409,9 +436,9 @@ const productos = [
         PrecioMinorista: null,
         Categoria: "Medias",
         TipoMedida: null,
-        Talle: [],
+        Talle: null,
         Descripcion: null,
-        Color: [],
+        Color: null,
     },
     {
         Codigo: "M05",
@@ -422,9 +449,9 @@ const productos = [
         PrecioMinorista: null,
         Categoria: "Medias",
         TipoMedida: null,
-        Talle: [],
+        Talle: null,
         Descripcion: null,
-        Color: [],
+        Color: null,
     },
     {
         Codigo: "M06",
@@ -435,9 +462,9 @@ const productos = [
         PrecioMinorista: null,
         Categoria: "Medias",
         TipoMedida: null,
-        Talle: [],
+        Talle: null,
         Descripcion: null,
-        Color: [],
+        Color: null,
     },
     {
         Codigo: "M07",
@@ -448,9 +475,9 @@ const productos = [
         PrecioMinorista: null,
         Categoria: "Medias",
         TipoMedida: null,
-        Talle: [],
+        Talle: null,
         Descripcion: null,
-        Color: [],
+        Color: null,
     },
     {
         Codigo: "M08",
@@ -461,9 +488,9 @@ const productos = [
         PrecioMinorista: null,
         Categoria: "Medias",
         TipoMedida: null,
-        Talle: [],
+        Talle: null,
         Descripcion: null,
-        Color: [],
+        Color: null,
     },
     {
         Codigo: "M09",
@@ -474,9 +501,9 @@ const productos = [
         PrecioMinorista: null,
         Categoria: "Medias",
         TipoMedida: null,
-        Talle: [],
+        Talle: null,
         Descripcion: null,
-        Color: [],
+        Color: null,
     },
 
     {
@@ -488,9 +515,9 @@ const productos = [
         PrecioMinorista: null,
         Categoria: "Medias",
         TipoMedida: null,
-        Talle: [],
+        Talle: null,
         Descripcion: null,
-        Color: [],
+        Color: null,
     },
 
     {
@@ -502,9 +529,9 @@ const productos = [
         PrecioMinorista: null,
         Categoria: "Medias",
         TipoMedida: null,
-        Talle: [],
+        Talle: null,
         Descripcion: null,
-        Color: [],
+        Color: null,
     },
 
     {
@@ -516,9 +543,9 @@ const productos = [
         PrecioMinorista: null,
         Categoria: "Medias",
         TipoMedida: null,
-        Talle: [],
+        Talle: null,
         Descripcion: null,
-        Color: [],
+        Color: null,
     },
 
     {
@@ -530,9 +557,9 @@ const productos = [
         PrecioMinorista: null,
         Categoria: "Medias",
         TipoMedida: null,
-        Talle: [],
+        Talle: null,
         Descripcion: null,
-        Color: [],
+        Color: null,
     },
 
     {
@@ -544,9 +571,9 @@ const productos = [
         PrecioMinorista: null,
         Categoria: "Medias",
         TipoMedida: null,
-        Talle: [],
+        Talle: null,
         Descripcion: null,
-        Color: [],
+        Color: null,
     },
 
     {
@@ -558,9 +585,9 @@ const productos = [
         PrecioMinorista: null,
         Categoria: "Medias",
         TipoMedida: null,
-        Talle: [],
+        Talle: null,
         Descripcion: null,
-        Color: [],
+        Color: null,
     },
 
     {
@@ -572,9 +599,9 @@ const productos = [
         PrecioMinorista: null,
         Categoria: "Medias",
         TipoMedida: null,
-        Talle: [],
+        Talle: null,
         Descripcion: null,
-        Color: [],
+        Color: null,
     },
 
     {
@@ -586,9 +613,9 @@ const productos = [
         PrecioMinorista: null,
         Categoria: "Medias",
         TipoMedida: null,
-        Talle: [],
+        Talle: null,
         Descripcion: null,
-        Color: [],
+        Color: null,
     },
 
     {
@@ -600,9 +627,9 @@ const productos = [
         PrecioMinorista: null,
         Categoria: "Medias",
         TipoMedida: null,
-        Talle: [],
+        Talle: null,
         Descripcion: null,
-        Color: [],
+        Color: null,
     },
 
     {
@@ -614,9 +641,9 @@ const productos = [
         PrecioMinorista: null,
         Categoria: "Medias",
         TipoMedida: null,
-        Talle: [],
+        Talle: null,
         Descripcion: null,
-        Color: [],
+        Color: null,
     },
 
     {
@@ -628,9 +655,9 @@ const productos = [
         PrecioMinorista: null,
         Categoria: "Medias",
         TipoMedida: null,
-        Talle: [],
+        Talle: null,
         Descripcion: null,
-        Color: [],
+        Color: null,
     },
 
     {
@@ -642,9 +669,9 @@ const productos = [
         PrecioMinorista: null,
         Categoria: "Medias",
         TipoMedida: null,
-        Talle: [],
+        Talle: null,
         Descripcion: null,
-        Color: [],
+        Color: null,
     },
 
     {
@@ -656,9 +683,9 @@ const productos = [
         PrecioMinorista: null,
         Categoria: "Medias",
         TipoMedida: null,
-        Talle: [],
+        Talle: null,
         Descripcion: null,
-        Color: [],
+        Color: null,
     },
 
     {
@@ -670,9 +697,9 @@ const productos = [
         PrecioMinorista: null,
         Categoria: "Medias",
         TipoMedida: null,
-        Talle: [],
+        Talle: null,
         Descripcion: null,
-        Color: [],
+        Color: null,
     },
 
     {
@@ -684,9 +711,9 @@ const productos = [
         PrecioMinorista: null,
         Categoria: "Medias",
         TipoMedida: null,
-        Talle: [],
+        Talle: null,
         Descripcion: null,
-        Color: [],
+        Color: null,
     },
 
     {
@@ -698,9 +725,9 @@ const productos = [
         PrecioMinorista: null,
         Categoria: "Medias",
         TipoMedida: null,
-        Talle: [],
+        Talle: null,
         Descripcion: null,
-        Color: [],
+        Color: null,
     },
 
     {
@@ -714,7 +741,7 @@ const productos = [
         TipoMedida: "Talle",
         Talle: ["S/M", "L/XL"],
         Descripcion: "Consultar por Docena.   Talles:S/M - L/XL   Colores: Consultar",
-        Color: [],
+        Color: null,
     },
     {
         Codigo: "VE02",
@@ -725,9 +752,9 @@ const productos = [
         PrecioMinorista: null,
         Categoria: "Vestimenta",
         TipoMedida: null,
-        Talle: [],
+        Talle: null,
         Descripcion: "Calza deportiva lisa con funce",
-        Color: [],
+        Color: null,
     },
     {
         Codigo: "VE03",
@@ -738,9 +765,9 @@ const productos = [
         PrecioMinorista: null,
         Categoria: "Vestimenta",
         TipoMedida: null,
-        Talle: [],
+        Talle: null,
         Descripcion: null,
-        Color: [],
+        Color: null,
     },
     {
         Codigo: "VE04",
@@ -751,7 +778,7 @@ const productos = [
         PrecioMinorista: null,
         Categoria: "Vestimenta",
         TipoMedida: null,
-        Talle: [],
+        Talle: null,
         Descripcion: "Un pack de 2 pares x 5000$ Colores: Negro - Tostado - Natural",
         Color: ["Negro", "Tostado", "Natural", "Surtido"],
     },
@@ -764,7 +791,7 @@ const productos = [
         PrecioMinorista: null,
         Categoria: "Vestimenta",
         TipoMedida: null,
-        Talle: [],
+        Talle: null,
         Descripcion: "Colores: Tostado - Negro - Natural",
         Color: ["Tostado", "Negro", "Natural"],
     },
@@ -777,9 +804,9 @@ const productos = [
         PrecioMinorista: null,
         Categoria: "Vestimenta",
         TipoMedida: null,
-        Talle: [],
+        Talle: null,
         Descripcion: "Unico color el de la imagen. ¡Un pack de 3pares x2500$!",
-        Color: [],
+        Color: null,
     },
     {
         Codigo: "VE07",
@@ -792,7 +819,7 @@ const productos = [
         TipoMedida: "Talle",
         Talle: ["M/L", "XL/XXL"],
         Descripcion: "Consultar por Docena y Colores",
-        Color: [],
+        Color: null,
     },
     {
         Codigo: "VE08",
@@ -838,26 +865,18 @@ const productos = [
     },
 ];
 
-
+//-----------------------------------------------------------------------
+//-------  -------  ---------   --------             -----------------------------------------
+//-------  -------    ------    -------  ---------------------------------------------
+//-------  -------  -  ----  -  ------  ----------------------------------------------
+//-------  -------  --  --  --  ------  ----------------------------------------------
+//-------  -------  ---    ---  ------  -----         ----------------------------------------
+//-------  -------  ----------  ------  -----  -----  ----------------------------
+//-------  -------  ----------  ------  ------------  -----------------------------
+//-------  -------  ----------  ------  -----------  -----------------------------
+//-------  -------  ----------  --------            ------------------------------------
+//-----------------------------------------------------------------------
 const TodasImg = [
-    {
-        codigo: "P22",
-        Imagenes: [
-            "Plantillas/P01-img1",
-            "Plantillas/P01-img2",
-            "Plantillas/P01-img3",
-            "Plantillas/P01-img4",
-        ],
-    },
-    {
-        codigo: "P24",
-        Imagenes: [
-            "Plantillas/P02-img1",
-            "Plantillas/P02-img2",
-            "Plantillas/P02-img3",
-            "Plantillas/P02-img4",
-        ],
-    },
     {
         codigo: "P01",
         Imagenes: [
@@ -949,6 +968,18 @@ const TodasImg = [
             "Plantillas/P11-img1",
             "Plantillas/P11-img2",
             "Plantillas/P11-img3"
+        ],
+    },
+    {
+        codigo: "P12",
+        Imagenes: [
+            "Plantillas/P12-img1",
+        ],
+    },
+    {
+        codigo: "P13",
+        Imagenes: [
+            "Plantillas/P13-img1",
         ],
     },
 
