@@ -106,7 +106,7 @@
 .Presentacion h3.Nuevo { background-color: green; padding-left: 53px; }
 .Presentacion h3.Agotado { background-color: #555; padding-left: 48px; }
 .Presentacion h3.Exclusivo { background-color: gold; color: #000; padding-left: 45px; }
-.Presentacion h3.Rebajado { background-color: orange; padding-left: 45px; }
+.Presentacion h3.Rebajado { background-color: orange; padding-left: 45px; } 
 .Presentacion h3.Proximamente { background-color: purple; padding-left: 33px; }
 .Presentacion h3.Top { background-color: teal; padding-left: 55px; }
 

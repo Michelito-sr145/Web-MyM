@@ -13,13 +13,16 @@ window.onscroll = () => {
 const linkSocial = document.querySelectorAll('.linkSocial');
 const Links_Curses = {
     fc: {
-        link: "https://www.facebook.com/share/1CRLPaxD55/"
+        link: "https://www.facebook.com/plantillasmaster"
     },
     ig: {
-        link: "https://www.instagram.com/"
+        link: "https://www.instagram.com/plantillasmaster"
     },
     wsp: {
-        link: "https://wa.me/5491138913633?text=Hola%20quiero%20más%20información"
+        link: "https://wa.me/5491153122990?text=Hola%20quiero%20más%20información"
+    },
+    tktk: {
+        link: "https://www.tiktok.com/plantillasmaster"
     },
 };
 linkSocial.forEach(item => {
