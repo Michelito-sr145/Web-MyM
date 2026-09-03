@@ -306,7 +306,7 @@ btnRetrocederemail.addEventListener("click", () => {
 function enviarWhatsApp() {
     const saludo = "Hola, me gustaría realizar este pedido:\n";
     const mensaje = saludo + generarTextoPedido();
-    const numero = "5491167623090"; // Número destino
+    const numero = "5491153122990"; // Número destino
     const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
     window.open(url, "_blank"); // Abre WhatsApp en una nueva pestaña
 }
