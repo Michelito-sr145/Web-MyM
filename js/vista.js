@@ -53,6 +53,11 @@ if (!code) {
 }
 
 // ======= ZONA DE LA VISTA DE PRODUCTO =======
+function mostrarPrecio(valor) {
+    return Number(valor) > 0
+        ? `$${valor}`
+        : "Consultar Precio";
+}
 function cargarProducto() {
     const productoSeleccionado = productos.find(prod => prod.Codigo === codigoP);
     
@@ -85,9 +90,12 @@ function cargarProducto() {
     // Nombre y descripción
     document.getElementById("vp-nombre").textContent = productoSeleccionado.Producto || "";
     document.getElementById("vp-Descripcion").textContent = productoSeleccionado.Descripcion?.trim() || productoSeleccionado.Producto;
+    // Precio Mayorista y minorista
+    document.getElementById("vp-PrecioMayor").textContent = `Precio Mayorista: ${mostrarPrecio(productoSeleccionado.PrecioMayor)}`;
+    document.getElementById("vp-PrecioMenor").textContent = `Precio Minorista: ${mostrarPrecio(productoSeleccionado.PrecioMinorista)}`;
     // Precio y cantidad
     const vp_tienePrecio = (productoSeleccionado.PrecioMayor && productoSeleccionado.PrecioMayor > 0);
-    document.getElementById("vp-precio").textContent = vp_tienePrecio ? `${productoSeleccionado.PrecioMayor}` : "Consultar Precio";
+    document.getElementById("vp-precio").textContent = vp_tienePrecio ? `$${productoSeleccionado.PrecioMayor}` : "Consultar Precio";
     vista(vp_tienePrecio, document.querySelector(".vp-input-cant"));
 
     // Imágenes del producto
@@ -96,7 +104,7 @@ function cargarProducto() {
     let imgIndex = 0;
     function mostrarImagen() {
         if (productoselecImgs?.Imagenes.length > 0) {
-            vp_carrusel.innerHTML = `<img src="img/${productoselecImgs.Imagenes[imgIndex]}.jpg" alt="Imagen ${codigoP}">`;
+            vp_carrusel.innerHTML = `<img src="img/${productoselecImgs.Imagenes[imgIndex]}.jpg" loading="lazy" alt="Imagen ${codigoP}">`;
         } else {
             vp_carrusel.innerHTML = `<p>Sin imágenes disponibles</p>`;
         }

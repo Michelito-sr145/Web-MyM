@@ -1,12 +1,28 @@
-// Estado = "oferta" - "limitado" - "nuevo" - "agotado" - "exclusivo" - "rebajado" - "proximamente" - "top"
-// Tipo Medida: "talle" - "Cm" - "Litros" - "Marca" 
-
-//Img, Estado, Categoria, Codigo, Producto, Talle, PrecioMayor, PrecioMinorista, Descripcion, Color
-
 //Se muestra en el carrito: Img, Producto, Talle, Precio, Color, Cantidad
 
+//    {
+//        Codigo: null, // ""
+//        Estado: null, // Tipos de estado: "Oferta" - "Limitado" - "Nuevo" - "Agotado" - "Exclusivo" - "Rebajado" - "Proximamente" - "Top" - null (si no lleva ninguno o Bloqueado/Quitar)
+//        Img: "", // la forma en que se coloca "(categoria)/(codigo)-img1" por ejemplo "Plantillas/P01-img1"
+//        Producto: "",
+//        PrecioMayor: , // valor numerico
+//        PrecioMinorista: , // valor numerico
+//        Categoria: "",
+//        TipoMedida: "", // deacuerdo a la medida que se da: "Peso" - "Talle" - "Volumen" - "Longitud"
+//        Talle: [], // En listar los distintos talles o medidas, si dice X al Y. por ejemplo "30 al 39" se enlista de la siguiente forma ["30","31","32","33","34","35","36","37","38","39"] 
+//        Descripcion: "", // ""
+//        Color: [], // En listar los distintos colores. si no tiene ningun color poner "null"
+//    },
+
+
+//    {
+//        codigo: "",
+//        Imagenes: [ ], // la forma en que se coloca "(categoria)/(codigo)-imgX" para cada producto pon un numero de 3 imagenes osea (img1 - img2 - img3)
+//    },
 
 const productos = [
+
+// -Plantillas
     {
         Codigo: "P01",
         Estado: "Top",
@@ -270,6 +286,7 @@ const productos = [
         Color: null,
     },
 
+// -Llaveros
 
     {
         Codigo: "MODELO00",
@@ -441,6 +458,8 @@ const productos = [
         Color: ["color Bronce","color Plata","Surtido"],
     },
 
+// -Articulo de Perro -------
+
     {
         Codigo: "ArtiPr01",
         Estado: "Limitado",
@@ -480,6 +499,358 @@ const productos = [
         Descripcion: null,
         Color: ["Rojo","Azul","Verder","Amarillo","Surtido"],
     },
+
+// -Articulo de calzado-----------asd
+{
+        Codigo: "ARC01",
+        Estado: null,
+        Img: "Articulo de calzado/ARC01-img1",
+        Producto: "Esponja aplicador Arola",
+        PrecioMayor: 1800,
+        PrecioMinorista: 3000,
+        Categoria: "Articulo de calzado",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "ARC02",
+        Estado: null,
+        Img: "Articulo de calzado/ARC02-img1",
+        Producto: "Cepillo pomada con mango",
+        PrecioMayor: 3000,
+        PrecioMinorista: 4000,
+        Categoria: "Articulo de calzado",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "ARC03",
+        Estado: null,
+        Img: "Articulo de calzado/ARC03-img1",
+        Producto: "Cepillo gamuza",
+        PrecioMayor: 3200,
+        PrecioMinorista: 5000,
+        Categoria: "Articulo de calzado",
+        TipoMedida: "Cm",
+        Talle: ["8cm"],
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "ARC04",
+        Estado: null,
+        Img: "Articulo de calzado/ARC04-img1",
+        Producto: "Cepillo gamuza bronce",
+        PrecioMayor: 3300,
+        PrecioMinorista: 5000,
+        Categoria: "Articulo de calzado",
+        TipoMedida: "Cm",
+        Talle: ["10cm"],
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "ARC05",
+        Estado: null,
+        Img: "Articulo de calzado/ARC05-img1",
+        Producto: "Cepillo barnizado comun.",
+        PrecioMayor: 3700,
+        PrecioMinorista: 7000,
+        Categoria: "Articulo de calzado",
+        TipoMedida: "Cm",
+        Talle: ["16cm"],
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "ARC06",
+        Estado: null,
+        Img: "Articulo de calzado/ARC06-img1",
+        Producto: "Cepillo WASS simil cuero",
+        PrecioMayor: 8300,
+        PrecioMinorista: 12000,
+        Categoria: "Articulo de calzado",
+        TipoMedida: null,
+        Talle: ["16cm"],
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "ARC07",
+        Estado: null,
+        Img: "Articulo de calzado/ARC07-img1",
+        Producto: "Cepillos KIT X3. SNEAKER",
+        PrecioMayor: 14000,
+        PrecioMinorista: 20000,
+        Categoria: "Articulo de calzado",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: null,
+        Color: null,
+    },
+
+    {
+        Codigo: "ARC08",
+        Estado: null,
+        Img: "Articulo de calzado/ARC08-img1",
+        Producto: "Calzador zapato plastico",
+        PrecioMayor: 1500,
+        PrecioMinorista: 4000,
+        Categoria: "Articulo de calzado",
+        TipoMedida: "Cm",
+        Talle: ["18cm"],
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "ARC09",
+        Estado: null,
+        Img: "Articulo de calzado/ARC09-img1",
+        Producto: "Arola impermeabilizante",
+        PrecioMayor: 9300,
+        PrecioMinorista: 15000,
+        Categoria: "Articulo de calzado",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: null,
+        Color: null,
+    },
+
+    {
+        Codigo: "ARC10",
+        Estado: null,
+        Img: "Articulo de calzado/ARC10-img1",
+        Producto: "Pictorian ESTIRADOR gatillo",
+        PrecioMayor: 5800,
+        PrecioMinorista: 8000,
+        Categoria: "Articulo de calzado",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "ARC11",
+        Estado: null,
+        Img: "Articulo de calzado/ARC11-img1",
+        Producto: "Wass pomada líquida",
+        PrecioMayor: 4900,
+        PrecioMinorista: 8000,
+        Categoria: "Articulo de calzado",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: ["Blanca", "Negra", "Marron", "Incoloro"],
+    },
+
+    {
+        Codigo: "ARC12",
+        Estado: null,
+        Img: "Articulo de calzado/ARC12-img1",
+        Producto: "Arola pomada",
+        PrecioMayor: 4900,
+        PrecioMinorista: 8000,
+        Categoria: "Articulo de calzado",
+        TipoMedida: "Peso",
+        Talle: ["60g"],
+        Descripcion: "",
+        Color: ["Marrón", "Choco", "Suela", "Incolor crema", "Negro"],
+    },
+
+    {
+        Codigo: "ARC13",
+        Estado: null,
+        Img: "Articulo de calzado/ARC13-img1",
+        Producto: "Wass gamuza LIMPIADOR",
+        PrecioMayor: 6600,
+        PrecioMinorista: 12000,
+        Categoria: "Articulo de calzado",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "ARC14",
+        Estado: null,
+        Img: "Articulo de calzado/ARC14-img1",
+        Producto: "Wass renovador gamuza",
+        PrecioMayor: 6900,
+        PrecioMinorista: 10000,
+        Categoria: "Articulo de calzado",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: ["Negro", "Suela", "Incoloro", "Marrón"],
+    },
+
+    {
+        Codigo: "ARC15",
+        Estado: null,
+        Img: "Articulo de calzado/ARC15-img1",
+        Producto: "Wass esponja mágica",
+        PrecioMayor: 4200,
+        PrecioMinorista: 7000,
+        Categoria: "Articulo de calzado",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: ["Negro", "Marrón", "Incoloro"],
+    },
+
+    {
+        Codigo: "ARC17",
+        Estado: null,
+        Img: "Articulo de calzado/ARC17-img1",
+        Producto: "Wass espuma SNEAKER limpiador",
+        PrecioMayor: null,
+        PrecioMinorista: 15000,
+        Categoria: "Articulo de calzado",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "ARC19",
+        Estado: null,
+        Img: "Articulo de calzado/ARC19-img1",
+        Producto: "Wass REVITALIZADOR cuero",
+        PrecioMayor: 8800,
+        PrecioMinorista: 15000,
+        Categoria: "Articulo de calzado",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "ARC20",
+        Estado: null,
+        Img: "Articulo de calzado/ARC20-img1",
+        Producto: "Zapp shampu limpiador",
+        PrecioMayor: 4800,
+        PrecioMinorista: 8000,
+        Categoria: "Articulo de calzado",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "ARC21",
+        Estado: null,
+        Img: "Articulo de calzado/ARC21-img1",
+        Producto: "Wass pomada en crema",
+        PrecioMayor: 3200,
+        PrecioMinorista: 5000,
+        Categoria: "Articulo de calzado",
+        TipoMedida: "Peso",
+        Talle: ["30g"],
+        Descripcion: "",
+        Color: ["Negro", "Marron", "Incoloro", "Blanca"],
+    },
+
+    {
+        Codigo: "ARC22",
+        Estado: null,
+        Img: "Articulo de calzado/ARC22-img1",
+        Producto: "Arola pomada vidrio / COLOR",
+        PrecioMayor: 6000,
+        PrecioMinorista: 10000,
+        Categoria: "Articulo de calzado",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "ARC23",
+        Estado: null,
+        Img: "Articulo de calzado/ARC23-img1",
+        Producto: "Pictorian tinta cuero",
+        PrecioMayor: 4200,
+        PrecioMinorista: 10000,
+        Categoria: "Articulo de calzado",
+        TipoMedida: "Peso",
+        Talle: ["50g"],
+        Descripcion: "",
+        Color: ["Negro", "Marrón", "Verde", "Rojo"],
+    },
+
+    {
+        Codigo: "ARC24",
+        Estado: null,
+        Img: "Articulo de calzado/ARC24-img1",
+        Producto: "Pictorian tinta gamuza",
+        PrecioMayor: 4200,
+        PrecioMinorista: 10000,
+        Categoria: "Articulo de calzado",
+        TipoMedida: "Peso",
+        Talle: ["50g"],
+        Descripcion: "",
+        Color: [
+            "Negro",
+            "Hueso",
+            "Gris",
+            "Azul",
+            "Verde Oscuro",
+            "Guinda",
+            "Marrón",
+            "Rojo",
+            "Suela",
+            "Beige"
+        ],
+    },
+
+    {
+        Codigo: "ARC25",
+        Estado: null,
+        Img: "Articulo de calzado/ARC25-img1",
+        Producto: "Pictorian tinta lona",
+        PrecioMayor: 4200,
+        PrecioMinorista: 10000,
+        Categoria: "Articulo de calzado",
+        TipoMedida: "Peso",
+        Talle: ["50g"],
+        Descripcion: "",
+        Color: ["Negro", "Blanco", "Rojo", "Azul"],
+    },
+
+    {
+        Codigo: "ARC26",
+        Estado: null,
+        Img: "Articulo de calzado/ARC26-img1",
+        Producto: "Wass desodorante PUFF",
+        PrecioMayor: null,
+        PrecioMinorista: 15000,
+        Categoria: "Articulo de calzado",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+
+// -Medias------------------------
+
 
     {
         Codigo: "M01",
@@ -1137,7 +1508,7 @@ const TodasImg = [
         ],
     },
     
-
+// -Llaveros--------------------
     {
         codigo: "MODELO00",
         Imagenes: [
@@ -1241,7 +1612,7 @@ const TodasImg = [
             "Llaveros/Modelo14-img3",
         ],
     },
-
+// -Articulo de Perros
     {
         codigo: "ArtiPr01",
         Imagenes: [
@@ -1267,7 +1638,184 @@ const TodasImg = [
             "ArticulosDePerro/ArtiPr03-img4",
         ],
     },
+// -Articulos de calzado--
+    {
+        codigo: "ARC01",
+        Imagenes: [
+            "Articulo de calzado/ARC01-img1",
+        ]
+    },
+    {
+        codigo: "ARC02",
+        Imagenes: [
+            "Articulo de calzado/ARC02-img1",
+            "Articulo de calzado/ARC02-img2",
+        ]
+    },
+    {
+        codigo: "ARC03",
+        Imagenes: [
+            "Articulo de calzado/ARC03-img1",
+            "Articulo de calzado/ARC03-img2",
+        ]
+    },
+    {
+        codigo: "ARC04",
+        Imagenes: [
+            "Articulo de calzado/ARC04-img1",
+        ]
+    },
+    {
+        codigo: "ARC05",
+        Imagenes: [
+            "Articulo de calzado/ARC05-img1",
+        ]
+    },
+    {
+        codigo: "ARC06",
+        Imagenes: [
+            "Articulo de calzado/ARC06-img1",
+            "Articulo de calzado/ARC06-img2",
+            "Articulo de calzado/ARC06-img3"
+        ]
+    },
+    {
+        codigo: "ARC07",
+        Imagenes: [
+            "Articulo de calzado/ARC07-img1",
+        ]
+    },
+    {
+        codigo: "ARC08",
+        Imagenes: [
+            "Articulo de calzado/ARC08-img1",
+        ]
+    },
+    {
+        codigo: "ARC09",
+        Imagenes: [
+            "Articulo de calzado/ARC09-img1",
+            "Articulo de calzado/ARC09-img2",
+            "Articulo de calzado/ARC09-img3"
+        ]
+    },
+    {
+        codigo: "ARC10",
+        Imagenes: [
+            "Articulo de calzado/ARC10-img1",
+            "Articulo de calzado/ARC10-img2",
+        ]
+    },
+    {
+        codigo: "ARC11",
+        Imagenes: [
+            "Articulo de calzado/ARC11-img1",
+            "Articulo de calzado/ARC11-img2",
+            "Articulo de calzado/ARC11-img3"
+        ]
+    },
+    {
+        codigo: "ARC12",
+        Imagenes: [
+            "Articulo de calzado/ARC12-img1",
+            "Articulo de calzado/ARC12-img2",
+        ]
+    },
+    {
+        codigo: "ARC13",
+        Imagenes: [
+            "Articulo de calzado/ARC13-img1",
+            "Articulo de calzado/ARC13-img2",
+        ]
+    },
+    {
+        codigo: "ARC14",
+        Imagenes: [
+            "Articulo de calzado/ARC14-img1",
+            "Articulo de calzado/ARC14-img2",
+        ]
+    },
+    {
+        codigo: "ARC15",
+        Imagenes: [
+            "Articulo de calzado/ARC15-img1",
+            "Articulo de calzado/ARC15-img2",
+            "Articulo de calzado/ARC15-img3",
+            "Articulo de calzado/ARC15-img4"
+        ]
+    },
+    {
+        codigo: "ARC17",
+        Imagenes: [
+            "Articulo de calzado/ARC17-img1",
+            "Articulo de calzado/ARC17-img2",
+        ]
+    },
+    //{
+    //    codigo: "ARC18",
+    //    Imagenes: [
+    //        "Articulo de calzado/ARC18-img1",
+    //        "Articulo de calzado/ARC18-img2",
+    //        "Articulo de calzado/ARC18-img3"
+    //    ]
+    //},
+    {
+        codigo: "ARC19",
+        Imagenes: [
+            "Articulo de calzado/ARC19-img1",
+            "Articulo de calzado/ARC19-img2",
+        ]
+    },
+    {
+        codigo: "ARC20",
+        Imagenes: [
+            "Articulo de calzado/ARC20-img1",
+            "Articulo de calzado/ARC20-img2",
+        ]
+    },
+    {
+        codigo: "ARC21",
+        Imagenes: [
+            "Articulo de calzado/ARC21-img1",
+            "Articulo de calzado/ARC21-img2",
+        ]
+    },
+    {
+        codigo: "ARC22",
+        Imagenes: [
+            "Articulo de calzado/ARC22-img1",
+        ]
+    },
+    {
+        codigo: "ARC23",
+        Imagenes: [
+            "Articulo de calzado/ARC23-img1",
+            "Articulo de calzado/ARC23-img2",
+        ]
+    },
+    {
+        codigo: "ARC24",
+        Imagenes: [
+            "Articulo de calzado/ARC24-img1",
+            "Articulo de calzado/ARC24-img2",
+            "Articulo de calzado/ARC24-img3"
+        ]
+    },
+    {
+        codigo: "ARC25",
+        Imagenes: [
+            "Articulo de calzado/ARC25-img1",
+        ]
+    },
+    {
+        codigo: "ARC26",
+        Imagenes: [
+            "Articulo de calzado/ARC26-img1",
+            "Articulo de calzado/ARC26-img2",
+        ]
+    },
 
+// -Medias------
     {
         codigo: "M01",
         Imagenes: [
@@ -1526,6 +2074,9 @@ const TodasImg = [
             "Medias/M25-img4",
         ],
     },
+
+// -Vestimenta
+
     {
         codigo: "VE01",
         Imagenes: [

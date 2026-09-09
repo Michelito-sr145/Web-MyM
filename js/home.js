@@ -117,7 +117,7 @@ function mostrarProductos(productosFiltrados) {
 
     item.innerHTML = `
       <a href="producto.html?code=${encodeURIComponent(prod.Codigo)}">
-        <img src="img/${prod.Img}.jpg" alt="${prod.Producto}">
+        <img src="img/${prod.Img}.jpg" loading="lazy" alt="${prod.Producto}">
         <h4>${prod.Producto}</h4>
         <p>${prod.PrecioMayor ? `$${prod.PrecioMayor}` : "Consultar precio"}</p>
         <button class="btn-visualizar">Comprar</button>
