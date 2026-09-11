@@ -286,6 +286,624 @@ const productos = [
         Color: null,
     },
 
+// -Cordones
+
+    {
+        Codigo: "COR01",
+        Estado: null,
+        Img: "Cordones/COR01-img1",
+        Producto: "Chato Común x12",
+        PrecioMayor: "Por Medida",
+        PrecioMinorista: null,
+        Categoria: "Cordones",
+        TipoMedida: "Metros",
+        Talle: ["0.45 $2500", "0.60 $3000", "0.90 $3400", "1.00 $3600", "1.10 $3800", "1.20 $4000", "1.50 $4400"],
+        Descripcion: "Cada medida del cordón lleva su respectivo precio.",
+        Color: ["Blanco", "Negro"],
+    },
+
+    {
+        Codigo: "COR02",
+        Estado: null,
+        Img: "Cordones/COR02-img1",
+        Producto: "Chato Común Color x12",
+        PrecioMayor: "Por Medida",
+        PrecioMinorista: null,
+        Categoria: "Cordones",
+        TipoMedida: "Metros",
+        Talle: ["0.45 $2500", "0.60 $3000", "0.90 $3400", "1.00 $3600", "1.10 $3800", "1.20 $4000", "1.50 $4400"],
+        Descripcion: "Cada medida del cordón lleva su respectivo precio.",
+        Color: ["Consultar Color", "Lila(803)", "Turquesa(850)", "Rojo(80)", "Francia(582)", "Celeste(36)", "Marrón(331)", "Violeta(568)", "Gris plata(37)", "Gris medio(38)", "Gris topo(361)", "Bordo/granate(338)", "Rojo vino(508)", "Palo rosa /nud(121)", "A marino(157)", "Verde navidad(276)", "Verde militar(13)", "Rosa bebe(76)", "Rosa chicle(99)", "Beige(350)", "Beige oscuro(861)", "Hueso(91)", "Ladrillo(352)", "Naranja(820)", "Coral(647)", "Salmón(502)", "Verde magenta(448)", "Fuccia(84)", "Amarillo(810)", "Amarillo papito(808)", "Purpura", "Natural(860)"],
+    },
+
+    {
+        Codigo: "COR03",
+        Estado: null,
+        Img: "Cordones/COR01-img1",
+        Producto: "Chato Común Blanco x72",
+        PrecioMayor: "Por Medida",
+        PrecioMinorista: null,
+        Categoria: "Cordones",
+        TipoMedida: "Metros",
+        Talle: ["0.45", "0.60", "0.90", "1.00", "1.10", "1.20", "1.50"],//["0.45 $3200", "0.60 $3800", "0.90 $5600", "1.00 $6300", "1.10 $7000", "1.20 $7500", "1.50 $9300"],
+        Descripcion: "Cada medida del cordón lleva su respectivo precio.",
+        Color: null,
+    },
+
+    {
+        Codigo: "COR04",
+        Estado: null,
+        Img: "Cordones/COR01-img1",
+        Producto: "Chato Común Negro x72",
+        PrecioMayor: "Por Medida",
+        PrecioMinorista: null,
+        Categoria: "Cordones",
+        TipoMedida: "Metros",
+        Talle: ["0.45", "0.60", "0.90", "1.00", "1.10", "1.20", "1.50"],//["0.45 $4000", "0.60 $5500", "0.90 $7400", "1.00 $8000", "1.10 $9000", "1.20 $10000", "1.50 $13000"],
+        Descripcion: "Cada medida del cordón lleva su respectivo precio.",
+        Color: null,
+    },
+
+    {
+        Codigo: "COR05",
+        Estado: null,
+        Img: "Cordones/COR02-img2",
+        Producto: "Chato Común Color x72",
+        PrecioMayor: null,
+        PrecioMinorista: null,
+        Categoria: "Cordones",
+        TipoMedida: "Metros",
+        Talle: ["0.60", "1.00", "1.20", "1.50"],
+        Descripcion: "Consulte por los colores para dicha medida.",
+        Color: ["Consultar Color", "Lila(803)", "Turquesa(850)", "Rojo(80)", "Francia(582)", "Celeste(36)", "Marrón(331)", "Violeta(568)", "Gris plata(37)", "Gris medio(38)", "Gris topo(361)", "Bordo/granate(338)", "Rojo vino(508)", "Palo rosa /nud(121)", "A marino(157)", "Verde navidad(276)", "Verde militar(13)", "Rosa bebe(76)", "Rosa chicle(99)", "Beige(350)", "Beige oscuro(861)", "Hueso(91)", "Ladrillo(352)", "Naranja(820)", "Coral(647)", "Salmón(502)", "Verde magenta(448)", "Fuccia(84)", "Amarillo(810)", "Amarillo papito(808)", "Purpura", "Natural(860)"],
+    },
+
+    {
+        Codigo: "COR06",
+        Estado: null,
+        Img: "Cordones/COR06-img1",
+        Producto: "Oval x12",
+        PrecioMayor: "Por Medida",
+        PrecioMinorista: null,
+        Categoria: "Cordones",
+        TipoMedida: "Metros",
+        Talle: ["0.60 $3500", "0.90 $3800", "1.00 $4000", "1.10 $4200", "1.20 $4300", "1.50 $4900"],
+        Descripcion: "Cada medida del cordón lleva su respectivo precio.",
+        Color: ["Blanco", "Negro"],
+    },
+
+    {
+        Codigo: "COR07",
+        Estado: null,
+        Img: "Cordones/COR07-img1",
+        Producto: "Oval Color x12",
+        PrecioMayor: "Por Medida",
+        PrecioMinorista: null,
+        Categoria: "Cordones",
+        TipoMedida: "Metros",
+        Talle: ["0.60 $3500", "0.90 $3800", "1.00 $4000", "1.10 $4200", "1.20 $4300", "1.50 $4900"],
+        Descripcion: "Cada medida del cordón lleva su respectivo precio.",
+        Color: ["Consultar Color", "Lila(803)", "Turquesa(850)", "Rojo(80)", "Francia(582)", "Celeste(36)", "Marrón(331)", "Violeta(568)", "Gris plata(37)", "Gris medio(38)", "Gris topo(361)", "Bordo/granate(338)", "Rojo vino(508)", "Palo rosa /nud(121)", "A marino(157)", "Verde navidad(276)", "Verde militar(13)", "Rosa bebe(76)", "Rosa chicle(99)", "Beige(350)", "Beige oscuro(861)", "Hueso(91)", "Ladrillo(352)", "Naranja(820)", "Coral(647)", "Salmón(502)", "Verde magenta(448)", "Fuccia(84)", "Amarillo(810)", "Amarillo papito(808)", "Purpura", "Natural(860)"],
+    },
+
+    {
+        Codigo: "COR08",
+        Estado: null,
+        Img: "Cordones/COR06-img1",
+        Producto: "Oval Blanco x72",
+        PrecioMayor: "Por Medida",
+        PrecioMinorista: null,
+        Categoria: "Cordones",
+        TipoMedida: "Metros",
+        Talle: ["0.60", "0.90", "1.00", "1.10", "1.20", "1.50"],//["0.60 $4900", "0.90 $7300", "1.00 $8000", "1.10 $8800", "1.20 $9600", "1.50 $11000"],
+        Descripcion: "Cada medida del cordón lleva su respectivo precio.",
+        Color: null,
+    },
+
+    {
+        Codigo: "COR09",
+        Estado: null,
+        Img: "Cordones/COR06-img1",
+        Producto: "Oval Negro x72",
+        PrecioMayor: "Por Medida",
+        PrecioMinorista: null,
+        Categoria: "Cordones",
+        TipoMedida: "Metros",
+        Talle: ["0.60", "0.90", "1.00", "1.10", "1.20", "1.50"],//["0.60 $6000", "0.90 $8400", "1.00 $10000", "1.10 $11000", "1.20 $12000", "1.50 $14000"],
+        Descripcion: "Cada medida del cordón lleva su respectivo precio.",
+        Color: null,
+    },
+
+    {
+        Codigo: "COR10",
+        Estado: null,
+        Img: "Cordones/COR07-img2",
+        Producto: "Oval Color x72",
+        PrecioMayor: null,
+        PrecioMinorista: null,
+        Categoria: "Cordones",
+        TipoMedida: "Metros",
+        Talle: ["0.60", "1.00", "1.20", "1.50"],
+        Descripcion: "Consulte por los colores para dicha medida.",
+        Color: ["Consultar Color", "Lila(803)", "Turquesa(850)", "Rojo(80)", "Francia(582)", "Celeste(36)", "Marrón(331)", "Violeta(568)", "Gris plata(37)", "Gris medio(38)", "Gris topo(361)", "Bordo/granate(338)", "Rojo vino(508)", "Palo rosa /nud(121)", "A marino(157)", "Verde navidad(276)", "Verde militar(13)", "Rosa bebe(76)", "Rosa chicle(99)", "Beige(350)", "Beige oscuro(861)", "Hueso(91)", "Ladrillo(352)", "Naranja(820)", "Coral(647)", "Salmón(502)", "Verde magenta(448)", "Fuccia(84)", "Amarillo(810)", "Amarillo papito(808)", "Purpura", "Natural(860)"],
+    },
+
+    {
+        Codigo: "COR11",
+        Estado: null,
+        Img: "Cordones/COR11-img1",
+        Producto: "Libreto x12",
+        PrecioMayor: "Por Medida",
+        PrecioMinorista: null,
+        Categoria: "Cordones",
+        TipoMedida: "Metros",
+        Talle: ["0.60 $3500", "0.75 $3800", "0.90 $4100", "1.00 $4300", "1.10 $4400", "1.20 $4500", "1.30 $4800", "1.50 $5200"],
+        Descripcion: "Cada medida del cordón lleva su respectivo precio.",
+        Color: ["Blanco", "Negro"],
+    },
+
+    {
+        Codigo: "COR12",
+        Estado: null,
+        Img: "Cordones/COR12-img1",
+        Producto: "Libreto Color x12",
+        PrecioMayor: "Por Medida",
+        PrecioMinorista: null,
+        Categoria: "Cordones",
+        TipoMedida: "Metros",
+        Talle: ["0.60 $3500", "0.75 $3800", "0.90 $4100", "1.00 $4300", "1.10 $4400", "1.20 $4500", "1.30 $4800", "1.50 $5200"],
+        Descripcion: "Cada medida del cordón lleva su respectivo precio.",
+        Color: ["Consultar Color", "Lila(803)", "Turquesa(850)", "Rojo(80)", "Francia(582)", "Celeste(36)", "Marrón(331)", "Violeta(568)", "Gris plata(37)", "Gris medio(38)", "Gris topo(361)", "Bordo/granate(338)", "Rojo vino(508)", "Palo rosa /nud(121)", "A marino(157)", "Verde navidad(276)", "Verde militar(13)", "Rosa bebe(76)", "Rosa chicle(99)", "Beige(350)", "Beige oscuro(861)", "Hueso(91)", "Ladrillo(352)", "Naranja(820)", "Coral(647)", "Salmón(502)", "Verde magenta(448)", "Fuccia(84)", "Amarillo(810)", "Amarillo papito(808)", "Purpura", "Natural(860)"],
+    },
+
+    {
+        Codigo: "COR13",
+        Estado: null,
+        Img: "Cordones/COR11-img1",
+        Producto: "Libreto Blanco x72",
+        PrecioMayor: "Por Medida",
+        PrecioMinorista: null,
+        Categoria: "Cordones",
+        TipoMedida: "Metros",
+        Talle: ["0.60", "0.75", "0.90", "1.00", "1.10", "1.20", "1.30", "1.50"],//["0.60 $5300", "0.75 $6600", "0.90 $7800", "1.00 $8700", "1.10 $9500", "1.20 $10500", "1.30 $11500", "1.50 $12700"],
+        Descripcion: "Cada medida del cordón lleva su respectivo precio.",
+        Color: null,
+    },
+
+    {
+        Codigo: "COR14",
+        Estado: null,
+        Img: "Cordones/COR11-img1",
+        Producto: "Libreto Negro x72",
+        PrecioMayor: "Por Medida",
+        PrecioMinorista: null,
+        Categoria: "Cordones",
+        TipoMedida: "Metros",
+        Talle: ["0.60", "0.75", "0.90", "1.00", "1.10", "1.20", "1.30", "1.50"],//["0.60 $6700", "0.75 $7800", "0.90 $9000", "1.00 $10000", "1.10 $11000", "1.20 $13000", "1.30 $14000", "1.50 $17000"],
+        Descripcion: "Cada medida del cordón lleva su respectivo precio.",
+        Color: null,
+    },
+
+    {
+        Codigo: "COR15",
+        Estado: null,
+        Img: "Cordones/COR12-img2",
+        Producto: "Libreto Color x72",
+        PrecioMayor: null,
+        PrecioMinorista: null,
+        Categoria: "Cordones",
+        TipoMedida: "Metros",
+        Talle: ["1.20"],
+        Descripcion: "Consulte por los colores para dicha medida.",
+        Color: ["Consultar Color", "Lila(803)", "Turquesa(850)", "Rojo(80)", "Francia(582)", "Celeste(36)", "Marrón(331)", "Violeta(568)", "Gris plata(37)", "Gris medio(38)", "Gris topo(361)", "Bordo/granate(338)", "Rojo vino(508)", "Palo rosa /nud(121)", "A marino(157)", "Verde navidad(276)", "Verde militar(13)", "Rosa bebe(76)", "Rosa chicle(99)", "Beige(350)", "Beige oscuro(861)", "Hueso(91)", "Ladrillo(352)", "Naranja(820)", "Coral(647)", "Salmón(502)", "Verde magenta(448)", "Fuccia(84)", "Amarillo(810)", "Amarillo papito(808)", "Purpura", "Natural(860)"],
+    },
+
+    {
+        Codigo: "COR16",
+        Estado: null,
+        Img: "Cordones/COR16-img1",
+        Producto: "Cola Rata x12",
+        PrecioMayor: "Por Medida",
+        PrecioMinorista: null,
+        Categoria: "Cordones",
+        TipoMedida: "Metros",
+        Talle: ["0.45 $2500", "0.60 $3000", "1.00 $3500", "1.20 $4000"],
+        Descripcion: "Cada medida del cordón lleva su respectivo precio.",
+        Color: ["Blanco"],
+    },
+
+    {
+        Codigo: "COR17",
+        Estado: null,
+        Img: "Cordones/COR17-img1",
+        Producto: "Cola Rata Color x12",
+        PrecioMayor: "Por Medida",
+        PrecioMinorista: null,
+        Categoria: "Cordones",
+        TipoMedida: "Metros",
+        Talle: ["0.45 $2500", "0.60 $3000", "1.00 $3500", "1.20 $4000"],
+        Descripcion: "Cada medida del cordón lleva su respectivo precio.",
+        Color: ["Consultar Color", "Lila(803)", "Turquesa(850)", "Rojo(80)", "Francia(582)", "Celeste(36)", "Marrón(331)", "Violeta(568)", "Gris plata(37)", "Gris medio(38)", "Gris topo(361)", "Bordo/granate(338)", "Rojo vino(508)", "Palo rosa /nud(121)", "A marino(157)", "Verde navidad(276)", "Verde militar(13)", "Rosa bebe(76)", "Rosa chicle(99)", "Beige(350)", "Beige oscuro(861)", "Hueso(91)", "Ladrillo(352)", "Naranja(820)", "Coral(647)", "Salmón(502)", "Verde magenta(448)", "Fuccia(84)", "Amarillo(810)", "Amarillo papito(808)", "Purpura", "Natural(860)"],
+    },
+
+    {
+        Codigo: "COR18",
+        Estado: null,
+        Img: "Cordones/COR16-img1",
+        Producto: "Cola Rata Blanco x72",
+        PrecioMayor: "Por Medida",
+        PrecioMinorista: null,
+        Categoria: "Cordones",
+        TipoMedida: "Metros",
+        Talle: ["0.45", "0.60", "1.00", "1.20"], //["0.45 $3200", "0.60 $3500", "1.00 $6500", "1.20 $7800"],
+        Descripcion: "Cada medida del cordón lleva su respectivo precio.",
+        Color: null,
+    },
+
+    {
+        Codigo: "COR19",
+        Estado: null,
+        Img: "Cordones/COR16-img1",
+        Producto: "Cola Rata Negro x72",
+        PrecioMayor: "Por Medida",
+        PrecioMinorista: null,
+        Categoria: "Cordones",
+        TipoMedida: "Metros",
+        Talle: ["0.45", "0.60", "1.00", "1.20"], //["0.45 $3700", "0.60 $5000", "1.00 $7800", "1.20 $9000"],
+        Descripcion: "Cada medida del cordón lleva su respectivo precio.",
+        Color: null,
+    },
+
+    {
+        Codigo: "COR20",
+        Estado: null,
+        Img: "Cordones/COR17-img1",
+        Producto: "Cola Rata Color x72",
+        PrecioMayor: "Por Medida",
+        PrecioMinorista: null,
+        Categoria: "Cordones",
+        TipoMedida: "Metros",
+        Talle: ["0.45", "0.60", "1.00", "1.20"],//["0.45 $5000", "0.60 $6000", "1.00 $9000", "1.20 $11000"],
+        Descripcion: "La medida 0.60 tiene más colores. La medida 1.20 solo Marrón.",
+        Color: ["Marrón(331)", "Beige(350)"],
+    },
+
+    {
+        Codigo: "COR21",
+        Estado: null,
+        Img: "Cordones/COR21-img1",
+        Producto: "Tubular x12",
+        PrecioMayor: 6000,
+        PrecioMinorista: null,
+        Categoria: "Cordones",
+        TipoMedida: "Metros",
+        Talle: ["1.00", "1.20", "1.50"],
+        Descripcion: "",
+        Color: ["Blanco", "Negro"],
+    },
+
+//    {
+//        Codigo: "COR22",
+//        Estado: null,
+//        Img: "Cordones/COR21-img1",
+//        Producto: "Tubular Color x12",
+//        PrecioMayor: 6000,
+//        PrecioMinorista: null,
+//        Categoria: "Cordones",
+//        TipoMedida: "Metros",
+//        Talle: ["1.00", "1.20", "1.50"],
+//        Descripcion: "",
+//        Color: ["Consultar Color", "Lila(803)", "Turquesa(850)", "Rojo(80)", "Francia(582)", "Celeste(36)", "Marrón(331)", "Violeta(568)", "Gris plata(37)", "Gris medio(38)", "Gris topo(361)", "Bordo/granate(338)", "Rojo vino(508)", "Palo rosa /nud(121)", "A marino(157)", "Verde navidad(276)", "Verde militar(13)", "Rosa bebe(76)", "Rosa chicle(99)", "Beige(350)", "Beige oscuro(861)", "Hueso(91)", "Ladrillo(352)", "Naranja(820)", "Coral(647)", "Salmón(502)", "Verde magenta(448)", "Fuccia(84)", "Amarillo(810)", "Amarillo papito(808)", "Purpura", "Natural(860)"],
+//    },
+
+    {
+        Codigo: "COR23",
+        Estado: null,
+        Img: "Cordones/COR21-img1",
+        Producto: "Tubular Blanco x72",
+        PrecioMayor: null,
+        PrecioMinorista: null,
+        Categoria: "Cordones",
+        TipoMedida: "Metros",
+        Talle: ["1.00", "1.20", "1.50"],
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "COR24",
+        Estado: null,
+        Img: "Cordones/COR21-img1",
+        Producto: "Tubular Negro x72",
+        PrecioMayor: null,
+        PrecioMinorista: null,
+        Categoria: "Cordones",
+        TipoMedida: "Metros",
+        Talle: ["1.00", "1.20", "1.50"],
+        Descripcion: "",
+        Color: null,
+    },
+
+//    {
+//        Codigo: "COR25",
+//        Estado: null,
+//        Img: "Cordones/COR25-img1",
+//        Producto: "Tubular Color x72",
+//        PrecioMayor: null,
+//        PrecioMinorista: null,
+//        Categoria: "Cordones",
+//        TipoMedida: "Metros",
+//        Talle: ["1.00", "1.20", "1.50"],
+//        Descripcion: "",
+//        Color: ["Consultar Color", "Lila(803)", "Turquesa(850)", "Rojo(80)", "Francia(582)", "Celeste(36)", "Marrón(331)", "Violeta(568)", "Gris plata(37)", "Gris medio(38)", "Gris topo(361)", "Bordo/granate(338)", "Rojo vino(508)", "Palo rosa /nud(121)", "A marino(157)", "Verde navidad(276)", "Verde militar(13)", "Rosa bebe(76)", "Rosa chicle(99)", "Beige(350)", "Beige oscuro(861)", "Hueso(91)", "Ladrillo(352)", "Naranja(820)", "Coral(647)", "Salmón(502)", "Verde magenta(448)", "Fuccia(84)", "Amarillo(810)", "Amarillo papito(808)", "Purpura", "Natural(860)"],
+//    },
+
+    {
+        Codigo: "COR26",
+        Estado: null,
+        Img: "Cordones/COR26-img1",
+        Producto: "Redondo x12",
+        PrecioMayor: "Por Medida",
+        PrecioMinorista: null,
+        Categoria: "Cordones",
+        TipoMedida: "Metros",
+        Talle: ["1.00 $4500", "1.20 $5500", "1.50 $6600", "1.80 $7800", "2.00 $8500"],
+        Descripcion: "Cada medida del cordón lleva su respectivo precio. Solo queda Negro",
+        Color: ["Negro"],
+    },
+
+    {
+        Codigo: "COR27",
+        Estado: null,
+        Img: "Cordones/COR26-img1",
+        Producto: "Redondo Color x12",
+        PrecioMayor: "Por Medida",
+        PrecioMinorista: null,
+        Categoria: "Cordones",
+        TipoMedida: "Metros",
+        Talle: ["1.00 $4500", "1.20 $5500", "1.50 $6600", "1.80 $7800", "2.00 $8500"],
+        Descripcion: "Cada medida del cordón lleva su respectivo precio.",
+        Color: ["Consultar Color", "Lila(803)", "Turquesa(850)", "Rojo(80)", "Francia(582)", "Celeste(36)", "Marrón(331)", "Violeta(568)", "Gris plata(37)", "Gris medio(38)", "Gris topo(361)", "Bordo/granate(338)", "Rojo vino(508)", "Palo rosa /nud(121)", "A marino(157)", "Verde navidad(276)", "Verde militar(13)", "Rosa bebe(76)", "Rosa chicle(99)", "Beige(350)", "Beige oscuro(861)", "Hueso(91)", "Ladrillo(352)", "Naranja(820)", "Coral(647)", "Salmón(502)", "Verde magenta(448)", "Fuccia(84)", "Amarillo(810)", "Amarillo papito(808)", "Purpura", "Natural(860)"],
+    },
+
+    {
+        Codigo: "COR28",
+        Estado: null,
+        Img: "Cordones/COR26-img1",
+        Producto: "Redondo Blanco x72",
+        PrecioMayor: "Por Medida",
+        PrecioMinorista: null,
+        Categoria: "Cordones",
+        TipoMedida: "Metros",
+        Talle: ["1.00", "1.20", "1.50", "1.80"], //["1.00 $10000", "1.20 $12000", "1.50 $15000", "1.80 $18000"],
+        Descripcion: "Cada medida del cordón lleva su respectivo precio.",
+        Color: null,
+    },
+
+    {
+        Codigo: "COR29",
+        Estado: null,
+        Img: "Cordones/COR26-img1",
+        Producto: "Redondo Negro x72",
+        PrecioMayor: "Por Medida",
+        PrecioMinorista: null,
+        Categoria: "Cordones",
+        TipoMedida: "Metros",
+        Talle: ["1.00", "1.20", "1.50", "1.80", "2.00"],//["1.00 $13000", "1.20 $16000", "1.50 $19000", "1.80 $23000", "2.00 $32000"],
+        Descripcion: "Cada medida del cordón lleva su respectivo precio.",
+        Color: null,
+    },
+
+    {
+        Codigo: "COR30",
+        Estado: null,
+        Img: "Cordones/COR26-img1",
+        Producto: "Redondo Color x72",
+        PrecioMayor: "Por Medida",
+        PrecioMinorista: null,
+        Categoria: "Cordones",
+        TipoMedida: "Metros",
+        Talle: ["1.00", "1.20", "1.50", "1.80", "2.00"], //["1.00 $17000", "1.20 $21000", "1.50 $26000", "1.80 $31000", "2.00 $36000"],
+        Descripcion: "Las medidas que solo tienen pocos colores son: 1.80 Marrón(331) - Beige(350) / 2.00 Marrón(331).",
+        Color: ["Consultar Color", "Lila(803)", "Turquesa(850)", "Rojo(80)", "Francia(582)", "Celeste(36)", "Marrón(331)", "Violeta(568)", "Gris plata(37)", "Gris medio(38)", "Gris topo(361)", "Bordo/granate(338)", "Rojo vino(508)", "Palo rosa /nud(121)", "A marino(157)", "Verde navidad(276)", "Verde militar(13)", "Rosa bebe(76)", "Rosa chicle(99)", "Beige(350)", "Beige oscuro(861)", "Hueso(91)", "Ladrillo(352)", "Naranja(820)", "Coral(647)", "Salmón(502)", "Verde magenta(448)", "Fuccia(84)", "Amarillo(810)", "Amarillo papito(808)", "Purpura", "Natural(860)"],
+    },
+
+    {
+        Codigo: "COR31",
+        Estado: null,
+        Img: "Cordones/COR31-img1",
+        Producto: "Redondo Reflex x12",
+        PrecioMayor: 12000,
+        PrecioMinorista: null,
+        Categoria: "Cordones",
+        TipoMedida: "Metros",
+        Talle: ["1.20"],
+        Descripcion: "",
+        Color: ["Gris", "Negro"],
+    },
+
+    {
+        Codigo: "COR32",
+        Estado: null,
+        Img: "Cordones/COR32-img1",
+        Producto: "Redondo Bicolor x12",
+        PrecioMayor: 10000,
+        PrecioMinorista: null,
+        Categoria: "Cordones",
+        TipoMedida: "Metros",
+        Talle: ["1.20"],
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "COR33",
+        Estado: null,
+        Img: "Cordones/COR32-img2",
+        Producto: "Redondo Bicolor x72",
+        PrecioMayor: null,
+        PrecioMinorista: null,
+        Categoria: "Cordones",
+        TipoMedida: "Metros",
+        Talle: ["1.20"],
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "COR34",
+        Estado: null,
+        Img: "Cordones/COR34-img1",
+        Producto: "Fluor Chato x12",
+        PrecioMayor: "Por Medida",
+        PrecioMinorista: null,
+        Categoria: "Cordones",
+        TipoMedida: "Metros",
+        Talle: ["0.60 $2700", "0.90 $4600"],
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "COR35",
+        Estado: null,
+        Img: "Cordones/COR35-img1",
+        Producto: "Fluor Oval x12",
+        PrecioMayor: "Por Medida",
+        PrecioMinorista: null,
+        Categoria: "Cordones",
+        TipoMedida: "Metros",
+        Talle: ["0.60 $3500", "1.00 $4600"],
+        Descripcion: "",
+        Color: ["Verde", "Amarillo", "Fuccia", "Naranja"],
+    },
+
+    {
+        Codigo: "COR36",
+        Estado: null,
+        Img: "Cordones/COR36-img1",
+        Producto: "Fluor Libreto x12",
+        PrecioMayor: 6000,
+        PrecioMinorista: null,
+        Categoria: "Cordones",
+        TipoMedida: "Metros",
+        Talle: ["1.20"],
+        Descripcion: "",
+        Color: ["Verde", "Amarillo", "Fuccia", "Naranja"],
+    },
+
+    {
+        Codigo: "COR37",
+        Estado: null,
+        Img: "Cordones/COR36-img1",
+        Producto: "Fluor Libreto x72",
+        PrecioMayor: null,
+        PrecioMinorista: null,
+        Categoria: "Cordones",
+        TipoMedida: "Metros",
+        Talle: ["1.20"],
+        Descripcion: "",
+        Color: ["Verde", "Amarillo", "Fuccia", "Naranja"],
+    },
+
+    {
+        Codigo: "COR38",
+        Estado: null,
+        Img: "Cordones/COR38-img1",
+        Producto: "Lurex x12",
+        PrecioMayor: "Por Medida",
+        PrecioMinorista: null,
+        Categoria: "Cordones",
+        TipoMedida: "Metros",
+        Talle: ["0.60 $5200", "1.00 $7000", "1.20 $8000"],
+        Descripcion: "Cada medida del cordón lleva su respectivo precio. El blister viene con colores surtidos.",
+        Color: null,
+    },
+
+    {
+        Codigo: "COR39",
+        Estado: null,
+        Img: "Cordones/COR39-img1",
+        Producto: "Ancho 1.5cm x12",
+        PrecioMayor: 6700,
+        PrecioMinorista: null,
+        Categoria: "Cordones",
+        TipoMedida: "Metros",
+        Talle: ["1.20"],
+        Descripcion: "",
+        Color: ["Blanco", "Negro"],
+    },
+
+    {
+        Codigo: "COR40",
+        Estado: null,
+        Img: "Cordones/COR39-img1",
+        Producto: "Ancho Blanco 1.5cm x72",
+        PrecioMayor: null,
+        PrecioMinorista: null,
+        Categoria: "Cordones",
+        TipoMedida: "Metros",
+        Talle: ["1.20"],
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "COR41",
+        Estado: null,
+        Img: "Cordones/COR39-img1",
+        Producto: "Ancho Negro 1.5cm x72",
+        PrecioMayor: null,
+        PrecioMinorista: null,
+        Categoria: "Cordones",
+        TipoMedida: "Metros",
+        Talle: ["1.20"],
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "COR42",
+        Estado: null,
+        Img: "Cordones/COR42-img1",
+        Producto: "Ancho 2cm x12",
+        PrecioMayor: 8500,
+        PrecioMinorista: null,
+        Categoria: "Cordones",
+        TipoMedida: "Metros",
+        Talle: ["1.20"],
+        Descripcion: "",
+        Color: ["Blanco", "Negro"],
+    },
+
+    {
+        Codigo: "COR43",
+        Estado: null,
+        Img: "Cordones/COR42-img1",
+        Producto: "Ancho Blanco 2cm x72",
+        PrecioMayor: null,
+        PrecioMinorista: null,
+        Categoria: "Cordones",
+        TipoMedida: "Metros",
+        Talle: ["1.20"],
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "COR44",
+        Estado: null,
+        Img: "Cordones/COR42-img1",
+        Producto: "Ancho Negro 2cm x72",
+        PrecioMayor: null,
+        PrecioMinorista: null,
+        Categoria: "Cordones",
+        TipoMedida: "Metros",
+        Talle: ["1.20"],
+        Descripcion: "",
+        Color: null,
+    },
+
 // -Llaveros
 
     {
@@ -1507,8 +2125,288 @@ const TodasImg = [
             "Plantillas/P20-img2",
         ],
     },
+
+// -Cordones
+    {
+        codigo: "COR01",
+        Imagenes: [
+            "Cordones/COR01-img1",
+        ]
+    },
+    {
+        codigo: "COR02",
+        Imagenes: [
+            "Cordones/COR02-img1",
+            "Cordones/COR02-img2"
+        ]
+    },
+    {
+        codigo: "COR03",
+        Imagenes: [
+            "Cordones/COR01-img1",
+        ]
+    },
+    {
+        codigo: "COR04",
+        Imagenes: [
+            "Cordones/COR01-img1",
+        ]
+    },
+    {
+        codigo: "COR05",
+        Imagenes: [
+            "Cordones/COR02-img2",
+            "Cordones/COR02-img1",
+        ]
+    },
+    {
+        codigo: "COR06",
+        Imagenes: [
+            "Cordones/COR06-img1",
+        ]
+    },
+    {
+        codigo: "COR07",
+        Imagenes: [
+            "Cordones/COR07-img1",
+        ]
+    },
+    {
+        codigo: "COR08",
+        Imagenes: [
+            "Cordones/COR06-img1",
+        ]
+    },
+    {
+        codigo: "COR09",
+        Imagenes: [
+            "Cordones/COR06-img1",
+        ]
+    },
+    {
+        codigo: "COR10",
+        Imagenes: [
+            "Cordones/COR7-img2",
+            "Cordones/COR7-img1",
+        ]
+    },
+    {
+        codigo: "COR11",
+        Imagenes: [
+            "Cordones/COR11-img1",
+        ]
+    },
+    {
+        codigo: "COR12",
+        Imagenes: [
+            "Cordones/COR12-img1",
+            "Cordones/COR12-img2"
+        ]
+    },
+    {
+        codigo: "COR13",
+        Imagenes: [
+            "Cordones/COR11-img1",
+        ]
+    },
+    {
+        codigo: "COR14",
+        Imagenes: [
+            "Cordones/COR11-img1",
+        ]
+    },
+    {
+        codigo: "COR15",
+        Imagenes: [
+            "Cordones/COR12-img2",
+            "Cordones/COR12-img1"
+        ]
+    },
+    {
+        codigo: "COR16",
+        Imagenes: [
+            "Cordones/COR16-img1",
+        ]
+    },
+    {
+        codigo: "COR17",
+        Imagenes: [
+            "Cordones/COR17-img1",
+            "Cordones/COR17-img2"
+        ]
+    },
+    {
+        codigo: "COR18",
+        Imagenes: [
+            "Cordones/COR16-img1",
+        ]
+    },
+    {
+        codigo: "COR19",
+        Imagenes: [
+            "Cordones/COR16-img1",
+        ]
+    },
+    {
+        codigo: "COR20",
+        Imagenes: [
+            "Cordones/COR17-img2",
+            "Cordones/COR17-img1"
+        ]
+    },
+    {
+        codigo: "COR21",
+        Imagenes: [
+            "Cordones/COR21-img1",
+        ]
+    },
+    //{
+    //    codigo: "COR22",
+    //    Imagenes: [
+    //        "Cordones/COR21-img1",
+    //    ]
+    //},
+    {
+        codigo: "COR23",
+        Imagenes: [
+            "Cordones/COR21-img1",
+        ]
+    },
+    {
+        codigo: "COR24",
+        Imagenes: [
+            "Cordones/COR24-img1",
+            "Cordones/COR24-img2"
+        ]
+    },
+    //{
+    //    codigo: "COR25",
+    //    Imagenes: [
+    //        "Cordones/COR25-img1",
+    //        "Cordones/COR25-img2"
+    //    ]
+    //},
+    {
+        codigo: "COR26",
+        Imagenes: [
+            "Cordones/COR26-img1",
+        ]
+    },
+    {
+        codigo: "COR27",
+        Imagenes: [
+            "Cordones/COR26-img1",
+        ]
+    },
+    {
+        codigo: "COR28",
+        Imagenes: [
+            "Cordones/COR26-img1",
+        ]
+    },
+    {
+        codigo: "COR29",
+        Imagenes: [
+            "Cordones/COR26-img1",
+        ]
+    },
+    {
+        codigo: "COR30",
+        Imagenes: [
+            "Cordones/COR26-img1",
+        ]
+    },
+    {
+        codigo: "COR31",
+        Imagenes: [
+            "Cordones/COR31-img1",
+            "Cordones/COR31-img2"
+        ]
+    },
+    {
+        codigo: "COR32",
+        Imagenes: [
+            "Cordones/COR32-img1",
+            "Cordones/COR32-img2"
+        ]
+    },
+    {
+        codigo: "COR33",
+        Imagenes: [
+            "Cordones/COR32-img2",
+            "Cordones/COR32-img1"
+        ]
+    },
+    {
+        codigo: "COR34",
+        Imagenes: [
+            "Cordones/COR34-img1",
+        ]
+    },
+    {
+        codigo: "COR35",
+        Imagenes: [
+            "Cordones/COR35-img1",
+        ]
+    },
+    {
+        codigo: "COR36",
+        Imagenes: [
+            "Cordones/COR36-img1",
+        ]
+    },
+    {
+        codigo: "COR37",
+        Imagenes: [
+            "Cordones/COR36-img1",
+        ]
+    },
+    {
+        codigo: "COR38",
+        Imagenes: [
+            "Cordones/COR38-img1",
+            "Cordones/COR38-img2"
+        ]
+    },
+    {
+        codigo: "COR39",
+        Imagenes: [
+            "Cordones/COR39-img1",
+        ]
+    },
+    {
+        codigo: "COR40",
+        Imagenes: [
+            "Cordones/COR39-img1",
+        ]
+    },
+    {
+        codigo: "COR41",
+        Imagenes: [
+            "Cordones/COR39-img1",
+        ]
+    },
+    {
+        codigo: "COR42",
+        Imagenes: [
+            "Cordones/COR42-img1",
+        ]
+    },
+    {
+        codigo: "COR43",
+        Imagenes: [
+            "Cordones/COR42-img1",
+        ]
+    },
+    {
+        codigo: "COR44",
+        Imagenes: [
+            "Cordones/COR42-img1",
+        ]
+    },
     
 // -Llaveros--------------------
+
     {
         codigo: "MODELO00",
         Imagenes: [
