@@ -44,8 +44,8 @@ function irAIndex(valor) {
 document.getElementById("btn-sec-plantilla")?.addEventListener("click", () => {
     irAIndex("plantilla");
 });
-document.getElementById("btn-sec-llavero")?.addEventListener("click", () => {
-    irAIndex("llavero");
+document.getElementById("btn-sec-cordones")?.addEventListener("click", () => {
+    irAIndex("cordones");
 });
 document.getElementById("btn-sec-media")?.addEventListener("click", () => {
     irAIndex("media");
