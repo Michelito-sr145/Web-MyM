@@ -73,7 +73,7 @@ btnPrev.addEventListener('click', anterior);
 // Auto slide
 function iniciarAutoSlide() {
   detenerAutoSlide();
-  intervalo = setInterval(siguiente, 9000);
+  intervalo = setInterval(siguiente, 3000);
 }
 function detenerAutoSlide() {
   if (intervalo) clearInterval(intervalo);

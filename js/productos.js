@@ -38,7 +38,7 @@ const productos = [
     },
     {
         Codigo: "P02",
-        Estado: "Top",
+        Estado: null,
         Img: "Plantillas/P02-img1",
         Producto: "Común Negra",
         PrecioMayor: 1000,
@@ -64,7 +64,7 @@ const productos = [
     },
     {
         Codigo: "P04",
-        Estado: "Top",
+        Estado: null,
         Img: "Plantillas/P04-img1",
         Producto: "Arco Negra",
         PrecioMayor: 1100,
@@ -155,7 +155,7 @@ const productos = [
     },
     {
         Codigo: "P11",
-        Estado: "Agotado",
+        Estado: "Limitado",
         Img: "Plantillas/P11-img1",
         Producto: "Viscoelasticas Anatomica",
         PrecioMayor: 6500,
@@ -168,7 +168,7 @@ const productos = [
     },
     {
         Codigo: "P12",
-        Estado: "Agotado",
+        Estado: "Limitado",
         Img: "Plantillas/P12-img1",
         Producto: "Biomagnetica",
         PrecioMayor: 4000,
@@ -1466,10 +1466,540 @@ const productos = [
         Color: null,
     },
 
+// -Accesorio de calzado------------------------
+{
+        Codigo: "ACC01",
+        Estado: null,
+        Img: "Accesorio de calzado/ACC01-img1",
+        Producto: "separador dedos",
+        PrecioMayor: 2500,
+        PrecioMinorista: 6000,
+        Categoria: "Accesorio de calzado",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "ACC02",
+        Estado: null,
+        Img: "Accesorio de calzado/ACC02-img1",
+        Producto: "silicona corrector juanete",
+        PrecioMayor: 2500,
+        PrecioMinorista: 6000,
+        Categoria: "Accesorio de calzado",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "ACC03",
+        Estado: null,
+        Img: "Accesorio de calzado/ACC03-img1",
+        Producto: "silicona protector talon",
+        PrecioMayor: 4600,
+        PrecioMinorista: 6000,
+        Categoria: "Accesorio de calzado",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    // {
+    //     Codigo: "ACC04",
+    //     Estado: null,
+    //     Img: "Accesorio de calzado/ACC04-img1",
+    //     Producto: "salvamedias silicona",
+    //     PrecioMayor: 2000,
+    //     PrecioMinorista: 6000,
+    //     Categoria: "Accesorio de calzado",
+    //     TipoMedida: null,
+    //     Talle: null,
+    //     Descripcion: "",
+    //     Color: null,
+    // },
+
+    {
+        Codigo: "ACC05",
+        Estado: null,
+        Img: "Accesorio de calzado/ACC05-img1",
+        Producto: "silicona protector metatarso",
+        PrecioMayor: 4400,
+        PrecioMinorista: 5000,
+        Categoria: "Accesorio de calzado",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "ACC06",
+        Estado: null,
+        Img: "Accesorio de calzado/ACC06-img1",
+        Producto: "silicona talonera",
+        PrecioMayor: 4000,
+        PrecioMinorista: 8000,
+        Categoria: "Accesorio de calzado",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "ACC07",
+        Estado: null,
+        Img: "Accesorio de calzado/ACC07-img1",
+        Producto: "talonera LATEX 3CM",
+        PrecioMayor: 6000,
+        PrecioMinorista: 12000,
+        Categoria: "Accesorio de calzado",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "ACC08",
+        Estado: null,
+        Img: "Accesorio de calzado/ACC08-img1",
+        Producto: "Media Siliconada",
+        PrecioMayor: 3800,
+        PrecioMinorista: 8000,
+        Categoria: "Accesorio de calzado",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "ACC09",
+        Estado: null,
+        Img: "Accesorio de calzado/ACC09-img1",
+        Producto: "Plantillas Silicona tacones",
+        PrecioMayor: 4200,
+        PrecioMinorista: null,
+        Categoria: "Accesorio de calzado",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "ACC10",
+        Estado: null,
+        Img: "Accesorio de calzado/ACC10-img1",
+        Producto: "salvamedias Adesiva",
+        PrecioMayor: 1800,
+        PrecioMinorista: 5000,
+        Categoria: "Accesorio de calzado",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "ACC11",
+        Estado: null,
+        Img: "Accesorio de calzado/ACC11-img1",
+        Producto: "salvamedias silicona",
+        PrecioMayor: 2000,
+        PrecioMinorista: 5000,
+        Categoria: "Accesorio de calzado",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "ACC12",
+        Estado: null,
+        Img: "Accesorio de calzado/ACC12-img1",
+        Producto: "silicona puntera ballet",
+        PrecioMayor: 2800,
+        PrecioMinorista: 6000,
+        Categoria: "Accesorio de calzado",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "ACC13",
+        Estado: null,
+        Img: "Accesorio de calzado/ACC13-img1",
+        Producto: "silicona metatarso protector RED",
+        PrecioMayor: 2600,
+        PrecioMinorista: 6000,
+        Categoria: "Accesorio de calzado",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    // {
+    //     Codigo: "ACC14",
+    //     Estado: null,
+    //     Img: "Accesorio de calzado/ACC14-img1",
+    //     Producto: "silicona separador dedos",
+    //     PrecioMayor: null,
+    //     PrecioMinorista: 5000,
+    //     Categoria: "Accesorio de calzado",
+    //     TipoMedida: null,
+    //     Talle: null,
+    //     Descripcion: "",
+    //     Color: null,
+    // },
+
+    {
+        Codigo: "ACC15",
+        Estado: null,
+        Img: "Accesorio de calzado/ACC15-img1",
+        Producto: "talonera. LATEX",
+        PrecioMayor: 3600,
+        PrecioMinorista: 6000,
+        Categoria: "Accesorio de calzado",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "ACC16",
+        Estado: null,
+        Img: "Accesorio de calzado/ACC16-img1",
+        Producto: "silicona elevadora Talón 3cm",
+        PrecioMayor: 8200,
+        PrecioMinorista: 15000,
+        Categoria: "Accesorio de calzado",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    // {
+    //     Codigo: "ACC17",
+    //     Estado: null,
+    //     Img: "Accesorio de calzado/ACC17-img1",
+    //     Producto: "silicona protector dedos ancho x2",
+    //     PrecioMayor: null,
+    //     PrecioMinorista: 5000,
+    //     Categoria: "Accesorio de calzado",
+    //     TipoMedida: null,
+    //     Talle: null,
+    //     Descripcion: "",
+    //     Color: null,
+    // },
+
+    {
+        Codigo: "ACC18",
+        Estado: null,
+        Img: "Accesorio de calzado/ACC18-img1",
+        Producto: "protector dedos pack",
+        PrecioMayor: 3500,
+        PrecioMinorista: 6000,
+        Categoria: "Accesorio de calzado",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "ACC19",
+        Estado: null,
+        Img: "Accesorio de calzado/ACC19-img1",
+        Producto: "protector metatarsal + separador dedos",
+        PrecioMayor: 3000,
+        PrecioMinorista: 6000,
+        Categoria: "Accesorio de calzado",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "ACC20",
+        Estado: null,
+        Img: "Accesorio de calzado/ACC20-img1",
+        Producto: "adhesivo CURITA × 7 piezas",
+        PrecioMayor: 2500,
+        PrecioMinorista: 5000,
+        Categoria: "Accesorio de calzado",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "ACC21",
+        Estado: null,
+        Img: "Accesorio de calzado/ACC21-img1",
+        Producto: "plantilla silicona tacones",
+        PrecioMayor: null,
+        PrecioMinorista: 10000,
+        Categoria: "Accesorio de calzado",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "ACC22",
+        Estado: null,
+        Img: "Accesorio de calzado/ACC22-img1",
+        Producto: "Talonera leal media plantilla",
+        PrecioMayor: 4000,
+        PrecioMinorista: 7000,
+        Categoria: "Accesorio de calzado",
+        TipoMedida: "Tamaños",
+        Talle: ["Chica", "Mediana", "Grande"],
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "ACC23",
+        Estado: null,
+        Img: "Accesorio de calzado/ACC23-img1",
+        Producto: "leal almohadilla",
+        PrecioMayor: 3500,
+        PrecioMinorista: 6000,
+        Categoria: "Accesorio de calzado",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "ACC24",
+        Estado: null,
+        Img: "Accesorio de calzado/ACC24-img1",
+        Producto: "silicona arco concavo",
+        PrecioMayor: 4400,
+        PrecioMinorista: 6000,
+        Categoria: "Accesorio de calzado",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "ACC25",
+        Estado: null,
+        Img: "Accesorio de calzado/ACC25-img1",
+        Producto: "curita/almoadilla",
+        PrecioMayor: 3200,
+        PrecioMinorista: 7000,
+        Categoria: "Accesorio de calzado",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "ACC26",
+        Estado: null,
+        Img: "Accesorio de calzado/ACC26-img1",
+        Producto: "protector SILICONA TOPE X 6",
+        PrecioMayor: 2000,
+        PrecioMinorista: 5000,
+        Categoria: "Accesorio de calzado",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "ACC27",
+        Estado: null,
+        Img: "Accesorio de calzado/ACC27-img1",
+        Producto: "férula corrector juanete",
+        PrecioMayor: 4000,
+        PrecioMinorista: 8000,
+        Categoria: "Accesorio de calzado",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "ACC28",
+        Estado: null,
+        Img: "Accesorio de calzado/ACC28-img1",
+        Producto: "Silicona protector dedos x 5",
+        PrecioMayor: 2800,
+        PrecioMinorista: 6000,
+        Categoria: "Accesorio de calzado",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "ACC29",
+        Estado: null,
+        Img: "Accesorio de calzado/ACC29-img1",
+        Producto: "almohadilla de espuma metatarso",
+        PrecioMayor: 2800,
+        PrecioMinorista: 6000,
+        Categoria: "Accesorio de calzado",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "ACC30",
+        Estado: null,
+        Img: "Accesorio de calzado/ACC30-img1",
+        Producto: "rodillera silicona magnéticas",
+        PrecioMayor: 4600,
+        PrecioMinorista: 10000,
+        Categoria: "Accesorio de calzado",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "ACC31",
+        Estado: null,
+        Img: "Accesorio de calzado/ACC31-img1",
+        Producto: "silicona metatarso magnetica x 2",
+        PrecioMayor: 4400,
+        PrecioMinorista: 8000,
+        Categoria: "Accesorio de calzado",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    // {
+    //     Codigo: "ACC32",
+    //     Estado: null,
+    //     Img: "Accesorio de calzado/ACC32-img1",
+    //     Producto: "plantisuela para metatarso cuero",
+    //     PrecioMayor: 4200,
+    //     PrecioMinorista: 8000,
+    //     Categoria: "Accesorio de calzado",
+    //     TipoMedida: null,
+    //     Talle: null,
+    //     Descripcion: "",
+    //     Color: null,
+    // },
+
+    // {
+    //     Codigo: "ACC33",
+    //     Estado: null,
+    //     Img: "Accesorio de calzado/ACC33-img1",
+    //     Producto: "almohadilla con talon metatarso",
+    //     PrecioMayor: 1500,
+    //     PrecioMinorista: 5000,
+    //     Categoria: "Accesorio de calzado",
+    //     TipoMedida: null,
+    //     Talle: null,
+    //     Descripcion: "",
+    //     Color: null,
+    // },
+
+    // {
+    //     Codigo: "ACC34",
+    //     Estado: null,
+    //     Img: "Accesorio de calzado/ACC34-img1",
+    //     Producto: "almohadilla silicona metatarso",
+    //     PrecioMayor: 2800,
+    //     PrecioMinorista: 7000,
+    //     Categoria: "Accesorio de calzado",
+    //     TipoMedida: null,
+    //     Talle: null,
+    //     Descripcion: "",
+    //     Color: null,
+    // },
+
+    {
+        Codigo: "ACC35",
+        Estado: null,
+        Img: "Accesorio de calzado/ACC35-img1",
+        Producto: "talonera leal × 3 talles",
+        PrecioMayor: 4600,
+        PrecioMinorista: 8000,
+        Categoria: "Accesorio de calzado",
+        TipoMedida: "Tamaños",
+        Talle: ["Chica", "Mediana", "Grande"],
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "ACC36",
+        Estado: null,
+        Img: "Accesorio de calzado/ACC36-img1",
+        Producto: "siliciona media soquete",
+        PrecioMayor: 6000,
+        PrecioMinorista: 10000,
+        Categoria: "Accesorio de calzado",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    // {
+    //     Codigo: "ACC37",
+    //     Estado: null,
+    //     Img: "Accesorio de calzado/ACC37-img1",
+    //     Producto: "silicona corrector dedo garra /martillo",
+    //     PrecioMayor: 2800,
+    //     PrecioMinorista: 6000,
+    //     Categoria: "Accesorio de calzado",
+    //     TipoMedida: null,
+    //     Talle: null,
+    //     Descripcion: "",
+    //     Color: null,
+    // },
+
+    // {
+    //     Codigo: "ACC38",
+    //     Estado: null,
+    //     Img: "Accesorio de calzado/ACC38-img1",
+    //     Producto: "Silicona Tope Separador",
+    //     PrecioMayor: 2800,
+    //     PrecioMinorista: 6000,
+    //     Categoria: "Accesorio de calzado",
+    //     TipoMedida: null,
+    //     Talle: null,
+    //     Descripcion: "",
+    //     Color: null,
+    // },
 
 // -Medias------------------------
-
-
     {
         Codigo: "M01",
         Estado: null,
@@ -2712,6 +3242,258 @@ const TodasImg = [
             "Articulo de calzado/ARC26-img2",
         ]
     },
+
+// -Accesorio de calzado------------------------
+{
+        codigo: "ACC01",
+        Imagenes: [
+            "Accesorio de calzado/ACC01-img1",
+            "Accesorio de calzado/ACC01-img2"
+        ]
+    },
+    {
+        codigo: "ACC02",
+        Imagenes: [
+            "Accesorio de calzado/ACC02-img1",
+            "Accesorio de calzado/ACC02-img2"
+        ]
+    },
+    {
+        codigo: "ACC03",
+        Imagenes: [
+            "Accesorio de calzado/ACC03-img1",
+            "Accesorio de calzado/ACC03-img2"
+        ]
+    },
+    {
+        codigo: "ACC04",
+        Imagenes: [
+            "Accesorio de calzado/ACC04-img1"
+        ]
+    },
+    {
+        codigo: "ACC05",
+        Imagenes: [
+            "Accesorio de calzado/ACC05-img1",
+            "Accesorio de calzado/ACC05-img2"
+        ]
+    },
+    {
+        codigo: "ACC06",
+        Imagenes: [
+            "Accesorio de calzado/ACC06-img1",
+            "Accesorio de calzado/ACC06-img2"
+        ]
+    },
+    {
+        codigo: "ACC07",
+        Imagenes: [
+            "Accesorio de calzado/ACC07-img1",
+            "Accesorio de calzado/ACC07-img2"
+        ]
+    },
+    {
+        codigo: "ACC08",
+        Imagenes: [
+            "Accesorio de calzado/ACC08-img1",
+            "Accesorio de calzado/ACC08-img2"
+        ]
+    },
+    {
+        codigo: "ACC09",
+        Imagenes: [
+            "Accesorio de calzado/ACC09-img1",
+            "Accesorio de calzado/ACC09-img2",
+            "Accesorio de calzado/ACC09-img3"
+        ]
+    },
+    {
+        codigo: "ACC10",
+        Imagenes: [
+            "Accesorio de calzado/ACC10-img1"
+        ]
+    },
+    {
+        codigo: "ACC11",
+        Imagenes: [
+            "Accesorio de calzado/ACC11-img1"
+        ]
+    },
+    {
+        codigo: "ACC12",
+        Imagenes: [
+            "Accesorio de calzado/ACC12-img1",
+            "Accesorio de calzado/ACC12-img2"
+        ]
+    },
+    {
+        codigo: "ACC13",
+        Imagenes: [
+            "Accesorio de calzado/ACC13-img1",
+            "Accesorio de calzado/ACC13-img2"
+        ]
+    },
+    {
+        codigo: "ACC14",
+        Imagenes: [
+            "Accesorio de calzado/ACC14-img1"
+        ]
+    },
+    {
+        codigo: "ACC15",
+        Imagenes: [
+            "Accesorio de calzado/ACC15-img1"
+        ]
+    },
+    {
+        codigo: "ACC16",
+        Imagenes: [
+            "Accesorio de calzado/ACC16-img1"
+        ]
+    },
+    {
+        codigo: "ACC17",
+        Imagenes: [
+            "Accesorio de calzado/ACC17-img1"
+        ]
+    },
+    {
+        codigo: "ACC18",
+        Imagenes: [
+            "Accesorio de calzado/ACC18-img1",
+            "Accesorio de calzado/ACC18-img2"
+        ]
+    },
+    {
+        codigo: "ACC19",
+        Imagenes: [
+            "Accesorio de calzado/ACC19-img1",
+            "Accesorio de calzado/ACC19-img2"
+        ]
+    },
+    {
+        codigo: "ACC20",
+        Imagenes: [
+            "Accesorio de calzado/ACC20-img1"
+        ]
+    },
+    {
+        codigo: "ACC21",
+        Imagenes: [
+            "Accesorio de calzado/ACC21-img1"
+        ]
+    },
+    {
+        codigo: "ACC22",
+        Imagenes: [
+            "Accesorio de calzado/ACC22-img1"
+        ]
+    },
+    {
+        codigo: "ACC23",
+        Imagenes: [
+            "Accesorio de calzado/ACC23-img1",
+            "Accesorio de calzado/ACC23-img2"
+        ]
+    },
+    {
+        codigo: "ACC24",
+        Imagenes: [
+            "Accesorio de calzado/ACC24-img1",
+            "Accesorio de calzado/ACC24-img2"
+        ]
+    },
+    {
+        codigo: "ACC25",
+        Imagenes: [
+            "Accesorio de calzado/ACC25-img1"
+        ]
+    },
+    {
+        codigo: "ACC26",
+        Imagenes: [
+            "Accesorio de calzado/ACC26-img1",
+            "Accesorio de calzado/ACC26-img2"
+        ]
+    },
+    {
+        codigo: "ACC27",
+        Imagenes: [
+            "Accesorio de calzado/ACC27-img1",
+            "Accesorio de calzado/ACC27-img2"
+        ]
+    },
+    {
+        codigo: "ACC28",
+        Imagenes: [
+            "Accesorio de calzado/ACC28-img1"
+        ]
+    },
+    {
+        codigo: "ACC29",
+        Imagenes: [
+            "Accesorio de calzado/ACC29-img1",
+            "Accesorio de calzado/ACC29-img2"
+        ]
+    },
+    {
+        codigo: "ACC30",
+        Imagenes: [
+            "Accesorio de calzado/ACC30-img1",
+            "Accesorio de calzado/ACC30-img2"
+        ]
+    },
+    {
+        codigo: "ACC31",
+        Imagenes: [
+            "Accesorio de calzado/ACC31-img1"
+        ]
+    },
+    {
+        codigo: "ACC32",
+        Imagenes: [
+            "Accesorio de calzado/ACC32-img1"
+        ]
+    },
+    {
+        codigo: "ACC33",
+        Imagenes: [
+            "Accesorio de calzado/ACC33-img1"
+        ]
+    },
+    {
+        codigo: "ACC34",
+        Imagenes: [
+            "Accesorio de calzado/ACC34-img1"
+        ]
+    },
+    {
+        codigo: "ACC35",
+        Imagenes: [
+            "Accesorio de calzado/ACC35-img1",
+            "Accesorio de calzado/ACC35-img2",
+            "Accesorio de calzado/ACC35-img3"
+        ]
+    },
+    {
+        codigo: "ACC36",
+        Imagenes: [
+            "Accesorio de calzado/ACC36-img1"
+        ]
+    },
+    {
+        codigo: "ACC37",
+        Imagenes: [
+            "Accesorio de calzado/ACC37-img1"
+        ]
+    },
+    {
+        codigo: "ACC38",
+        Imagenes: [
+            "Accesorio de calzado/ACC38-img1"
+        ]
+    },
+
 
 // -Medias------
     {
