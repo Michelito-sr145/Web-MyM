@@ -54,10 +54,10 @@ function mostrarCarrito() {
         // Contenedor horizontal imagen + datos
         const contenedor = document.createElement("div");
         contenedor.classList.add("producto-contenedor");
-
+// Cambio de .jpg a .avif para optimización de imágenes
         // Imagen
         const img = document.createElement("img");
-        img.src = `img/${producto.Img}.jpg`;
+        img.src = `img/${producto.Img}.avif`;
         img.alt = producto.Producto;
         img.classList.add("carrito-img");
 
@@ -152,9 +152,9 @@ function activarEdicion(fila, item, index, producto) {
 
     const contenedor = document.createElement("div");
     contenedor.classList.add("producto-contenedor");
-
+// Cambio de .jpg a .avif para optimización de imágenes
     const img = document.createElement("img");
-    img.src = `img/${producto.Img}.jpg`;
+    img.src = `img/${producto.Img}.avif`;
     img.alt = producto.Producto;
     img.classList.add("carrito-img");
 

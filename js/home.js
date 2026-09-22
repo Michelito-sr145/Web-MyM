@@ -17,11 +17,11 @@ productosDestacados.forEach(prod => {
   a.href = `producto.html?code=${encodeURIComponent(prod.Codigo)}`;
   a.className = 'c-producto';
   a.dataset.codigo = prod.Codigo;
-
+  // Cambio de .jpg a .avif para optimización de imágenes
   a.innerHTML = `
     <div class="Presentacion">
       <h3 class="${prod.Estado}">${prod.Estado}</h3>
-      <img src="img/${prod.Img}.jpg" alt="${prod.Producto}">
+      <img src="img/${prod.Img}.avif" alt="${prod.Producto}">
     </div>
     <div class="Texto">
       <h4>${prod.Producto}</h4>
@@ -114,10 +114,10 @@ function mostrarProductos(productosFiltrados) {
     const item = document.createElement('div');
     item.classList.add('producto');
     item.setAttribute('data-codigo', prod.Codigo);
-
+    // Cambio de .jpg a .avif para optimización de imágenes
     item.innerHTML = `
       <a href="producto.html?code=${encodeURIComponent(prod.Codigo)}">
-        <img src="img/${prod.Img}.jpg" loading="lazy" alt="${prod.Producto}">
+        <img src="img/${prod.Img}.avif" loading="lazy" alt="${prod.Producto}">
         <h4>${prod.Producto}</h4>
         <p>${prod.PrecioMayor ? `$${prod.PrecioMayor}` : "Consultar precio"}</p>
         <button class="btn-visualizar">Comprar</button>

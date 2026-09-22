@@ -101,10 +101,11 @@ function cargarProducto() {
     // Imágenes del producto
     const productoselecImgs = TodasImg.find(item => item.codigo === codigoP);
     // Dentro de cargarProducto()
+    // Cambio de .jpg a .avif para optimización de imágenes
     let imgIndex = 0;
     function mostrarImagen() {
         if (productoselecImgs?.Imagenes.length > 0) {
-            vp_carrusel.innerHTML = `<img src="img/${productoselecImgs.Imagenes[imgIndex]}.jpg" loading="lazy" alt="Imagen ${codigoP}">`;
+            vp_carrusel.innerHTML = `<img src="img/${productoselecImgs.Imagenes[imgIndex]}.avif" loading="lazy" alt="Imagen ${codigoP}">`;
         } else {
             vp_carrusel.innerHTML = `<p>Sin imágenes disponibles</p>`;
         }
@@ -147,7 +148,7 @@ function simularesOestado(esPorCategoria) {
         mostraP(ProSugeridos);
     }
 }
-
+// Cambio de .jpg a .avif para optimización de imágenes
 function mostraP(prodMostrar){
     vs_carruselItems.innerHTML = ""; // Limpio antes de agregar
     prodMostrar.forEach(sprod => {
@@ -157,7 +158,7 @@ function mostraP(prodMostrar){
 
         enlace.innerHTML = `
             <div class="vs-Presentacion">
-                <img src="img/${sprod.Img}.jpg" alt="${sprod.Producto}">
+                <img src="img/${sprod.Img}.avif" alt="${sprod.Producto}">
             </div>
             <div class="vs-Texto">
                 <h4>${sprod.Producto}</h4>
