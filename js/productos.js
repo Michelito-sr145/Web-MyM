@@ -118,27 +118,27 @@ const productos = [
         Codigo: "P08",
         Estado: "Oferta",
         Img: "Plantillas/P08-img1",
-        Producto: "3D Chico",
+        Producto: "plantilla 3D",
         PrecioMayor: 2800,
         PrecioMinorista: 4000,
         Categoria: "Plantillas",
-        TipoMedida: null,
-        Talle: null,
-        Descripcion: "Plantilla Recortable/adaptable a los talles: 35 al 40",
-        Color: null,
+        TipoMedida: "Tamaño",
+        Talle: ["chico", "Grande"],
+        Descripcion: "Plantilla Recortable/adaptable a los talles: 35-40 y 41-45",
+        Color: ["Azul", "Negro", "Gris"],
     },
     {
         Codigo: "P09",
-        Estado: "Oferta",
+        Estado: null,
         Img: "Plantillas/P09-img1",
-        Producto: "3D Grande",
+        Producto: "Viscoelasticas Talón",
         PrecioMayor: 2800,
         PrecioMinorista: 4000,
         Categoria: "Plantillas",
-        TipoMedida: null,
-        Talle: null,
-        Descripcion: "Plantilla Recortable/adaptable a los talles: 40 al 45",
-        Color: null,
+        TipoMedida: "Tamaño",
+        Talle: ["chico", "Grande"],
+        Descripcion: "Plantilla Recortable/adaptable a los talles: 35-40 y 41-45",
+        Color: ["Naranja", "Negro", "Gris"],
     },
     {
         Codigo: "P10",
@@ -176,8 +176,8 @@ const productos = [
         Categoria: "Plantillas",
         TipoMedida: null,
         Talle: null,
-        Descripcion: "",
-        Color: null,
+        Descripcion: "Un par de plantillas magnéticas de masaje para calzado, diseñadas para estimular puntos de reflexología. Función: Buscan promover la circulación sanguínea y aliviar dolores en los pies mediante acupresión. Diseño: Incorporan imanes naturales y están fabricadas con materiales ligeros y transpirables. Ajuste: Son recortables para adaptarse a diferentes tallas de zapatos.",
+        Color: "",
     },
     {
         Codigo: "P13",
@@ -194,7 +194,7 @@ const productos = [
     },
     {
         Codigo: "P14",
-        Estado: null,
+        Estado: "Oferta",
         Img: "Plantillas/P14-img1",
         Producto: "Plantilla Reforzada Memo Verde",
         PrecioMayor: 4700,
@@ -444,7 +444,7 @@ const productos = [
 
     {
         Codigo: "COR12",
-        Estado: null,
+        Estado: "Top",
         Img: "Cordones/COR12-img1",
         Producto: "Libreto Color x12",
         PrecioMayor: "Por Medida",
@@ -1261,7 +1261,7 @@ const productos = [
 
     {
         Codigo: "ARC11",
-        Estado: null,
+        Estado: "Top",
         Img: "Articulo de calzado/ARC11-img1",
         Producto: "Wass pomada líquida",
         PrecioMayor: 4900,
@@ -1469,7 +1469,7 @@ const productos = [
 // -Accesorio de calzado------------------------
 {
         Codigo: "ACC01",
-        Estado: null,
+        Estado: "Top",
         Img: "Accesorio de calzado/ACC01-img1",
         Producto: "separador dedos",
         PrecioMayor: 2500,
@@ -1945,7 +1945,7 @@ const productos = [
 
     {
         Codigo: "ACC35",
-        Estado: null,
+        Estado: "Nuevo",
         Img: "Accesorio de calzado/ACC35-img1",
         Producto: "talonera leal × 3 talles",
         PrecioMayor: 4600,
@@ -2015,7 +2015,7 @@ const productos = [
     },
     {
         Codigo: "M02",
-        Estado: null,
+        Estado: "Oferta",
         Img: "Medias/M02-img1",
         Producto: "Soquete x12",
         PrecioMayor: 3500,
@@ -2054,7 +2054,7 @@ const productos = [
     },
     {
         Codigo: "M05",
-        Estado: null,
+        Estado: "Top",
         Img: "Medias/M05-img1",
         Producto: "Tenis x12",
         PrecioMayor: 18000,
