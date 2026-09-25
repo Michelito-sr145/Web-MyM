@@ -8,8 +8,8 @@
 //        PrecioMayor: , // valor numerico
 //        PrecioMinorista: , // valor numerico
 //        Categoria: "",
-//        TipoMedida: "", // deacuerdo a la medida que se da: "Peso" - "Talle" - "Volumen" - "Longitud"
-//        Talle: [], // En listar los distintos talles o medidas, si dice X al Y. por ejemplo "30 al 39" se enlista de la siguiente forma ["30","31","32","33","34","35","36","37","38","39"] 
+//        TipoMedida: "", // deacuerdo a la medida que se da: "Peso" - "Talle" - "Volumen" - "Longitud". Valor vacio o sin dato poner null
+//        Talle: [], // En listar los distintos talles o medidas, si dice X al Y. por ejemplo "30 al 39" se enlista de la siguiente forma ["30","31","32","33","34","35","36","37","38","39"]. Valor vacio o sin dato poner null
 //        Descripcion: "", // ""
 //        Color: [], // En listar los distintos colores. si no tiene ningun color poner "null"
 //    },
@@ -1999,7 +1999,388 @@ const productos = [
     //     Color: null,
     // },
 
-// -Medias------------------------
+
+// -Fajas------------------------------------------------------------------------------------------------------------------------
+    {
+        Codigo: "FJ01",
+        Estado: null,
+        Img: "Fajas/FJ01-img1",
+        Producto: "Manoplat azul elastica",
+        PrecioMayor: 3500,
+        PrecioMinorista: 6000,
+        Categoria: "Fajas",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "FJ02",
+        Estado: null,
+        Img: "Fajas/FJ02-img1",
+        Producto: "Muñequera azul elastica",
+        PrecioMayor: 2100,
+        PrecioMinorista: 4000,
+        Categoria: "Fajas",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    //{
+    //    Codigo: "FJ03",
+    //    Estado: null,
+    //    Img: "Fajas/FJ03-img1",
+    //    Producto: "Tobillera azul elastica pie",
+    //    PrecioMayor: 3500,
+    //    PrecioMinorista: 6000,
+    //    Categoria: "Fajas",
+    //    TipoMedida: null,
+    //    Talle: null,
+    //    Descripcion: "",
+    //    Color: null,
+    //},
+
+    {
+        Codigo: "FJ04",
+        Estado: null,
+        Img: "Fajas/FJ04-img1",
+        Producto: "Muslera azul elastica",
+        PrecioMayor: 5000,
+        PrecioMinorista: 7000,
+        Categoria: "Fajas",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "FJ05",
+        Estado: null,
+        Img: "Fajas/FJ05-img1",
+        Producto: "Rodillera azul elastica",
+        PrecioMayor: 5000,
+        PrecioMinorista: 7000,
+        Categoria: "Fajas",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "FJ06",
+        Estado: null,
+        Img: "Fajas/FJ06-img1",
+        Producto: "Gemelera azul elastica",
+        PrecioMayor: 5000,
+        PrecioMinorista: 7000,
+        Categoria: "Fajas",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "FJ07",
+        Estado: null,
+        Img: "Fajas/FJ07-img1",
+        Producto: "Muñequera soporte protector",
+        PrecioMayor: 2800,
+        PrecioMinorista: 5000,
+        Categoria: "Fajas",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "FJ08",
+        Estado: null,
+        Img: "Fajas/FJ08-img1",
+        Producto: "Codera verde compresión",
+        PrecioMayor: 5500,
+        PrecioMinorista: 7000,
+        Categoria: "Fajas",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "FJ09",
+        Estado: null,
+        Img: "Fajas/FJ09-img1",
+        Producto: "Rodillera compresion verde",
+        PrecioMayor: 6800,
+        PrecioMinorista: 10000,
+        Categoria: "Fajas",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "FJ10",
+        Estado: null,
+        Img: "Fajas/FJ10-img1",
+        Producto: "Media pierna compresión",
+        PrecioMayor: 9200,
+        PrecioMinorista: 10000,
+        Categoria: "Fajas",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "FJ11",
+        Estado: null,
+        Img: "Fajas/FJ11-img1",
+        Producto: "Muñequera AJUSTABLE bajo",
+        PrecioMayor: 4500,
+        PrecioMinorista: 6000,
+        Categoria: "Fajas",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "FJ12",
+        Estado: null,
+        Img: "Fajas/FJ12-img1",
+        Producto: "Muñequera AJUSTABLE medio",
+        PrecioMayor: null,
+        PrecioMinorista: 6000,
+        Categoria: "Fajas",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "FJ13",
+        Estado: null,
+        Img: "Fajas/FJ13-img1",
+        Producto: "Manopla ajustable",
+        PrecioMayor: 6500,
+        PrecioMinorista: 6000,
+        Categoria: "Fajas",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "FJ14",
+        Estado: null,
+        Img: "Fajas/FJ14-img1",
+        Producto: "Tobillera verde AJUSTABLE",
+        PrecioMayor: 6700,
+        PrecioMinorista: 7000,
+        Categoria: "Fajas",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "FJ15",
+        Estado: null,
+        Img: "Fajas/FJ15-img1",
+        Producto: "Codera verde ajustable",
+        PrecioMayor: 9000,
+        PrecioMinorista: 8000,
+        Categoria: "Fajas",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "FJ16",
+        Estado: null,
+        Img: "Fajas/FJ16-img1",
+        Producto: "Muslera verde ajustable",
+        PrecioMayor: 10500,
+        PrecioMinorista: 10000,
+        Categoria: "Fajas",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "FJ17",
+        Estado: null,
+        Img: "Fajas/FJ17-img1",
+        Producto: "Gemelera verde ajustable",
+        PrecioMayor: 9500,
+        PrecioMinorista: 9000,
+        Categoria: "Fajas",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "FJ18",
+        Estado: null,
+        Img: "Fajas/FJ18-img1",
+        Producto: "Rodillera ajustable",
+        PrecioMayor: 11000,
+        PrecioMinorista: 10000,
+        Categoria: "Fajas",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "FJ19",
+        Estado: null,
+        Img: "Fajas/FJ19-img1",
+        Producto: "Hombrera ajustable",
+        PrecioMayor: 12000,
+        PrecioMinorista: 20000,
+        Categoria: "Fajas",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "FJ20",
+        Estado: null,
+        Img: "Fajas/FJ20-img1",
+        Producto: "Hombrera neopren azul",
+        PrecioMayor: 6000,
+        PrecioMinorista: 12000,
+        Categoria: "Fajas",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "FJ21",
+        Estado: null,
+        Img: "Fajas/FJ21-img1",
+        Producto: "Venda elastica tobillo",
+        PrecioMayor: 4500,
+        PrecioMinorista: 8000,
+        Categoria: "Fajas",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "FJ22",
+        Estado: null,
+        Img: "Fajas/FJ22-img1",
+        Producto: "Vendas elastica rodillera",
+        PrecioMayor: 6500,
+        PrecioMinorista: 12000,
+        Categoria: "Fajas",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "FJ23",
+        Estado: null,
+        Img: "Fajas/FJ23-img1",
+        Producto: "Protector dedos mano",
+        PrecioMayor: 3200,
+        PrecioMinorista: 5000,
+        Categoria: "Fajas",
+        TipoMedida: null,
+        Talle: null,
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "FJ24",
+        Estado: null,
+        Img: "Fajas/FJ24-img1",
+        Producto: "Cinta kinesiologia 2.5 cm",
+        PrecioMayor: 3500,
+        PrecioMinorista: 5000,
+        Categoria: "Fajas",
+        TipoMedida: "Longitud",
+        Talle: ["2.5 cm"],
+        Descripcion: "",
+        Color: null,
+    },
+
+    {
+        Codigo: "FJ25",
+        Estado: null,
+        Img: "Fajas/FJ25-img1",
+        Producto: "Cinta kinesiologia 5cm",
+        PrecioMayor: 6000,
+        PrecioMinorista: 9000,
+        Categoria: "Fajas",
+        TipoMedida: "Longitud",
+        Talle: ["5 cm"],
+        Descripcion: "",
+        Color: null,
+    },
+
+    //{
+    //    Codigo: "FJ26",
+    //    Estado: null,
+    //    Img: "Fajas/FJ26-img1",
+    //    Producto: "Faja de trabajo 3 talles",
+    //    PrecioMayor: 13500,
+    //    PrecioMinorista: 20000,
+    //    Categoria: "Fajas",
+    //    TipoMedida: "Talle",
+    //    Talle: null,
+    //    Descripcion: "Disponible en 3 talles.",
+    //    Color: null,
+    //},
+
+    // {
+    //     Codigo: "FJ27",
+    //     Estado: null,
+    //     Img: "Fajas/FJ27-img1",
+    //     Producto: "Rodillera deportiva",
+    //     PrecioMayor: 8700,
+    //     PrecioMinorista: 12000,
+    //     Categoria: "Fajas",
+    //     TipoMedida: null,
+    //     Talle: null,
+    //     Descripcion: "",
+    //     Color: null,
+    // },
+
+
+// -Medias------------------------------------------------------------------------------------------------------------------------
     {
         Codigo: "M01",
         Estado: null,
@@ -3494,6 +3875,169 @@ const TodasImg = [
         ]
     },
 
+// -Faja--------------------------------------------------------------------------------------------------
+    {
+        codigo: "FJ01",
+        Imagenes: [
+            "Fajas/FJ01-img1",
+        ]
+    },
+    {
+        codigo: "FJ02",
+        Imagenes: [
+            "Fajas/FJ02-img1",
+        ]
+    },
+    {
+        codigo: "FJ03",
+        Imagenes: [
+            "Fajas/FJ03-img1",
+        ]
+    },
+    {
+        codigo: "FJ04",
+        Imagenes: [
+            "Fajas/FJ04-img1",
+        ]
+    },
+    {
+        codigo: "FJ05",
+        Imagenes: [
+            "Fajas/FJ05-img1",
+        ]
+    },
+    {
+        codigo: "FJ06",
+        Imagenes: [
+            "Fajas/FJ06-img1",
+        ]
+    },
+    {
+        codigo: "FJ07",
+        Imagenes: [
+            "Fajas/FJ07-img1",
+        ]
+    },
+    {
+        codigo: "FJ08",
+        Imagenes: [
+            "Fajas/FJ08-img1",
+        ]
+    },
+    {
+        codigo: "FJ09",
+        Imagenes: [
+            "Fajas/FJ09-img1",
+        ]
+    },
+    {
+        codigo: "FJ10",
+        Imagenes: [
+            "Fajas/FJ10-img1",
+        ]
+    },
+    {
+        codigo: "FJ11",
+        Imagenes: [
+            "Fajas/FJ11-img1",
+        ]
+    },
+    {
+        codigo: "FJ12",
+        Imagenes: [
+            "Fajas/FJ12-img1",
+        ]
+    },
+    {
+        codigo: "FJ13",
+        Imagenes: [
+            "Fajas/FJ13-img1",
+        ]
+    },
+    {
+        codigo: "FJ14",
+        Imagenes: [
+            "Fajas/FJ14-img1",
+        ]
+    },
+    {
+        codigo: "FJ15",
+        Imagenes: [
+            "Fajas/FJ15-img1",
+        ]
+    },
+    {
+        codigo: "FJ16",
+        Imagenes: [
+            "Fajas/FJ16-img1",
+        ]
+    },
+    {
+        codigo: "FJ17",
+        Imagenes: [
+            "Fajas/FJ17-img1",
+        ]
+    },
+    {
+        codigo: "FJ18",
+        Imagenes: [
+            "Fajas/FJ18-img1",
+        ]
+    },
+    {
+        codigo: "FJ19",
+        Imagenes: [
+            "Fajas/FJ19-img1",
+        ]
+    },
+    {
+        codigo: "FJ20",
+        Imagenes: [
+            "Fajas/FJ20-img1",
+        ]
+    },
+    {
+        codigo: "FJ21",
+        Imagenes: [
+            "Fajas/FJ21-img1",
+        ]
+    },
+    {
+        codigo: "FJ22",
+        Imagenes: [
+            "Fajas/FJ22-img1",
+        ]
+    },
+    {
+        codigo: "FJ23",
+        Imagenes: [
+            "Fajas/FJ23-img1",
+        ]
+    },
+    {
+        codigo: "FJ24",
+        Imagenes: [
+            "Fajas/FJ24-img1",
+        ]
+    },
+    {
+        codigo: "FJ25",
+        Imagenes: [
+            "Fajas/FJ25-img1",
+        ]
+    },
+    {
+        codigo: "FJ26",
+        Imagenes: [
+            "Fajas/FJ26-img1",
+        ]
+    },
+    {
+        codigo: "FJ27",
+        Imagenes: [
+            "Fajas/FJ27-img1"
+        ]
+    },
 
 // -Medias------
     {
