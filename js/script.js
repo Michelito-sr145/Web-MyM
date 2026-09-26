@@ -36,22 +36,15 @@ linkSocial.forEach(item => {
 
 // Función universal para redirigir a index.html con valor
 function irAIndex(valor) {
-    localStorage.setItem("filtrarProductos", valor);
+    localStorage.setItem("filtrarProductos", valor.replace(/-/g, " "));
     window.location.href = "index.html";
 }
 
 // Botones del banner/header
-document.getElementById("btn-sec-plantilla")?.addEventListener("click", () => {
-    irAIndex("plantilla");
-});
-document.getElementById("btn-sec-cordones")?.addEventListener("click", () => {
-    irAIndex("cordones");
-});
-document.getElementById("btn-sec-media")?.addEventListener("click", () => {
-    irAIndex("media");
-});
-document.getElementById("btn-sec-todo")?.addEventListener("click", () => {
-    irAIndex("todo");
+document.querySelectorAll(".cat-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+        irAIndex(btn.dataset.cat);
+    });
 });
 
 

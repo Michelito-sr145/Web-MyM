@@ -247,65 +247,72 @@ HEADER
   color:#25d366;
 }
 
-
 /* ======= BANNER ======= */
-
 .opciones{
   position:relative;
   width:100%;
-  height:125px;
+  min-height:125px;   /* ya no es altura fija, es un mínimo */
   overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding: 20px 15px;  /* aire arriba/abajo cuando crece */
 }
 
 .banner{
+  position:absolute;
+  top:0; left:0;
   width:100%;
   height:100%;
   object-fit:cover;
+  z-index:0;
 }
 
-
-/* BOTONES */
-
-.categoria-botones{
+/* opcional: oscurece un poco la imagen para que el texto de los botones resalte siempre */
+.opciones::before{
+  content:"";
   position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
+  top:0; left:0;
+  width:100%; height:100%;
+  background: rgba(0,0,0,0.25);
+  z-index:0;
+}
+
+/* ======= BOTONES ======= */
+.categoria-botones{
+  position:relative;
+  z-index:1;
   display:flex;
-  flex-direction:column;
-  align-items:center;
-  gap:12px;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:6px;
+  max-width: 900px;
 }
 
-.categoria-botones .principal {
-  padding: 10px 15px;
+.cat-btn{
+  padding: 8px 14px;
   border: none;
   cursor: pointer;
-  border-radius: 7px;
-  background-color: var(--banner-btn); /* holor */
-  color: var(--banner-text); /* holor */
-  font-size: 1rem;
-}
-
-.categoria-botones .secundarios {
-  display: flex;
-  gap: 10px;
-}
-.categoria-botones .secundarios button {
-  padding: 8px 13px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  background-color: var(--banner-btn); /* holor */
-  color: var(--banner-text); /* holor */
-  font-size: 1rem;
-}
-
-.categoria-botones button:hover {
-  background-color:var(--banner-btn-hover); /* holor */
-  color: var(--banner-text-hover);
+  border-radius: 6px;
+  background-color: var(--banner-btn);
+  color: var(--banner-text);
+  font-size: 0.72rem;
+  padding: 5px 8px;
+  white-space: nowrap;
   transition: 0.3s;
 }
+
+.cat-btn:hover{
+  background-color: var(--banner-btn-hover);
+  color: var(--banner-text-hover);
+}
+
+.cat-btn--todos{
+  font-weight: bold;
+}
+
+.cat-btn .full{ display:none; }
+.cat-btn .short{ display:inline; }
 
 /* ======= CARRITO FLOTANTE ======= */
 
@@ -416,13 +423,12 @@ footer > p {
   .navbar a {
     font-size: 1.4rem;
   }
-  .categoria-botones .principal{
-    font-size: 1rem;
-    padding: 8px 14px;
+  .categoria-botones{
+    gap: 10px;
   }
-  .categoria-botones .secundarios button {
-    font-size: 1rem;
-    padding: 8px 14px;
+  .cat-btn{
+    font-size: 0.8rem;
+    padding: 6px 10px;
   }
   footer .info {
     font-size: 0.9rem;
@@ -437,18 +443,6 @@ footer > p {
     font-size: 1.2rem;
   }
   
-  /* === BANNER === */
-  .opciones {
-    height: 125px;
-  }
-  .categoria-botones {
-    flex-direction: row;
-    gap: 10px;
-  }
-  .categoria-botones .secundarios {
-    justify-content:space-around;
-    gap: 10px;
-  }
   /* ==== FOOTER ====*/
   footer .info {
     flex-direction: row; /* fila: info a la izquierda, mapa derecha */
@@ -502,14 +496,12 @@ footer > p {
   .navbar a {
     font-size: 1.5rem;
   }
-  .categoria-botones .principal{
-    font-size: 1rem;
-    padding: 10px 20px;
+  .cat-btn{
+    font-size: 0.95rem;
+    padding: 8px 14px;
   }
-  .categoria-botones .secundarios button {
-    font-size: 1rem;
-    padding:  10px 20px;
-  }
+  .cat-btn .full{ display:inline; }
+  .cat-btn .short{ display:none; }
   footer .info {
     font-size: 0.9rem;
   }
@@ -522,14 +514,6 @@ footer > p {
   .icono-car i{
     font-size: 1.2rem;
   }
-
-  .categoria-botones {
-    gap: 20px;
-  }
-  .categoria-botones .secundarios {
-    gap: 20px;
-  }
-
   /*=== FOOTER ===*/
   .mini-mapa {
     width: 250px;
