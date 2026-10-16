@@ -33,6 +33,34 @@ function ocultar(elemento, clase) {
     elemento.classList.remove(`${clase}--show`);
 }
 
+
+function obtenerPrecio(producto, item) {
+    const precio = producto.PrecioMayor;
+    // Precio numérico normal
+    if (typeof precio === "number" &&
+        Number.isFinite(precio) && precio >= 0) {
+        return precio;
+    }
+    // Precio indicado en la medida seleccionada
+    if (precio === "Por Medida" && item.Talle) {
+        const coincidencia = String(item.Talle).match(/\$\s*(\d+)/);
+
+        if (coincidencia) {
+            return Number(coincidencia[1]);
+        }
+    }
+    // Precio no disponible o pendiente de consulta
+    return null;
+}
+
+function formatearPrecio(precio) {
+    return precio.toLocaleString("es-AR", {
+        style: "currency",
+        currency: "ARS"
+    });
+}
+
+
 // ======= MOSTRAR EL CARRITO =======
 function mostrarCarrito() {
     contenedorCarrito.innerHTML = "";
@@ -86,21 +114,39 @@ function mostrarCarrito() {
         }
 
         // Precio y cantidad solo si tiene precio
-        if (producto.PrecioMayor) {
-            const precio = document.createElement("span");
-            precio.textContent = `Precio : $${producto.PrecioMayor.toFixed(2)}`;
-            datos.appendChild(precio);
+        
+        const precioUnitario = obtenerPrecio(producto, item);
 
-            const cantidad = document.createElement("span");
-            cantidad.textContent = `Cantidad: ${item.Cantidad}`;
-            datos.appendChild(cantidad);
+        const precio = document.createElement("span");
 
-            total += producto.PrecioMayor * item.Cantidad;
-        }else{
-            const precio = document.createElement("span");
-            precio.textContent = "Para Consultar Precio";
-            datos.appendChild(precio);
+        precio.textContent = precioUnitario !== null
+            ? `Precio: ${formatearPrecio(precioUnitario)}`
+            : "Precio: A consultar";
+
+        datos.appendChild(precio);
+
+        const cantidad = document.createElement("span");
+        cantidad.textContent = `Cantidad: ${item.Cantidad}`;
+        datos.appendChild(cantidad);
+
+        if (precioUnitario !== null) {
+            total += precioUnitario * item.Cantidad;
         }
+        //if (producto.PrecioMayor) {
+        //    const precio = document.createElement("span");
+        //    precio.textContent = `Precio : $${producto.PrecioMayor.toFixed(2)}`;
+        //    datos.appendChild(precio);
+//
+        //    const cantidad = document.createElement("span");
+        //    cantidad.textContent = `Cantidad: ${item.Cantidad}`;
+        //    datos.appendChild(cantidad);
+//
+        //    total += producto.PrecioMayor * item.Cantidad;
+        //}else{
+        //    const precio = document.createElement("span");
+        //    precio.textContent = "Para Consultar Precio";
+        //    datos.appendChild(precio);
+        //}
 
         contenedor.append(img, datos);
         fila.appendChild(contenedor);
@@ -110,7 +156,8 @@ function mostrarCarrito() {
         botones.classList.add("producto-botones");
 
         // Botón Editar (solo si hay precio y cantidad)
-        if (producto.PrecioMayor && (item.Cantidad || 0) > 0) {
+        //if (producto.PrecioMayor && (item.Cantidad || 0) > 0) 
+        if ((item.Cantidad || 0) > 0){
             const btnEditar = document.createElement("button");
             btnEditar.textContent = "Editar";
             btnEditar.classList.add("btn-editar");
@@ -178,22 +225,40 @@ function activarEdicion(fila, item, index, producto) {
         datos.appendChild(color);
     }
 
-    if (producto.PrecioMayor) {
-        const precio = document.createElement("span");
-        precio.textContent = `Precio: $${producto.PrecioMayor.toFixed(2)}`;
-        datos.appendChild(precio);
-    }
+    //if (producto.PrecioMayor) {
+    //    const precio = document.createElement("span");
+    //    precio.textContent = `Precio: $${producto.PrecioMayor.toFixed(2)}`;
+    //    datos.appendChild(precio);
+    //}
+
+    const precioUnitario = obtenerPrecio(producto, item);
+
+    const precio = document.createElement("span");
+    precio.textContent = precioUnitario !== null
+        ? `Precio: ${formatearPrecio(precioUnitario)}`
+        : "Precio: A consultar";
+
+    datos.appendChild(precio);
+
+    // Permitir editar cantidades de todos los productos
+    const inputCantidad = document.createElement("input");
+    inputCantidad.type = "number";
+    inputCantidad.min = 1;
+    inputCantidad.step = 1;
+    inputCantidad.value = item.Cantidad || 1;
+    inputCantidad.classList.add("input-cantidad");
+    datos.appendChild(inputCantidad);
 
     // Input cantidad editable (solo si hay precio)
-    let inputCantidad;
-    if (producto.PrecioMayor) {
-        inputCantidad = document.createElement("input");
-        inputCantidad.type = "number";
-        inputCantidad.min = 1;
-        inputCantidad.value = item.Cantidad;
-        inputCantidad.classList.add("input-cantidad");
-        datos.appendChild(inputCantidad);
-    }
+    //let inputCantidad;
+    //if (producto.PrecioMayor) {
+    //    inputCantidad = document.createElement("input");
+    //    inputCantidad.type = "number";
+    //    inputCantidad.min = 1;
+    //    inputCantidad.value = item.Cantidad;
+    //    inputCantidad.classList.add("input-cantidad");
+    //    datos.appendChild(inputCantidad);
+    //}
 
     contenedor.append(img, datos);
     fila.appendChild(contenedor);
@@ -209,11 +274,20 @@ function activarEdicion(fila, item, index, producto) {
         btnGuardar.textContent = "Guardar";
         btnGuardar.classList.add("btn-editar");
         btnGuardar.addEventListener("click", () => {
-            const nuevaCantidad = parseInt(inputCantidad.value);
+            //const nuevaCantidad = parseInt(inputCantidad.value);
+            //item.Cantidad = nuevaCantidad >= 1 ? nuevaCantidad : 1;
+            //carrito[index] = item;
+            //localStorage.setItem("carrito", JSON.stringify(carrito));
+            //mostrarCarrito();
+
+            const nuevaCantidad = parseInt(inputCantidad.value, 10);
             item.Cantidad = nuevaCantidad >= 1 ? nuevaCantidad : 1;
             carrito[index] = item;
+            // Guardar los cambios en localStorage
             localStorage.setItem("carrito", JSON.stringify(carrito));
-            mostrarCarrito();
+            // Actualizar automáticamente la página
+            location.reload();
+
         });
         botones.appendChild(btnGuardar);
     }
@@ -262,12 +336,22 @@ function generarTextoPedido() {
             linea += "";
         }
 
-        // Cantidad (negrita si falta)
-        if (datos.PrecioMayor) {
-            linea += "\n Cantidad: " + pcar.Cantidad;
+        const precioUnitario = obtenerPrecio(datos, pcar);
+        linea += "\n Cantidad: " + pcar.Cantidad;
+        if (precioUnitario !== null) {
+            linea += "\n Precio unitario: " +
+                formatearPrecio(precioUnitario);
         } else {
-            linea += "\n *CONSULTA* del precio";
+            linea += "\n *PRECIO A CONSULTAR*";
         }
+
+        //// Cantidad (negrita si falta)
+        //if (datos.PrecioMayor) {
+        //    linea += "\n Cantidad: " + pcar.Cantidad;
+        //} else {
+        //    linea += "\n *CONSULTA* del precio";
+        //}
+        
         mensaje += linea + "\n\n";
     });
     return mensaje;
