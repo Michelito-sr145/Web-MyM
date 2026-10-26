@@ -432,6 +432,22 @@
   background: var(--modal-btn-hover);
   color: var(--modal-text-hover);
 }
+p.msg-error{
+  color: rgb(150, 150, 150)
+}
+.msg-error{
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.msg-error--show{
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+
 
 /* =======================
   ANIMACIÓN

@@ -6,8 +6,9 @@ const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 // ======= ZONA DE REALIZAR EL PEDIDO =======
 const compraModal = document.querySelector(".Compra-Modal");
 const opcion = document.querySelector(".opcion");
-const btnRetrocederwps = document.querySelector(".atras-wsp")
-const btnRetrocederemail = document.querySelector(".atras-email")
+const btnRetrocederwps = document.querySelector(".atras-wsp");
+const btnRetrocederemail = document.querySelector(".atras-email");
+const btnErrorEmail = document.querySelector(".atras-confi-email");
 // WhatsApp
 const confirmacionWsp = document.querySelector(".confirmacion-wsp");
 const btnWhatsApp = document.getElementById("msj-wsp");
@@ -19,6 +20,7 @@ const formEmail = document.querySelector(".form-email");
 const confirmacionEmail = document.querySelector(".confirmacion-email");
 const formulario = document.getElementById("formulario");
 const estadoEmail = document.querySelector(".estado");
+const msgErrorForm = document.querySelector(".msg-error");
 const btnCerrarConfiEmail = document.querySelector(".cerrar-confi-email");
 
 document.getElementById("btn-verPro")?.addEventListener("click", () => {
@@ -385,6 +387,15 @@ btnRetrocederemail.addEventListener("click", () => {
     visible(opcion, "opcion");
 });
 
+btnErrorEmail.addEventListener("click", () => {
+    // Oculta cualquier sección activa dentro del modal
+    ocultar(formEmail, "form-email");
+    ocultar(confirmacionEmail, "confirmacion-email");
+
+    // Muestra nuevamente el menú de opciones
+    visible(opcion, "opcion");
+});
+
 // ===== Eventos de WhatsApp=====
 // Enviar WhatsApp
 function enviarWhatsApp() {
@@ -442,11 +453,15 @@ formulario.addEventListener("submit", function(e) {
         .then(function(response) {
             console.log("✅ Email enviado:", response);
             ocultar(formEmail, "form-email");
+            ocultar(msgErrorForm, ".msg-error");
             visible(confirmacionEmail, "confirmacion-email");
             estadoEmail.textContent = "✅ Pedido realizado, espere nuestra respuesta...";
         }, function(error) {
             console.error("❌ Error al enviar:", error);
-            estadoEmail.textContent = "❌ Error al enviar el pedido, inténtelo nuevamente.";
+            estadoEmail.textContent = "❌ Error al enviar su mensaje, Una disculpa...";
+            msgErrorForm.textContent = "Por favor comunicar este error por las redes o intente por el medio de WhatsApp. Muchas Gracias"
+            ocultar(formEmail, "form-email");
+            visible(msgErrorForm, "msg-error");
             visible(confirmacionEmail, "confirmacion-email");
         });
 });
