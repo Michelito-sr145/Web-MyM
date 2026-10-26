@@ -4372,3 +4372,20 @@ const TodasImg = [
         ],
     },
 ];
+
+// Solo usar cuando agregamos nuevos productos.
+function generarURL() {
+    const urls = productos
+        .filter(p => p.Codigo != null && String(p.Codigo).trim() !== "")
+        .map(p => String(p.Codigo).trim())
+        .filter((codigo, index, array) => array.indexOf(codigo) === index)
+        .map(codigo => {
+            const url = `https://plantillasmaster.com/producto.html?code=${encodeURIComponent(codigo)}`;
+
+            return `  <url>
+    <loc>${url.replace(/&/g, "&amp;")}</loc>
+  </url>`;
+        });
+
+    console.log(urls.join("\n"));
+}
